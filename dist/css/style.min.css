@@ -1789,6 +1789,9 @@ body {
 .sliders__slider-2 {
   margin-bottom: 34px;
 }
+.sliders__range {
+  position: relative;
+}
 .sliders__obolochka {
   position: absolute;
   width: 344px;
@@ -1873,6 +1876,15 @@ input[type=range]::-ms-thumb {
 
 .calc-3 input[type=range]::-ms-thumb {
   background-color: #33e6ff;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 50%;
+  height: 2px;
+  background-color: #0099ff;
 }
 
 .check {

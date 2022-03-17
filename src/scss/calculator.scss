@@ -199,6 +199,7 @@
    &__range-3 {
    }
    &__range {
+      position: relative;
    }
    &__obolochka {
       position: absolute;
@@ -276,6 +277,14 @@ input[type="range"]::-ms-thumb {
 }
 .calc-3 input[type="range"]::-ms-thumb {
    background-color: #33e6ff;
+}
+.progress-bar {
+   position: absolute;
+   bottom: 0%;
+   left: 0%;
+   width: 50%;
+   height: 2px;
+   background-color: #0099ff;
 }
 // ==========================================check
 .check {

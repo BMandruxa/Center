@@ -581,6 +581,13 @@ $(document).ready(() => {
 		}
 	})
 })
+// progress bar
+// const slider = document.querySelector(".slider")
+// const bar = document.querySelector(".progress-bar")
+// slider.oninput = () => {
+// 	let value = slider.value;
+// 	bar.style.width = value + '%';
+// }
 
 document.addEventListener('DOMContentLoaded', () => {
 	new CustomSelect('#select-1', {
@@ -594,24 +601,24 @@ document.addEventListener('DOMContentLoaded', () => {
 		],
 		onSelected(select, option) {
 			// выбранное значение
-			console.log(`Выбранное значение: ${select.value}`);
+			// console.log(`Выбранное значение: ${select.value}`);
 			// индекс выбранной опции
-			console.log(`Индекс выбранной опции: ${select.selectedIndex}`);
+			// console.log(`Индекс выбранной опции: ${select.selectedIndex}`);
 			// выбранный текст опции
 			const text = option ? option.textContent : '';
-			console.log(`Выбранный текст опции: ${text}`);
+			// console.log(`Выбранный текст опции: ${text}`);
 		},
 	});
 	document.querySelector('.select').addEventListener('select.change', (e) => {
 		const btn = e.target.querySelector('.select__toggle');
 		// выбранное значение
-		console.log(`Выбранное значение: ${btn.value}`);
+		// console.log(`Выбранное значение: ${btn.value}`);
 		// индекс выбранной опции
-		console.log(`Индекс выбранной опции: ${btn.dataset.index}`);
+		// console.log(`Индекс выбранной опции: ${btn.dataset.index}`);
 		// выбранный текст опции
 		const selected = e.target.querySelector('.select__option_selected');
 		const text = selected ? selected.textContent : '';
-		console.log(`Выбранный текст опции: ${text}`);
+		// console.log(`Выбранный текст опции: ${text}`);
 	});
 })
 
@@ -757,6 +764,8 @@ document.addEventListener('click', (e) => {
 		});
 	}
 });
+
+
 
 
 
