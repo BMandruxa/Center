@@ -1,0 +1,40 @@
+<div id="popup_4" class="header__customer popup">
+   <div class="popup__body body_3">
+      <div class="popup__column">
+         <div class="popup__content">
+            <div class="popup__title">Получить
+               консультацию</div>
+            <div class="popup__text">Оставьте контактные данные, чтобы получить консультацию<br class="popup-textbr">
+               о вкладах и займах доступных<br class="popup-textbr2"> для пайщиков нашего кредитного кооператива</div>
+         </div>
+         <form action="#" class="popup__data">
+            <label class="popup__label" for="username">
+               <p>Ваше имя</p>
+               <input type="text" name="username" autocomplete="on" required>
+            </label>
+
+            <label class="popup__label" for="tel">
+               <p>Контактный телефон</p>
+               <input type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
+            </label>
+
+            <button class="popup__button" name="submit">Отправить данные</button>
+
+
+            <div class="popup__checkbox">
+               <label class="checkbox-other" for="personal-data">
+                  <input type="checkbox" id="personal-data" name="personal-data" required>
+                  <span>Отправляя форму, я даю согласие на обработку<br>
+                     персональных данных.</span>
+               </label>
+            </div>
+         </form>
+         <img class="popup__img-figure" src="@img/main/saving-loans/figure4.svg" alt="figure">
+         <div class="popup__icn close-popup">
+            <svg class="cross">
+               <use xlink:href="#cross"></use>
+            </svg>
+         </div>
+      </div>
+   </div>
+</div>

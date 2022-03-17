@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/sprite.html',{})
+		@@include('html/header.html',{})
+		@@include('html/swiper.html',{})
+		@@include('html/popupclients.html',{})
+		@@include('html/popupconsultation.html',{})
+		@@include('html/popuploans.html',{})
+		@@include('html/popupsaving.html',{})
+		<!-- @@include('html/popupthanks.html',{}) -->
+		<div class="description">
+			<div class="description__container _container">
+				<div class="description__row">
+					<div class="description__column">
+						<div class="description__content block-1">
+							<div class="description__icon bank">
+								<img src="@img/main/page/bank.svg" alt="Банк РФ">
+							</div>
+							<div class="description__text">Находимся
+								в государственном реестре Центрального Банка РФ</div>
+						</div>
+					</div>
+					<div class="description__column">
+						<div class="description__content block-2">
+							<div class="description__icon puzzle">
+								<img src="@img/main/page/puzl.svg" alt="Банк РФ">
+							</div>
+							<div class="description__text">Состоим в СРО<br class="description-br-one">
+								«НСКК «Содействие»</div>
+						</div>
+					</div>
+					<div class="description__column">
+						<div class="description__content block-3">
+							<div class="description__icon gerb">
+								<img src="@img/main/page/gerb.svg" alt="Банк РФ">
+							</div>
+							<div class="description__text">Действуем в соответствии<br>
+								с законом РФ<br class="description-br">
+								«О кредитной кооперации»</div>
+						</div>
+					</div>
+					<div class="description__column">
+						<div class="description__content block-4">
+							<div class="description__icon question">
+								<img src="@img/main/page/question.svg" alt="Банк РФ">
+							</div>
+							<div class="description__text">Вопрос-ответ по любым темам о деятельности “Центр финансов”</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="savings-loans">
+			<div class="savings-loans__container _container">
+				<div class="savings-loans__row">
+					<div class="savings-loans__column">
+						<div class="savings-loans__content">
+							<div class="savings-loans__title">Сбережения</div>
+							<div class="savings-loans__info">
+								<div class="savings-loans__text">Ставка выше, чем по вкладам<br> на весь срок</div>
+								<div class="savings-loans__text">Пополнение и снятие на свою<br> карту в любом банке</div>
+								<div class="savings-loans__text">Ответственность “Центр<br> Финансов” застрахована.</div>
+							</div>
+							<div class="savings-loans__button">
+								<a class="savings-loans__btn popup-link" href="#popup_2">Подробнее</a>
+							</div>
+							<img class="savings-loans__img-safe" src="@img/main/header/client/safe.svg" alt="safe">
+							<img class="savings-loans__img-procent-one" src="@img/main/saving-loans/procent-one.svg" alt="procent">
+							<img class="savings-loans__img-figure" src="@img/main/saving-loans/figure.svg" alt="figure">
+							<img class="savings-loans__img-figure-mobile" src="@img/main/saving-loans/figure-mobile.svg" alt="figure">
+							<img class="savings-loans__img-safe-mobile" src="@img/main/saving-loans/safe-mobile.svg" alt="safe">
+						</div>
+
+					</div>
+					<div class="savings-loans__column">
+						<div class="savings-loans__content gradient">
+							<div class="savings-loans__title">Займы</div>
+							<div class="savings-loans__info savings-loans__info_two">
+								<div class="savings-loans__text">Для бизнесса или на личные<br> цели</div>
+								<div class="savings-loans__text">От 3% в месяц, индивидуальные<br> условия</div>
+								<div class="savings-loans__text">Под залог недвижимости<br> или авто</div>
+							</div>
+							<div class="savings-loans__button savings-loans__button_white">
+								<a class="savings-loans__btn popup-link" href="#popup_3">Подробнее</a>
+							</div>
+
+							<img class="savings-loans__img-procent-two" src="@img/main/saving-loans/procent-two.svg" alt="procent">
+							<img class="savings-loans__img-figure-blue" src="@img/main/saving-loans/figure-blue.svg" alt="figure">
+							<img class="savings-loans__img-case" src="@img/main/header/client/case.svg" alt="case">
+							<img class="savings-loans__img-figure-mobile-blue" src="@img/main/saving-loans/figure-mobile-blue.svg" alt="figure">
+						</div>
+						<img class="savings-loans__img-case-mobile" src="@img/main/saving-loans/case-mobile.svg" alt="case">
+					</div>
+				</div>
+			</div>
+		</div>
+		@@include('html/calculator.html',{})
+		@@include('html/journal.html',{})
+		<div class="video">
+			<div class="video__container">
+				<div class="video__vimeo">
+					<div class="click-for-video">
+						<img class="video__media" src="@img/main/video/video.png" alt="video">
+						<button class="video__button">
+							<span class="video__flex">
+								<span class="video__btn">
+									<svg class="video__icon">
+										<use xlink:href="#play"></use>
+									</svg></span> <span class="video__text">Смотреть видео</span>
+							</span>
+						</button>
+					</div>
+					<div class="youtube">
+						<iframe class="youtube"></iframe>
+					</div>
+				</div>
+				<div class="video__title"> <a href="https://vimeo.com/user141088718">Смотреть больше о КПК “Центр Финансов"</a></div>
+			</div>
+		</div>
+		<div class="history">
+			<div class="history__container _container">
+				<div class="history__body">
+					<div class="history__title">История создания</div>
+					<div class="history__icon">
+						<img class="history__icn" src="@img/main/history/lider.svg" alt="stroy lider">
+					</div>
+					<div class="history__text">Как бизнес по малоэтажному<br>
+						строительству стал центром притяжения<br class="br-mobilenone">
+						<span class="whitespace-mobile">для доходов других</span> отраслей
+					</div>
+					<div class="history__button">
+						<a class="history__btn" href="#">Читать в проектах</a>
+					</div>
+				</div>
+			</div>
+			<img class="history__home" src="@img/main/history/home.svg" alt="home">
+			<img class="history__neon" src="@img/main/history/neon.svg" alt="neon">
+		</div>
+		@@include('html/documents.html',{})
+		@@include('html/comment.html',{})
+		@@include('html/communication.html',{})
+		@@include('html/footer.html',{})
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
+<!-- <svg class="content-footer__icn">
+   <use xlink:href="#twitter"></use>
+ </svg> -->

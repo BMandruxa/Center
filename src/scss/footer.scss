@@ -1,0 +1,402 @@
+.footer {
+   position: relative;
+   z-index: 1;
+   background: #071b22;
+   background-image: url("@img/footer/figure1.svg");
+   background-position: bottom 0% left 0%;
+   background-repeat: no-repeat;
+   mix-blend-mode: screen;
+   &__container {
+      padding: 77px 0px 50px 103px;
+      position: relative;
+      z-index: 1;
+
+      @media (max-width: 1220px) {
+         padding: 77px 0px 50px 53px;
+      }
+      @media (max-width: 895px) {
+         padding: 77px 0px 50px 33px;
+      }
+      @media (max-width: 769px) {
+         padding: 65px 0px 50px 20px;
+      }
+      @media (max-width: 767.98px) {
+         padding: 0px 16px 0px 19px;
+      }
+   }
+
+   &__top {
+      margin: 0px 0px 86px 0px;
+      padding: 0px 100px 0px 0px;
+      @media (max-width: 1000px) {
+         padding: 0px 50px 0px 0px;
+      }
+      @media (max-width: 895px) {
+         padding: 0px 30px 0px 0px;
+      }
+   }
+   &__top a {
+      font-size: 18px;
+      line-height: 1.27;
+   }
+   &__border {
+      position: absolute;
+      top: 56%;
+      left: 0%;
+      z-index: 2;
+      height: 1px;
+      background-color: rgba(21, 128, 255, 0.3);
+      @media (max-width: 1220px) {
+         left: 2%;
+         width: 94%;
+      }
+      @media (max-width: 952px) {
+         top: 53%;
+      }
+   }
+
+   &__bottom {
+   }
+
+   &__mobile {
+   }
+}
+
+.top-footer {
+   &__logo {
+      width: 279px;
+      height: 55px;
+      margin: 0px 0px 55px 0px;
+   }
+   &__logo img {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+   }
+   &__body {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__about-us {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__credits {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   &__business-face {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 77px 0px 0px;
+   }
+
+   &__deposits-loans {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 10px 0px 0px;
+   }
+
+   &__connection {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__number {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.29;
+      margin: 0px 0px 16px 0px;
+   }
+
+   &__call {
+      text-decoration-line: underline;
+      color: #2fc6ff;
+      font-size: 18px;
+      line-height: 1.27;
+      margin: 0px 0px 20px 0px;
+   }
+
+   &__timetable {
+      min-width: 202px;
+      font-size: 18px;
+      line-height: 1.27;
+      color: rgba(255, 255, 255, 0.3);
+   }
+}
+.aboutus-topfooter {
+   &__link:not(:last-child) {
+      margin: 0px 0px 20px 0px;
+   }
+   &__link {
+      color: #ffffff;
+   }
+   &__link:hover {
+      text-decoration-line: underline;
+   }
+}
+.businessface-topfooter {
+   &__link:not(:last-child) {
+      margin: 0px 0px 20px 0px;
+   }
+   &__link {
+      color: #2fc6ff;
+   }
+   &__link:hover {
+      text-decoration-line: underline;
+   }
+}
+.depositsloans-topfooter {
+   &__link:not(:last-child) {
+      margin: 0px 0px 20px 0px;
+      color: #33e6ff;
+   }
+   &__link:last-child {
+      color: #fff;
+   }
+   &__link:hover {
+      text-decoration-line: underline;
+   }
+}
+.bottom-footer {
+   &__content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin: 0px 0px 40px 0px;
+      padding: 0px 100px 0px 0px;
+      @media (max-width: 1000px) {
+         padding: 0px 50px 0px 0px;
+      }
+   }
+
+   &__kpk {
+      font-size: 18px;
+      line-height: 1.27;
+      padding: 0px 10px 0px 0px;
+   }
+
+   &__address {
+      font-size: 18px;
+      line-height: 1.27;
+      display: flex;
+      align-items: center;
+   }
+   &__img {
+      margin: 0px 15px 0px 0px;
+   }
+
+   &__description {
+      max-width: 1113px;
+      font-size: 12px;
+      line-height: 1.25;
+      color: #81caff;
+      @media (max-width: 1100px) {
+         max-width: 960px;
+      }
+      @media (max-width: 895px) {
+         padding: 0px 30px 0px 0px;
+      }
+   }
+}
+
+@media (max-width: 767.98px) {
+   .footer {
+      &__top {
+         display: none;
+         opacity: 0;
+         z-index: -999;
+         visibility: hidden;
+         width: 0;
+         height: 0;
+         position: absolute;
+         left: -9999;
+         top: -9999;
+      }
+      &__bottom {
+         display: none;
+         opacity: 0;
+         z-index: -999;
+         visibility: hidden;
+         width: 0;
+         height: 0;
+         position: absolute;
+         left: -9999;
+         top: -9999;
+      }
+      &__border {
+         display: none;
+         opacity: 0;
+         z-index: -999;
+         visibility: hidden;
+         width: 0;
+         height: 0;
+         position: absolute;
+         left: -9999;
+         top: -9999;
+      }
+      background-image: none;
+      background-image: url("@img/footer/figure2.svg");
+      background-size: 100% auto;
+      background-position: bottom 0% left 0%;
+   }
+   // .footer__prob {
+   //    position: absolute;
+   //    bottom: 0%;
+   //    left: 0%;
+   //    width: 100%;
+   //    mix-blend-mode: screen;
+   // }
+   // .footer__prob img {
+   //    width: 100%;
+   //    mix-blend-mode: screen;
+   // }
+   .mobile-footer {
+      position: relative;
+      &__head {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         justify-content: space-between;
+         height: 127px;
+         margin-bottom: 36px;
+         border-bottom: 1px solid rgba(21, 128, 255, 0.3);
+      }
+      &__head img {
+         max-width: 150px;
+      }
+
+      &__number {
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 1.27;
+         @media (max-width: 360px) {
+            font-size: 16px;
+         }
+      }
+
+      &__links {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      &__links-one {
+         display: flex;
+         flex-direction: column;
+         padding: 0px 76px 0px 0px;
+         min-width: 205px;
+         @media (max-width: 360px) {
+            padding: 0px 40px 0px 0px;
+            min-width: 170px;
+         }
+      }
+
+      &__link {
+         font-size: 18px;
+         line-height: 1.27;
+         margin-bottom: 32px;
+         color: #fff;
+         &_blue {
+            color: #2fc6ff;
+         }
+      }
+
+      &__links-two {
+         display: flex;
+         flex-direction: column;
+         padding: 0px 20px 0px 0px;
+      }
+
+      &__address {
+         font-size: 18px;
+         line-height: 1.27;
+         padding: 17px 0px 0px 0px;
+         margin-bottom: 43px;
+      }
+      &__image {
+      }
+      &__img {
+      }
+      &__text {
+      }
+
+      &__data {
+         font-size: 18px;
+         line-height: 1.27;
+         margin: 0px 0px 47px 0px;
+         color: rgba(255, 255, 255, 0.3);
+      }
+
+      &__foot {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+      }
+
+      &__button {
+         width: 240px;
+         height: 50px;
+         border: 2px solid #33ccff;
+         border-radius: 7px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 0px 0px 60px 0px;
+      }
+
+      &__btn {
+         padding: 15px 20px 16px 26px;
+         line-height: 1.28;
+         color: #fff;
+      }
+      &__btn img {
+         margin: 0px 15px 0px 0px;
+      }
+
+      &__icons {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 0px 0px 37px 0px;
+      }
+      &__icons img:not(:last-child) {
+         margin-right: 75px;
+      }
+
+      &__kpk {
+         font-size: 18px;
+         line-height: 1.27;
+         text-align: center;
+         margin-bottom: 79px;
+      }
+   }
+}
+@media (min-width: 768px) {
+   .mobile-footer {
+      display: none;
+      opacity: 0;
+      z-index: -999;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: -9999;
+      top: -9999;
+   }
+}
+
+.footer__block {
+   @media (max-width: 767.98px) {
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      z-index: 5;
+      height: 56px;
+      width: 100%;
+      background: #011b31;
+   }
+}

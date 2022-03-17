@@ -1,0 +1,360 @@
+<div class="calculator">
+   <div class="background-calc"></div>
+   <div class="calculator__container _container">
+      <div class="calculator__tabs tabs">
+         <div class="tabs-triggers">
+            <div class="tabs-triggers__title">Калькулятор</div>
+            <div class="tabs-triggers__items">
+               <a href="#tab-1" class="tabs-triggers__item tabs-triggers__item_item-1">Сбережения</a>
+               <a href="#tab-2" class="tabs-triggers__item tabs-triggers__item_item-2">Бизнес сбережения</a>
+               <a href="#tab-3" class="tabs-triggers__item tabs-triggers__item_item-3">Займы</a>
+            </div>
+         </div>
+         <div class="tabs-content">
+            <div id="tab-1" class="tabs-content__item">
+               <div class="tabs-content__body">
+                  <div class="tabs-content__sliders sliders">
+                     <div class="sliders__slider-1">
+                        <div class="sliders__title">Сумма</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">50 000</div>
+                           <div class="sliders__num-2">3 000 000</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="sum-pointer" class="sliders__table">1 500 000</div>
+                              </div>
+                           </div>
+                           <input id="sum" class="sliders__range-1 slider" type="range" min="50000" max="3000000" value="1500000" step="10000">
+                        </div>
+                     </div>
+                     <div class="sliders__slider-2">
+                        <div class="sliders__title">Срок</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">1</div>
+                           <div class="sliders__num-2">36</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="time-pointer" class="sliders__table">18</div>
+                              </div>
+                           </div>
+                           <input id="time" class="sliders__range-2 slider" type="range" min="1" max="36" value="18" step="1">
+                        </div>
+                     </div>
+                     <div class="sliders__slider-3">
+                        <div class="sliders__title">Ежемесячное пополнение</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">10 000</div>
+                           <div class="sliders__num-2">250 000</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="refill-pointer" class="sliders__table">125000</div>
+                              </div>
+                           </div>
+                           <input id="refill" class="sliders__range-3 slider" type="range" min="10000" max="250000" value="125000" step="5000">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-content__check check">
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_1">
+                           <div class="check__title">Выплата % в день<br> открытия договора</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_2">
+                           <div class="check__title">Ежемесячное получение %</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_3">
+                           <div class="check__title">Частичное снятие любой<br> суммы</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_4">
+                           <div class="check__title">Капитализация</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" name="namecheckbox_5">
+                           <div class="check__title">Частичное снятие 50%<br> от суммы</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-content__stavka stavka">
+                     <div class="stavka__content">
+                        <div class="stavka__body">
+                           <div class="stavka__text">
+                              <div class="stavka__title">Ставка</div>
+                              <div class="stavka__title">Внесена сумма<br> <span class="stavka__data start-date">на 01. 2022 г.</span></div>
+                              <div class="stavka__title">Пополнено<br> <span class="stavka__data end-date">на 06. 2023 г.</span></div>
+                              <div class="stavka__title">Общий доход<br> <span class="stavka__data end-date">на 06. 2023 г.</span></div>
+                              <div class="stavka__title">Прибыль<br> <span class="stavka__data end-date">на 06. 2023 г.</span></div>
+                              <div class="stavka__title">Доход в месяц</div>
+                           </div>
+                           <div class="stavka__numbers">
+                              <div class="stavka__num">13%</div>
+                              <div class="stavka__num first-num">1 500 000</div>
+                              <div class="stavka__num two-num">3 750 000</div>
+                              <div class="stavka__num">5 255 000</div>
+                              <div class="stavka__num">724 200</div>
+                              <div class="stavka__num">40 235</div>
+                           </div>
+                           <div class="stavka__border"></div>
+                        </div>
+                        <form>
+                           <button class="stavka__button">
+                              <svg class="header__client">
+                                 <use xlink:href="#client"></use>
+                              </svg><span>Оформить сбережение</span>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="shape">
+                     <img src="@img/elements/calculator/shape.svg" alt="">
+                  </div>
+                  <div class="figure-calc">
+                     <img src="@img/elements/calculator/figure.svg" alt="">
+                  </div>
+                  <div class="text-calc">
+                     Подробная информация по тарифам находится<br class="br-calcmobile"> в разделе документы - Положение<br class="br-calcdesktop"> “О порядке<br class="br-calcmobile"> и об условиях привлечения денежных средств”
+                  </div>
+               </div>
+            </div>
+            <div id="tab-2" class="tabs-content__item">
+               <div class="tabs-content__body">
+                  <div class="tabs-content__sliders sliders">
+                     <div class="sliders__slider-1">
+                        <div class="sliders__title">Сумма</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">50 000</div>
+                           <div class="sliders__num-2">3 000 000</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="bsum-pointer" class="sliders__table">1 500 000</div>
+                              </div>
+                           </div>
+                           <input id="bsum" class="sliders__range-1 slider" type="range" min="50000" max="3000000" value="1500000" step="50000">
+                        </div>
+                     </div>
+                     <div class="sliders__slider-2">
+                        <div class="sliders__title">Срок</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">1</div>
+                           <div class="sliders__num-2">36</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="btime-pointer" class="sliders__table">18</div>
+                              </div>
+                           </div>
+                           <input id="btime" class="sliders__range-2 slider" type="range" min="1" max="36" value="18" step="1">
+                        </div>
+                     </div>
+                     <div class="sliders__slider-3">
+                        <div class="sliders__title">Ежемесячное пополнение</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">10 000</div>
+                           <div class="sliders__num-2">250 000</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="brefill-pointer" class="sliders__table">125 000</div>
+                              </div>
+                           </div>
+                           <input id="brefill" class="sliders__range-3 slider" type="range" min="10000" max="250000" value="125000" step="5000">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-content__check check">
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_1">
+                           <div class="check__title">Выплата % в день<br> открытия договора</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_2">
+                           <div class="check__title">Ежемесячное получение %</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_3">
+                           <div class="check__title">Частичное снятие любой<br> суммы</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" name="namecheckbox_4">
+                           <div class="check__title">Капитализация</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-content__stavka stavka">
+                     <div class="stavka__content">
+                        <div class="stavka__body">
+                           <div class="stavka__text">
+                              <div class="stavka__title">Ставка</div>
+                              <div class="stavka__title">Внесена сумма<br> <span class="stavka__data bstart-date">на 01. 2022 г.</span></div>
+                              <div class="stavka__title">Пополнено<br> <span class="stavka__data bend-date">на 06. 2023 г.</span></div>
+                              <div class="stavka__title">Общий доход<br> <span class="stavka__data bend-date">на 06. 2023 г.</span></div>
+                              <div class="stavka__title">Прибыль<br> <span class="stavka__data bend-date">на 06. 2023 г.</span></div>
+                              <div class="stavka__title">Доход в месяц</div>
+                           </div>
+                           <div class="stavka__numbers">
+                              <div class="stavka__num">13%</div>
+                              <div class="stavka__num">1 500 000</div>
+                              <div class="stavka__num">3 750 000</div>
+                              <div class="stavka__num">5 255 000</div>
+                              <div class="stavka__num">724 200</div>
+                              <div class="stavka__num">40 235</div>
+                           </div>
+                           <div class="stavka__border"></div>
+                        </div>
+                        <form>
+                           <button class="stavka__button">
+                              <svg class="header__client">
+                                 <use xlink:href="#client"></use>
+                              </svg><span>Оформить сбережение</span>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="shape">
+                     <img src="@img/elements/calculator/shape.svg" alt="">
+                  </div>
+                  <div class="figure-calc">
+                     <img src="@img/elements/calculator/figure.svg" alt="">
+                  </div>
+                  <div class="text-calc">
+                     Подробная информация по тарифам находится<br class="br-calcmobile"> в разделе документы - Положение<br class="br-calcdesktop"> “О порядке<br class="br-calcmobile"> и об условиях привлечения денежных средств”
+                  </div>
+               </div>
+            </div>
+            <div id="tab-3" class="tabs-content__item">
+               <div class="tabs-content__body calc-3">
+                  <div class="tabs-content__sliders sliders">
+                     <div class="sliders__slider-1">
+                        <div class="sliders__title">Сумма займа</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">300 000</div>
+                           <div class="sliders__num-2">5 000 000</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="zsum-pointer" class="sliders__table">2 500 000</div>
+                              </div>
+                           </div>
+                           <input id="zsum" class="sliders__range-2 slider" type="range" min="300000" max="5000000" value="2500000" step="100000">
+                        </div>
+                     </div>
+                     <div class="sliders__slider-2">
+                        <div class="sliders__title">Срок</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">1</div>
+                           <div class="sliders__num-2">12</div>
+                        </div>
+
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="ztime-pointer" class="sliders__table">6</div>
+                              </div>
+                           </div>
+                           <input id="ztime" class="sliders__range-2 slider" type="range" min="1" max="12" value="6" step="1">
+                        </div>
+
+                     </div>
+                     <div class="sliders__slider-3">
+                        <div class="sliders__title">Вид залога</div>
+                     </div>
+                  </div>
+                  <div class="tabs-content__check check check-calc-3">
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_1">
+                           <div class="check__title">Возможность пролонгации<br> на первоначальный срок
+                           </div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" name="namecheckbox_2">
+                           <div class="check__title">Возможность выплаты займа<br> в конце срока договора</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-content__stavka stavka">
+                     <div class="stavka__content content-calc-3">
+                        <div class="stavka__body">
+                           <div class="stavka__text">
+                              <div class="stavka__title">Ставка</div>
+                              <div class="stavka__title">Ежемесячный платёж</div>
+                              <div class="stavka__title">Итоговая сумма</div>
+                           </div>
+                           <div class="stavka__numbers">
+                              <div class="stavka__num">3% <span>в месяц</span></div>
+                              <!-- <div class="stavka__num">1 500 000</div>
+                           <div class="stavka__num">3 750 000</div>
+                           <div class="stavka__num">5 255 000</div>
+                           <div class="stavka__num">724 200</div>
+                           <div class="stavka__num">40 235</div> -->
+                           </div>
+                        </div>
+                        <form action="#" class="stavka__form">
+                           <label class="stavka__label" for="username">
+                              <p>Ваше имя</p>
+                              <input class="name" type="text" name="username" autocomplete="on" required>
+                           </label>
+
+                           <label class="stavka__label" for="tel">
+                              <p>Контактный телефон</p>
+                              <input class="tel" type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
+                           </label>
+
+                           <button class="stavka__button">
+                              <svg class="header__client">
+                                 <use xlink:href="#client"></use>
+                              </svg><span>Получить займ</span>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="rub">
+                     <img src="@img/elements/calculator/rub.svg" alt="">
+                  </div>
+                  <div class="figure-3">
+                     <img class="image-calc-3" src="@img/elements/calculator/figure3.svg" alt="">
+                  </div>
+                  <div class="figure-calc">
+                     <img src="@img/elements/calculator/figure.svg" alt="">
+                  </div>
+                  <div class="text-calc text-calc_3">
+                     Предварительный расчет носит ознакомительный характер<br id="text-3">
+                     и не является официальной офертой. Ознакомиться с условиями.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

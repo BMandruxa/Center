@@ -1,0 +1,680 @@
+.page {
+   height: 772px;
+   background-color: #011b31;
+   position: relative;
+   // padding: 111px 0 0px 0;
+   z-index: 1;
+}
+.page__border {
+   height: 1px;
+   position: absolute;
+   z-index: 50;
+   top: 111px;
+   left: 50%;
+   background-color: rgba(21, 128, 255, 0.3);
+   transform: translate(-50%, 0%);
+   width: 98%;
+   max-width: 1246px;
+   @media (max-width: 1023.98px) {
+      top: 100px;
+   }
+}
+.image-slider {
+   height: 772px;
+   padding: 111px 0 0px 0;
+   // background: #011b31;
+   position: relative;
+   z-index: 6;
+}
+.image-slider__wrapper {
+}
+.image-slider__slide {
+}
+.image-slider__image {
+   position: absolute;
+   bottom: 0%;
+   right: 15%;
+   @media (max-width: 1330px) {
+      position: absolute;
+      bottom: 0%;
+      right: 8%;
+   }
+   @media (max-width: 1024px) {
+      position: absolute;
+      bottom: 0%;
+      right: 7%;
+   }
+}
+.image-slider__image img {
+   max-width: 100%;
+}
+.swiper-autoheight .swiper-wrapper {
+   align-items: flex-end;
+   transition-property: transform, height;
+}
+.swiper-slide {
+   flex-shrink: 0;
+   width: 100%;
+   // height: 100%;
+   position: relative;
+   transition-property: transform;
+   z-index: 10;
+}
+.swiper__buttons {
+   display: flex;
+   position: absolute;
+   z-index: 15;
+   width: 142px;
+   height: 55px;
+   bottom: 6%;
+   left: 20%;
+   @media (max-width: 1330px) {
+      left: 16%;
+   }
+   @media (max-width: 1024px) {
+      left: 13%;
+   }
+   @media (max-width: 720px) {
+      bottom: 2%;
+      left: 73%;
+   }
+   @media (max-width: 520px) {
+      bottom: 1%;
+      left: 63%;
+   }
+   @media (max-width: 520px) {
+      bottom: 1%;
+      left: 60%;
+   }
+}
+.swiper__blocks {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+#blockone {
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   width: 55px;
+   height: 55px;
+   border-radius: 50%;
+   background: rgba(1, 27, 49, 0.62);
+   border: none;
+}
+#blocktwo {
+   position: absolute;
+   top: 0%;
+   right: 0%;
+   width: 55px;
+   height: 55px;
+   border-radius: 50%;
+   background: rgba(1, 27, 49, 0.62);
+   border: none;
+}
+.swiper-button-prev,
+.swiper-button-next {
+   position: absolute;
+   // top: 72%;
+   top: 39%;
+   // width: calc(var(--swiper-navigation-size) / 44 * 27);
+   // height: var(--swiper-navigation-size);
+   width: 40%;
+   height: 100%;
+
+   margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+   z-index: 15;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+   left: -2%;
+   // right: auto;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+   content: "prev";
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+   right: -2%;
+   // left: auto;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+   content: "next";
+}
+/* Стрелки */
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+   color: #33e6ff;
+   font-size: 16px;
+}
+.image-men {
+   right: 24%;
+   @media (max-width: 1330px) {
+      right: 17%;
+   }
+}
+.image-family {
+   right: 16%;
+   @media (max-width: 1330px) {
+      right: 7%;
+   }
+}
+.image-pensioners {
+   right: 25%;
+   @media (max-width: 1330px) {
+      right: 17%;
+   }
+}
+//
+.figure-slider {
+   position: absolute;
+   bottom: 0%;
+   left: 0%;
+   z-index: 5;
+   width: 100%;
+   // height: 50%;
+   &__wrapper {
+   }
+
+   &__image {
+      position: absolute;
+      bottom: 0%;
+      right: -7%;
+      width: 100%;
+      @media (max-width: 1024px) {
+         right: 0%;
+      }
+   }
+   &__image img {
+      max-width: 100%;
+   }
+}
+.figure-men {
+   right: -12.5%;
+   @media (max-width: 1024px) {
+      right: -7.5%;
+   }
+}
+
+.zadnik-slider {
+   position: absolute;
+   top: 0%;
+   right: 0%;
+   z-index: 4;
+   width: 100%;
+   height: 772px;
+   &__wrapper {
+   }
+
+   &__image {
+      height: 100%;
+      position: relative;
+   }
+   &__image img {
+      max-width: 100%;
+   }
+}
+.zadnik-house {
+   position: absolute;
+   bottom: 0%;
+   right: 13.5%;
+   @media (max-width: 1330px) {
+      right: 7.5%;
+   }
+}
+.zadnik-car {
+   position: absolute;
+   bottom: 0%;
+   right: 9%;
+   @media (max-width: 1330px) {
+      right: 0%;
+   }
+}
+.zadnik-flat {
+   position: absolute;
+   bottom: 9.5%;
+   right: 16.5%;
+   @media (max-width: 1330px) {
+      right: 7.5%;
+   }
+}
+.zadnik-palms {
+   position: absolute;
+   bottom: 0%;
+   right: 14%;
+   @media (max-width: 1330px) {
+      right: 4%;
+   }
+}
+.page {
+   &__content {
+      position: absolute;
+      top: 30%;
+      left: 22.5%;
+      z-index: 20;
+      @media (max-width: 1330px) {
+         left: 19.5%;
+      }
+      @media (max-width: 1024px) {
+         top: 30%;
+         left: 9%;
+      }
+   }
+
+   &__title {
+      font-family: Druk Text Wide Cyr Heavy;
+      font-size: 38px;
+      line-height: 1.2;
+      margin-bottom: 36px;
+   }
+   &__title span {
+      color: #33e6ff;
+   }
+
+   &__text {
+      font-size: 18px;
+      line-height: 1.27;
+      margin-bottom: 85px;
+   }
+
+   &__button {
+      background: #1580ff;
+      width: 241px;
+      height: 50px;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease 0s;
+   }
+   &__button:hover {
+      background: #0557a3;
+   }
+   &__button a {
+      padding: 13px 45px 13px 45px;
+      font-size: 18px;
+      line-height: 1.27;
+      color: #fff;
+   }
+}
+@media (max-width: 1024px) {
+   .image-slider__image {
+      position: absolute;
+      bottom: 0%;
+      right: 3%;
+   }
+   .image-men {
+      right: 11%;
+   }
+   .image-family {
+      right: 3%;
+   }
+   .image-pensioners {
+      right: 16%;
+   }
+   .zadnik-house {
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+   }
+   .zadnik-car {
+      position: absolute;
+      bottom: 0%;
+      right: -5%;
+   }
+   .zadnik-flat {
+      position: absolute;
+      bottom: 9.5%;
+      right: 4.5%;
+   }
+   .zadnik-palms {
+      position: absolute;
+      bottom: 0%;
+      right: 2%;
+   }
+}
+@media (max-width: 1195px) {
+   .women {
+      max-width: 693px;
+      max-height: 429px;
+   }
+   .men {
+      max-width: 378px;
+      max-height: 436px;
+   }
+   .family {
+      max-width: 595px;
+      max-height: 417px;
+   }
+   .pensioners {
+      max-width: 374px;
+      max-height: 409px;
+   }
+   .zadnik-house {
+      max-width: 588px;
+      max-height: 449px;
+   }
+   .zadnik-car {
+      max-width: 875px;
+      max-height: 390px;
+   }
+   .zadnik-flat {
+      max-width: 414px;
+      max-height: 483px;
+      bottom: 7%;
+   }
+   .zadnik-palms {
+      max-width: 472px;
+      max-height: 411px;
+   }
+   .page {
+      height: 672px;
+   }
+   .image-slider {
+      height: 672px;
+      padding: 111px 0 0px 0;
+   }
+   .zadnik-slider {
+      height: 672px;
+   }
+}
+@media (max-width: 925px) {
+   .page {
+      &__content {
+         position: absolute;
+         top: 16%;
+         left: 5%;
+         // text-align: center;
+      }
+      &__title {
+         font-size: 34px;
+         margin-bottom: 31px;
+      }
+      &__text {
+         font-size: 18px;
+         line-height: 1.27;
+         margin-bottom: 34px;
+      }
+   }
+}
+@media (max-width: 855px) {
+   .page {
+      &__content {
+         position: absolute;
+         top: 20%;
+         left: 5%;
+         // text-align: center;
+      }
+   }
+   .women {
+      max-width: 623px;
+      max-height: 359px;
+   }
+   .men {
+      max-width: 308px;
+      max-height: 366px;
+   }
+   .family {
+      max-width: 525px;
+      max-height: 347px;
+   }
+   .pensioners {
+      max-width: 304px;
+      max-height: 339px;
+   }
+   .zadnik-house {
+      max-width: 518px;
+      max-height: 379px;
+   }
+   .zadnik-car {
+      max-width: 805px;
+      max-height: 310px;
+   }
+   .zadnik-flat {
+      max-width: 334px;
+      max-height: 413px;
+      bottom: 7%;
+   }
+   .zadnik-palms {
+      max-width: 402px;
+      max-height: 341px;
+   }
+   .page {
+      height: 672px;
+   }
+   .image-slider {
+      height: 672px;
+      padding: 111px 0 0px 0;
+   }
+   .zadnik-slider {
+      height: 672px;
+   }
+}
+@media (max-width: 720px) {
+   .page {
+      &__content {
+         position: absolute;
+         top: 33%;
+         left: 50%;
+         margin-right: -50%;
+         transform: translate(-50%, -50%);
+         text-align: center;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+      }
+      &__title {
+         font-size: 28px;
+      }
+      &__text {
+         font-size: 14px;
+      }
+      &__button {
+         height: 70px;
+      }
+   }
+   .page {
+      height: 775px;
+      overflow: hidden;
+   }
+   .image-slider {
+      height: 775px;
+      padding: 111px 0 0px 0;
+   }
+   .zadnik-slider {
+      height: 775px;
+   }
+   .women {
+      max-width: 623px;
+      max-height: 359px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-10%, 0%);
+   }
+   .men {
+      max-width: 308px;
+      max-height: 366px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-42%, 0%);
+   }
+   .family {
+      max-width: 525px;
+      max-height: 347px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-15%, 0%);
+   }
+   .pensioners {
+      max-width: 304px;
+      max-height: 339px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-26%, 0%);
+   }
+   .zadnik-house {
+      max-width: 518px;
+      max-height: 400px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-38%, 0%);
+   }
+   .zadnik-car {
+      max-width: 805px;
+      max-height: 310px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, 0%);
+   }
+   .zadnik-flat {
+      max-width: 334px;
+      max-height: 413px;
+      bottom: 7%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, 12%);
+   }
+   .zadnik-palms {
+      max-width: 402px;
+      max-height: 341px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-3%, 0%);
+   }
+}
+@media (max-width: 620px) {
+   .women {
+      transform: translate(0%, 0%);
+   }
+}
+@media (max-width: 590px) {
+   .men {
+      max-width: 292px;
+      max-height: 317px;
+   }
+   .family {
+      transform: translate(0%, 0%);
+   }
+}
+@media (max-width: 520px) {
+   .women {
+      width: 400px;
+      height: 291px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(8%, 0%);
+   }
+   .zadnik-slider {
+      &__image {
+         height: 100%;
+
+         overflow: hidden;
+      }
+      &__image img {
+         max-width: 150%;
+      }
+   }
+   .zadnik-house {
+      width: 497px;
+      height: 400px;
+      bottom: -2%;
+      left: 36%;
+   }
+   .men {
+      width: 272px;
+      height: 297px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-10%, 0%);
+   }
+   .zadnik-car {
+      max-width: 805px;
+      max-height: 310px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, 13%);
+   }
+   .family {
+      max-height: 305px;
+
+      transform: translate(5%, 0%);
+   }
+   .zadnik-flat {
+      max-height: 370px;
+      transform: translate(-50%, 26%);
+   }
+   .pensioners {
+      max-width: 304px;
+      max-height: 290px;
+
+      transform: translate(-18%, 0%);
+   }
+   .zadnik-palms {
+      transform: translate(-20%, 0%);
+   }
+}
+@media (max-width: 450px) {
+   .zadnik-palms {
+      transform: translate(-30%, 0%);
+   }
+   .page {
+      &__content {
+         top: 33%;
+         left: 50%;
+         margin-right: -50%;
+         transform: translate(-50%, -40%);
+      }
+      &__title {
+         font-size: 21px;
+         line-height: 1.19;
+      }
+      &__text {
+         font-size: 14px;
+      }
+      &__button {
+         height: 70px;
+      }
+   }
+
+   .figure-slider {
+      width: 100%;
+      height: 100%;
+      // z-index: 8;
+      &__wrapper {
+      }
+
+      &__image {
+         position: absolute;
+         bottom: -3%;
+         right: -143%;
+         // width: 150%;
+         width: 1600px;
+         height: 386px;
+      }
+      &__image img {
+         width: 1600px;
+         height: 386px;
+      }
+   }
+   .fig1 {
+      // transform: scale(-1, 1);
+   }
+}
+@media (max-width: 400px) {
+   .pensioners {
+      transform: translate(-8%, 0%);
+   }
+}
+@media (max-width: 370px) {
+   .pensioners {
+      transform: translate(-5%, 0%);
+   }
+}

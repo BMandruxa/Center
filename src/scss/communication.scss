@@ -1,0 +1,388 @@
+.communication {
+   background-image: url("@img/elements/communication/figure.svg");
+   background-position-y: bottom;
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+   &__container {
+      position: relative;
+      max-width: 1246px;
+      margin: 0px auto;
+      padding: 0px 15px;
+   }
+   &__img {
+      position: absolute;
+      bottom: -7%;
+      right: 0;
+      z-index: 2;
+   }
+   &__body {
+      padding: 0px 0px 172px 0px;
+      background-image: url("@img/elements/communication/figure2.svg");
+      background-repeat: no-repeat;
+      background-position: bottom 900% left 0%;
+      overflow: hidden;
+   }
+
+   &__title {
+      margin-bottom: 136px;
+      padding: 0px 0px 0px 69px;
+      font-family: DrukWideCyTTMedium;
+      font-size: 38px;
+      line-height: 1.2;
+      color: #011b31;
+   }
+
+   &__data {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 0px 0px 106px;
+   }
+   &__data > .communication__label {
+      margin-bottom: 30px;
+   }
+   &__data > .communication__label:nth-child(2) {
+      margin-bottom: 38px;
+   }
+
+   &__label p {
+      padding: 0px 0px 5px 30px;
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.27;
+      color: #011b31;
+      font-weight: 700;
+   }
+   &__label input {
+      position: relative;
+      z-index: 100;
+      width: 416px;
+      height: 50px;
+      border: 1px solid #cbd1dc;
+      border-radius: 10px;
+      font-size: 24px;
+      line-height: 1.27;
+      font-weight: 400;
+   }
+
+   &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 70px;
+      width: 280px;
+      color: #fff;
+      background: linear-gradient(266.9deg, #2fc6ff 1.58%, #1580ff 97.56%);
+      background-size: 400% 400%;
+      -moz-animation: gradient 3s ease-in-out infinite;
+      -webkit-animation: gradient 3s ease-in-out infinite;
+      animation: gradient 3s ease-in-out infinite;
+      border-radius: 7px;
+      padding: 20px 62px 27px 62px;
+      transition: all 0.5s ease 0s;
+      cursor: pointer;
+      margin-right: 33px;
+      font-size: 18px;
+      line-height: 1.27;
+   }
+   &__yes {
+      display: flex;
+      align-items: center;
+   }
+}
+.checkbox-othe {
+   display: block;
+   margin: 0px 0 10px 0;
+   cursor: pointer;
+   user-select: none;
+   position: relative;
+}
+.checkbox-othe input[type="checkbox"] {
+   position: absolute;
+   z-index: -1;
+   opacity: 0;
+   display: block;
+   width: 0;
+   height: 0;
+}
+.checkbox-othe span {
+   display: inline-block;
+   position: relative;
+   padding: 0 0 0 30px;
+   font-size: 14px;
+   line-height: 1.28;
+   // font-weight: 700;
+   color: #011b31;
+}
+.checkbox-othe span:before {
+   content: "";
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   left: 0%;
+   top: 40%;
+   background: url("@img/elements/communication/check.svg") 0 0 no-repeat;
+}
+
+/* Checked */
+.checkbox-othe input[type="checkbox"] + span:after {
+   content: "";
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+.checkbox-othe input[type="checkbox"]:checked + span:after {
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   left: 1.5%;
+   top: 40%;
+   background: url(../img/main/header/client/checkbox.svg) 0 0 no-repeat;
+   opacity: 1;
+}
+@media (max-width: 930px) {
+   .checkbox-othe input[type="checkbox"]:checked + span:after {
+      left: 1%;
+   }
+}
+
+/* Focus */
+.focused span:before {
+   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Hover */
+.checkbox-othe span:hover:after {
+   filter: brightness(110%);
+}
+
+/* Active */
+.checkbox-othe span:active:before,
+.checkbox-othe span:active:after {
+   filter: brightness(80%);
+}
+
+/* Disabled */
+.checkbox-othe input[type="checkbox"]:disabled + span {
+   color: #666;
+   cursor: default;
+}
+.checkbox-othe input[type="checkbox"]:disabled + span:before,
+.checkbox-othe input[type="checkbox"]:disabled + span:after {
+   filter: grayscale(100%);
+   opacity: 0.6;
+}
+@media (max-width: 1023.98px) {
+   .communication {
+      &__body {
+         padding: 0px 0px 70px 0px;
+
+         background-position: bottom 80% left 2%;
+      }
+      &__data {
+         padding: 0px 0px 0px 50px;
+      }
+      &__title {
+         margin-bottom: 70px;
+      }
+      &__yes {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+      }
+      &__button {
+         margin-bottom: 10px;
+      }
+
+      &__img {
+         width: 496px;
+         height: 501px;
+         bottom: -6%;
+         right: 0%;
+      }
+   }
+}
+@media (max-width: 970px) {
+   .communication {
+      &__label input {
+         width: 383px;
+      }
+   }
+}
+@media (max-width: 930px) {
+   .communication {
+      &__body {
+         padding: 0px 0px 20px 0px;
+         background-size: 558px 597px;
+         background-position: bottom 195% left 0%;
+      }
+      &__title {
+         padding: 0px 0px 0px 0px;
+      }
+      &__img {
+         width: 440px;
+         height: 440px;
+         bottom: -6%;
+         right: 0%;
+      }
+      &__data {
+         padding: 0px 0px 0px 15px;
+      }
+      &__button {
+         margin-right: 0px;
+      }
+      &__yes {
+         max-width: 280px;
+         align-items: center;
+      }
+   }
+}
+@media (max-width: 855px) {
+   .communication {
+      &__label input {
+         font-size: 20px;
+         width: 330px;
+      }
+      &__title {
+         font-size: 34px;
+      }
+   }
+}
+@media (max-width: 800px) {
+   .communication {
+      &__body {
+         padding: 0px 0px 72px 0px;
+         background-size: auto auto;
+         background-position: bottom -20% left 50%;
+      }
+
+      &__title {
+         margin-bottom: 440px;
+      }
+      &__data {
+         padding: 0px 0px 0px 0px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+      &__data > .communication__label {
+         margin-bottom: 22px;
+      }
+      &__data > .communication__label:nth-child(2) {
+         margin-bottom: 49px;
+      }
+
+      &__label input {
+         width: 383px;
+         height: 70px;
+         font-size: 26px;
+      }
+
+      &__button {
+         width: 384px;
+         height: 70px;
+         padding: 21px 114px 26px 114px;
+         margin-bottom: 29px;
+      }
+      &__yes {
+         max-width: 100%;
+         align-items: center;
+      }
+      &__img {
+         width: 388px;
+         height: 392px;
+         top: 16%;
+         left: 50%;
+         transform: translate(-50%, -16%);
+      }
+   }
+   .br-communication {
+      display: none;
+   }
+}
+// @media (max-width: 800px) {
+//    .communication {
+
+//    }
+// }
+.communication__title {
+   @media (max-width: 746px) {
+      font-size: 28px;
+   }
+   @media (max-width: 620px) {
+      font-size: 22px;
+   }
+}
+.communication__img {
+   @media (max-width: 620px) {
+      top: 15%;
+   }
+}
+.communication__title-mobile {
+   @media (min-width: 620px) {
+      display: none;
+   }
+}
+.communication__title-br {
+   @media (max-width: 619.98px) {
+      display: none;
+   }
+}
+.communication__title-br {
+   @media (max-width: 619.98px) {
+      display: none;
+   }
+}
+@media (max-width: 660px) {
+   .communication {
+      &__body {
+         background-size: 558px 597px;
+         background-position: bottom -20% left 50%;
+      }
+   }
+}
+@media (max-width: 570px) {
+   .communication {
+      &__body {
+         background-size: 500px 540px;
+         background-position: bottom -20% left 50%;
+      }
+   }
+}
+@media (max-width: 530px) {
+   .communication {
+      &__body {
+         background-size: 450px 490px;
+         background-position: bottom -10% left 50%;
+      }
+   }
+}
+@media (max-width: 460px) {
+   .communication {
+      &__body {
+         background-size: 405px 430px;
+         background-position: bottom -6% left 50%;
+      }
+   }
+}
+
+@media (max-width: 414px) {
+   .communication {
+      &__container {
+         padding: 0px 0px;
+      }
+   }
+}
+@media (max-width: 390px) {
+   .communication {
+      &__label input {
+         width: 360px;
+      }
+
+      &__button {
+         width: 360px;
+         padding: 21px 100px 26px 100px;
+      }
+   }
+}

@@ -1,0 +1,16 @@
+.popup {
+   &__body {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+}
+.body_3 {
+   padding: 10px 30px;
+}
+.figure_3 {
+   top: 0%;
+   right: 0%;
+   // transform: matrix(0, -1, -1, 0, 0, 0);
+}

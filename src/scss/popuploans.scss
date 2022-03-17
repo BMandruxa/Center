@@ -1,0 +1,20 @@
+.popup {
+   &__body {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   &__img-figure {
+      position: absolute;
+      top: 0%;
+      z-index: 2;
+   }
+}
+.body_2 {
+   padding: 10px 30px;
+}
+.figure_2 {
+   left: 0%;
+   transform: matrix(-1, 0, 0, 1, 0, 0);
+}
