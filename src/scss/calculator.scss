@@ -513,6 +513,12 @@ input[type="range"]::-ms-thumb {
 .content-calc-3 .stavka__title:nth-child(3) {
    margin-bottom: 0px;
 }
+.content-calc-3 .stavka__num:nth-child(1) {
+   margin-bottom: 12px;
+}
+.content-calc-3 .stavka__num:nth-child(2) {
+   margin-bottom: 10px;
+}
 .stavka__num {
    display: flex;
    flex-direction: column;
