@@ -49,13 +49,13 @@ function startFirstTab() {
     const refillPointer = document.querySelector('#refill-pointer');
 
     sumInput.addEventListener('input', () => {
-        sumPointer.innerHTML = sumInput.value;
+        sumPointer.innerHTML = toRuCurrency(sumInput.value);
         sumValue.innerHTML = toRuCurrency(sumInput.value);
         setPointerPosition(sumInput, sumPointer);
     })
 
     timeInput.addEventListener('input', () => {
-        timePointer.innerHTML = timeInput.value;
+        timePointer.innerHTML = toRuCurrency(timeInput.value);
         setPointerPosition(timeInput, timePointer);
         sumFill.innerHTML = toRuCurrency(timeInput.value * refillInput.value)
 
@@ -68,7 +68,7 @@ function startFirstTab() {
     })
 
     refillInput.addEventListener('input', () => {
-        refillPointer.innerHTML = refillInput.value;
+        refillPointer.innerHTML = toRuCurrency(refillInput.value);
         sumFill.innerHTML = toRuCurrency(timeInput.value * refillInput.value)
         setPointerPosition(refillInput, refillPointer);
     })
@@ -97,13 +97,13 @@ function startSecondTab() {
     const refillPointer = document.querySelector('#brefill-pointer');
 
     sumInput.addEventListener('input', () => {
-        sumPointer.innerHTML = sumInput.value;
+        sumPointer.innerHTML = toRuCurrency(sumInput.value);
         sumValue.innerHTML = toRuCurrency(sumInput.value);
         setPointerPosition(sumInput, sumPointer);
     })
 
     timeInput.addEventListener('input', () => {
-        timePointer.innerHTML = timeInput.value;
+        timePointer.innerHTML = toRuCurrency(timeInput.value);
         setPointerPosition(timeInput, timePointer);
         sumFill.innerHTML = toRuCurrency(timeInput.value * refillInput.value)
 
@@ -116,7 +116,7 @@ function startSecondTab() {
     })
 
     refillInput.addEventListener('input', () => {
-        refillPointer.innerHTML = refillInput.value;
+        refillPointer.innerHTML = toRuCurrency(refillInput.value);
         setPointerPosition(refillInput, refillPointer);
         sumFill.innerHTML = toRuCurrency(timeInput.value * refillInput.value)
 
@@ -139,12 +139,12 @@ function startThirdTab() {
     const timePointer = document.querySelector('#ztime-pointer');
 
     sumInput.addEventListener('input', () => {
-        sumPointer.innerHTML = sumInput.value;
+        sumPointer.innerHTML = toRuCurrency(sumInput.value);
         setPointerPosition(sumInput, sumPointer);
     })
 
     timeInput.addEventListener('input', () => {
-        timePointer.innerHTML = timeInput.value;
+        timePointer.innerHTML = toRuCurrency(timeInput.value);
         setPointerPosition(timeInput, timePointer);
     })
 
