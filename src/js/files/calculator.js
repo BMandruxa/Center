@@ -38,6 +38,7 @@ function startFirstTab() {
     const sumInput = document.querySelector('#sum');
     const sumPointer = document.querySelector('#sum-pointer');
     const sumValue = document.querySelector('#sum-value')
+    const sumFill = document.querySelector('#sum-fill')
 
     const timeInput = document.querySelector('#time');
     const timePointer = document.querySelector('#time-pointer');
@@ -56,6 +57,7 @@ function startFirstTab() {
     timeInput.addEventListener('input', () => {
         timePointer.innerHTML = timeInput.value;
         setPointerPosition(timeInput, timePointer);
+        sumFill.innerHTML = toRuCurrency(timeInput.value * refillInput.value)
 
         const now = new Date();
         const months = timeInput.value
@@ -67,6 +69,7 @@ function startFirstTab() {
 
     refillInput.addEventListener('input', () => {
         refillPointer.innerHTML = refillInput.value;
+        sumFill.innerHTML = toRuCurrency(timeInput.value * refillInput.value)
         setPointerPosition(refillInput, refillPointer);
     })
 
@@ -75,12 +78,15 @@ function startFirstTab() {
     setPointerPosition(refillInput, refillPointer);
     startDate.innerHTML = `на ${toRuDate(new Date())} г.`
     sumValue.innerHTML = toRuCurrency(sumInput.value)
+    sumFill.innerHTML = toRuCurrency(timeInput.value * refillInput.value)
 }
 
 function startSecondTab() {
     const sumInput = document.querySelector('#bsum');
     const sumPointer = document.querySelector('#bsum-pointer');
     const sumValue = document.querySelector('#bsum-value');
+    const sumFill = document.querySelector('#bsum-fill')
+
 
     const timeInput = document.querySelector('#btime');
     const timePointer = document.querySelector('#btime-pointer');
@@ -99,6 +105,7 @@ function startSecondTab() {
     timeInput.addEventListener('input', () => {
         timePointer.innerHTML = timeInput.value;
         setPointerPosition(timeInput, timePointer);
+        sumFill.innerHTML = toRuCurrency(timeInput.value * refillInput.value)
 
         const now = new Date();
         const months = timeInput.value
@@ -111,6 +118,8 @@ function startSecondTab() {
     refillInput.addEventListener('input', () => {
         refillPointer.innerHTML = refillInput.value;
         setPointerPosition(refillInput, refillPointer);
+        sumFill.innerHTML = toRuCurrency(timeInput.value * refillInput.value)
+
     })
 
     setPointerPosition(sumInput, sumPointer);
@@ -118,6 +127,8 @@ function startSecondTab() {
     setPointerPosition(refillInput, refillPointer);
     startDate.innerHTML = `на ${toRuDate(new Date())} г.`
     sumValue.innerHTML = toRuCurrency(sumInput.value)
+    sumFill.innerHTML = toRuCurrency(timeInput.value * refillInput.value)
+
 }
 
 function startThirdTab() {
