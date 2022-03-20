@@ -418,14 +418,6 @@ $(document).ready(function () {
 	});
 });
 
-// progress bar
-// const slider = document.querySelector(".slider")
-// const bar = document.querySelector(".progress-bar")
-// slider.oninput = () => {
-// 	let value = slider.value;
-// 	bar.style.width = value + '%';
-// }
-
 document.addEventListener('DOMContentLoaded', () => {
 	new CustomSelect('#select-1', {
 		name: 'car',
