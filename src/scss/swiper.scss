@@ -293,15 +293,13 @@
       align-items: center;
       justify-content: center;
       transition: all 0.3s ease 0s;
-   }
-   &__button:hover {
-      background: #0557a3;
-   }
-   &__button a {
       padding: 13px 45px 13px 45px;
       font-size: 18px;
       line-height: 1.27;
       color: #fff;
+   }
+   &__button:hover {
+      background: #0557a3;
    }
 }
 @media (max-width: 1024px) {

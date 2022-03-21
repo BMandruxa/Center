@@ -241,13 +241,16 @@
       }
    }
    &__text {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 1.2;
       color: #000000;
-      font-family: DrukWideCyTTMedium;
+      font-family: Druk Text Wide Cyr Heavy;
       margin-bottom: 20px;
       @media (max-width: 1023.98px) {
          font-size: 17px;
+      }
+      @media (max-width: 435px) {
+         font-size: 15px;
       }
    }
 

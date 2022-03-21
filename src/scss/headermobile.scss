@@ -14,8 +14,34 @@
 // .header__link_color-blue:hover svg {
 //    fill: #2fc6ff;
 // }
+.header__menu {
+   @media (max-width: 1023.98px) {
+      display: none;
+      opacity: 0;
+      z-index: -999;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: -9999;
+      top: -9999;
+   }
+}
 @media (min-width: 1024px) {
    .header__mobile {
+      display: none;
+      opacity: 0;
+      z-index: -999;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: -9999;
+      top: -9999;
+   }
+}
+.header__content-mobile {
+   @media (min-width: 1024px) {
       display: none;
       opacity: 0;
       z-index: -999;
@@ -30,6 +56,7 @@
 .header {
    @media (max-width: 1023.98px) {
       &__mobile {
+         // overflow: auto;
       }
 
       &__container-mobile {
@@ -50,23 +77,37 @@
       }
 
       &__content-mobile {
-         padding: 28px 72px 0px 32px;
-         max-width: 328px;
-         height: 805px;
-         background: #011b31;
-         border-radius: 0px 0px 0px 32px;
-         position: fixed;
-
+         transition: right 0.5s ease 0s;
+         position: absolute;
+         overflow-y: auto;
          top: 102%;
          right: -100%;
-         z-index: 3;
-         overflow: auto;
-         transition: right 0.5s ease 0s;
+         height: 87vh;
+         @media (min-height: 765px) {
+            height: 88vh;
+         }
+         @media (max-height: 620px) {
+            height: 85vh;
+         }
+         @media (max-height: 550px) {
+            height: 82vh;
+         }
+         @media (max-height: 500px) {
+            height: 80vh;
+         }
+         @media (max-height: 465px) {
+            height: 79vh;
+         }
+         @media (max-height: 430px) {
+            height: 77vh;
+         }
       }
       &__content-mobile._mobile {
-         position: absolute;
-         top: 99%;
+         position: fixed;
+         top: 100px;
          right: 0%;
+         // height: 80%;
+         z-index: 50;
       }
 
       &__client {
@@ -93,10 +134,21 @@
       }
    }
 }
+.mobile-content__container {
+   padding: 28px 72px 0px 32px;
+   max-width: 328px;
+   height: 800px;
+   background: #011b31;
+   border-radius: 0px 0px 0px 32px;
+   z-index: 3;
+   transition: right 0.5s ease 0s;
+   overflow-y: auto;
+}
 .mobile-container {
    height: 100px;
    position: relative;
    z-index: 2;
+
    padding: 35px 40px 35px 15px;
 }
 .mobile-body {

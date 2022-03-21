@@ -53,20 +53,17 @@
    }
 
    &__link-two {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
       background: #1580ff;
       width: 170px;
       height: 50px;
       border-radius: 10px;
-   }
-   &__link-two a {
       font-size: 14px;
       line-height: 1.28;
       color: #ffffff;
-      padding: 16px 35px;
+      transition: all 0.3s ease 0s;
+   }
+   &__link-two:hover {
+      background: #0663d4;
    }
    &__image {
       position: absolute;

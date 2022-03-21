@@ -10,7 +10,9 @@
       @@include('html/header.html',{})
       <div class="business__head head-business">
          <div class="head-business__container">
+            <div class="head-business__figure"></div>
             <img class="head-business__img-individuals" src="@img/individuals/01.png" alt="For business">
+            <div class="head-business__title">Частным лицам</div>
          </div>
       </div>
       <div class="individuals__cards cards">
@@ -56,8 +58,8 @@
                <div class="cards__items">
                   <div class="cards__item">
                      <div class="cards__icon">
-                        <img class="img-desktop" src="@img/business/cards/up.svg" alt="Индивидуальные условия на условия сбережений">
-                        <img class="img-mobile" src="@img/business/cards/up2.svg" alt="Индивидуальные условия на условия сбережений">
+                        <img class="img-desktop" src="@img/business/cards/check.svg" alt="Индивидуальные условия на условия сбережений">
+                        <img class="img-mobile" src="@img/business/cards/check2.svg" alt="Индивидуальные условия на условия сбережений">
                      </div>
                      <div class="cards__text">
                         <!-- Индивидуальные условия<br class="cards__br">
@@ -127,12 +129,12 @@
                         <img src="@img/individuals/two/figure2.svg" alt="Сберегательная">
                      </div>
                      <div class="savings-individuals__head">Сберегательная <span>+</span></div>
-                     <div class="savings-individuals__percent">от 12% до 15%<br>
+                     <div class="savings-individuals__percent">от 12% до 17%<br>
                         годовых </div>
-                     <div class="savings-individuals__money">от 10 000 ₽<br>
+                     <div class="savings-individuals__money savings-individuals__money_margin-2">от 30 000 ₽<br>
                         до 15 000 000 ₽</div>
                      <div class="savings-individuals__list">
-                        <div class="savings-individuals__information">Частичное снятие</div>
+                        <!-- <div class="savings-individuals__information">Частичное снятие</div> -->
                         <div class="savings-individuals__information">от 1 до 36 месяцев</div>
                         <div class="savings-individuals__information">Пополнение от 10 000 ₽</div>
                         <div class="savings-individuals__information">Ежемесячная выплата<br> процентов</div>
@@ -145,7 +147,7 @@
                   <div class="savings-individuals__content">
                      <div class="savings-individuals__rectangle-2"></div>
                      <div class="savings-individuals__image-7">
-                        <img src="@img/individuals/three/31.svg" alt="Сберегательная">
+                        <img src="@img/individuals/three/daco.png" alt="Сберегательная">
                      </div>
                      <div class="savings-individuals__image-8">
                         <img src="@img/individuals/three/32.svg" alt="Сберегательная">
@@ -153,11 +155,11 @@
                      <div class="savings-individuals__image-9">
                         <img src="@img/individuals/three/figure3.svg" alt="Сберегательная">
                      </div>
-                     <div class="savings-individuals__head">Сберегательная</div>
-                     <div class="savings-individuals__percent">от 12% до 15%<br>
+                     <div class="savings-individuals__head">Пенсионная</div>
+                     <div class="savings-individuals__percent">15%<br>
                         годовых </div>
-                     <div class="savings-individuals__money">от 10 000 ₽<br>
-                        до 15 000 000 ₽</div>
+                     <div class="savings-individuals__money">от 1 000 ₽<br>
+                        до 5 000 000 ₽</div>
                      <div class="savings-individuals__list">
                         <div class="savings-individuals__information">Частичное снятие</div>
                         <div class="savings-individuals__information">от 1 до 36 месяцев</div>
@@ -255,7 +257,7 @@
          </div>
       </div>
       @@include('html/calculator.html',{})
-      <div class="individuals__reviews reviews">
+      <div class="business__reviews reviews">
          <div class="reviews__container">
             <div class="reviews__title">Отзывы от наших пайщиков</div>
             <div class="reviews-slider swiper-container">
@@ -285,8 +287,9 @@
                               Евгеньевич</div>
                         </div>
                         <div class="reviews__text">
-                           Я, Виктор Николаевич Дмитриев являюсь вкладчиком КПК "Народный капитал" могу дать оценку о работе сотрудниц данного отдела. Менеджеры к клиентам относятся учтиво, добросовестно, всегда выслушивают мнение клиентов и, своими действиями, помогают разобраться в вопросах.
+                           Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
                         </div>
+                        <button class="reviews__more">Подробнее</button>
                      </div>
                   </div>
                   <div class="reviews-slider__slide swiper-slide">
@@ -313,8 +316,39 @@
                               Евгеньевич</div>
                         </div>
                         <div class="reviews__text">
+                           Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
+                        </div>
+                        <button class="reviews__more">Подробнее</button>
+                     </div>
+                  </div>
+                  <div class="reviews-slider__slide swiper-slide">
+                     <div class="reviews-slider__image">
+                        <div class="reviews__head">
+                           <div class="reviews__icon">
+                              <img src="@img/business/reviews/01.svg" alt="Александр Евгеньевич">
+                           </div>
+                           <div class="reviews__name">Александр<br>
+                              Евгеньевич</div>
+                        </div>
+                        <div class="reviews__text">
                            Я, Виктор Николаевич Дмитриев являюсь вкладчиком КПК "Народный капитал" могу дать оценку о работе сотрудниц данного отдела. Менеджеры к клиентам относятся учтиво, добросовестно, всегда выслушивают мнение клиентов и, своими действиями, помогают разобраться в вопросах.
                         </div>
+
+                     </div>
+                  </div>
+                  <div class="reviews-slider__slide swiper-slide">
+                     <div class="reviews-slider__image">
+                        <div class="reviews__head">
+                           <div class="reviews__icon">
+                              <img src="@img/business/reviews/01.svg" alt="Александр Евгеньевич">
+                           </div>
+                           <div class="reviews__name">Александр<br>
+                              Евгеньевич</div>
+                        </div>
+                        <div class="reviews__text">
+                           Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
+                        </div>
+                        <button class="reviews__more">Подробнее</button>
                      </div>
                   </div>
                   <div class="reviews-slider__slide swiper-slide">
@@ -341,36 +375,9 @@
                               Евгеньевич</div>
                         </div>
                         <div class="reviews__text">
-                           Я, Виктор Николаевич Дмитриев являюсь вкладчиком КПК "Народный капитал" могу дать оценку о работе сотрудниц данного отдела. Менеджеры к клиентам относятся учтиво, добросовестно, всегда выслушивают мнение клиентов и, своими действиями, помогают разобраться в вопросах.
+                           Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
                         </div>
-                     </div>
-                  </div>
-                  <div class="reviews-slider__slide swiper-slide">
-                     <div class="reviews-slider__image">
-                        <div class="reviews__head">
-                           <div class="reviews__icon">
-                              <img src="@img/business/reviews/01.svg" alt="Александр Евгеньевич">
-                           </div>
-                           <div class="reviews__name">Александр<br>
-                              Евгеньевич</div>
-                        </div>
-                        <div class="reviews__text">
-                           Я, Виктор Николаевич Дмитриев являюсь вкладчиком КПК "Народный капитал" могу дать оценку о работе сотрудниц данного отдела. Менеджеры к клиентам относятся учтиво, добросовестно, всегда выслушивают мнение клиентов и, своими действиями, помогают разобраться в вопросах.
-                        </div>
-                     </div>
-                  </div>
-                  <div class="reviews-slider__slide swiper-slide">
-                     <div class="reviews-slider__image">
-                        <div class="reviews__head">
-                           <div class="reviews__icon">
-                              <img src="@img/business/reviews/01.svg" alt="Александр Евгеньевич">
-                           </div>
-                           <div class="reviews__name">Александр<br>
-                              Евгеньевич</div>
-                        </div>
-                        <div class="reviews__text">
-                           Я, Виктор Николаевич Дмитриев являюсь вкладчиком КПК "Народный капитал" могу дать оценку о работе сотрудниц данного отдела. Менеджеры к клиентам относятся учтиво, добросовестно, всегда выслушивают мнение клиентов и, своими действиями, помогают разобраться в вопросах.
-                        </div>
+                        <button class="reviews__more">Подробнее</button>
                      </div>
                   </div>
                </div>

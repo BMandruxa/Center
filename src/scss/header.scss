@@ -1,10 +1,12 @@
 .header {
-   position: absolute;
+   position: fixed;
    top: 0;
    left: 0;
    width: 100%;
-   z-index: 10;
+   z-index: 50;
+   // overflow-y: auto;
    background: #011b31;
+
    &__linkvip a {
       color: #fff;
       transition: color 0.3s linear;
@@ -80,8 +82,9 @@
          top: -100%;
          left: 0;
          width: 100%;
+         background: #011b31;
          padding: 0px 0px 0px 0px;
-         transition: all 0.3s ease 0s;
+         transition: all 0s ease 0s;
          overflow: auto;
          display: flex;
          justify-content: center;
@@ -90,15 +93,26 @@
          top: 99%;
       }
       &__menu-active {
+         position: relative;
          max-width: 990px;
-         // margin: 0px auto;
-         padding: 30px 10px 30px 10px;
+         // width: 100%;
+         // border-top: 1px solid rgba(21, 128, 255, 0.3);
+         margin: 0px auto;
+         padding: 0px 10px 30px 0px;
          display: flex;
          align-items: center;
          justify-content: center;
-         border-radius: 0px 0px 10px 10px;
+         // border-radius: 0px 0px 10px 10px;
          background: #011b31;
          // overflow: hidden;
+      }
+      &__menu-border {
+         height: 1px;
+         position: absolute;
+         top: 2%;
+         left: 0%;
+         width: 100%;
+         background: rgba(21, 128, 255, 0.3);
       }
       &__linkvips {
          display: flex;
@@ -182,7 +196,9 @@
       }
    }
 }
-
+.header._scroll {
+   overflow-y: auto;
+}
 // ==============================================ИКОНКИ
 .header__navigate {
 }
@@ -295,7 +311,7 @@
    left: 23%;
    top: 25%;
    width: 18px;
-   transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+   transition: 0.15s cubic-bezier(0.5, 0.2, 0.1, 1.2);
    transform: rotate(90deg);
    transition-delay: 150ms;
 }
@@ -303,7 +319,7 @@
    left: 12.5%;
    top: 45%;
    width: 14px;
-   transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+   transition: 0.15s cubic-bezier(0.5, 0.2, 0.1, 1.2);
    transform: rotate(45deg);
    transition-delay: 50ms;
 }
@@ -311,7 +327,7 @@
    left: 50%;
    top: 45%;
    width: 14px;
-   transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+   transition: 0.15s cubic-bezier(0.5, 0.2, 0.1, 1.2);
    transform: rotate(-45deg);
    transition-delay: 100ms;
 }

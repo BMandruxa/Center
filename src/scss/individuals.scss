@@ -17,7 +17,7 @@
 
    &__title {
       font-family: DrukWideCyTTMedium;
-      font-size: 28px;
+      font-size: 38px;
       line-height: 1.2;
       color: #011b31;
       padding-left: 40px;
@@ -158,9 +158,13 @@
       color: #ffffff;
       position: relative;
       z-index: 10;
+      transition: all 0.2s ease 0s;
       @media (max-width: 650px) {
          margin: 0 auto;
       }
+   }
+   &__button:hover {
+      font-size: 19px;
    }
 
    &__item-2 {
@@ -374,6 +378,9 @@
       padding-left: 25px;
       position: relative;
       z-index: 20;
+      &_margin-2 {
+         margin-bottom: 80px;
+      }
    }
 
    &__list {
@@ -408,6 +415,10 @@
       margin-left: 23px;
       position: relative;
       z-index: 20;
+      transition: all 0.3s ease 0s;
+   }
+   &__button:hover {
+      background: #0866d8;
    }
 
    &__rectangle {

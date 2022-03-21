@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Контакты"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/sprite.html',{})
+      @@include('html/header.html',{})
+      <div class="business__head head-business">
+         <div class="head-business__container">
+            <div class="head-business__figure"></div>
+            <img class="head-business__img-individuals" src="@img/contacts/01.png" alt="Contacts">
+            <div class="head-business__title">Контакты</div>
+         </div>
+      </div>
+      <div class="contacts__information information-contacts">
+         <div class="information-contacts__container">
+            <div class="information-contacts__body">
+               <div class="information-contacts__telephones telephones-info">
+                  <div class="telephones-info__title">Телефоны</div>
+                  <div class="telephones-info__num-1">8 (800) 333-42-01 <br>звонок бесплатный<br><br>
+                     +7 (495) 145-80-30</div>
+               </div>
+               <div class="information-contacts__work work-info">
+                  <div class="work-info__title">Режим работы</div>
+                  <div class="work-info__num-1">понедельник - пятница<br> 09:00-18:00<br><br>
+                     <span> суббота - воскресенье<br> выходной</span>
+                  </div>
+               </div>
+               <div class="information-contacts__email email-info">
+                  <div class="email-info__title">E-mail</div>
+                  <div class="email-info__num-1">info@centr.finance</div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="contacts__map map-contacts">
+         <div class="map-contacts__container">
+            <!-- <div class="map-contacts__image">
+               <img src="@img/contacts/rec.png" alt="map">
+            </div> -->
+            <div class="map-contacts__body">
+               <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1fba0b2663c16b3e0f9f5c79dfc1b3b1c5b29ebd5b818a53e782aa5e73c1182d&amp;source=constructor" max-width="100%" max-height="100%" frameborder="0"></iframe>
+            </div>
+         </div>
+      </div>
+
+      <div class="contacts__route route-contacts">
+         <div class="route-contacts__container">
+            <div class="route-contacts__body">
+               <div class="route-contacts__title">г. Нижний Новгород, <br>
+                  Варшавское шоссе,<br class="route-contacts__br"> д. 1, стр. 17, <br>
+                  W-Plaza 2, оф. В-301</div>
+               <button class="route-contacts__button">Построить маршут</button>
+
+            </div>
+         </div>
+      </div>
+      <div class="contacts__transport transport-contacts">
+         <div class="transport-contacts__container">
+            <div class="transport-contacts__body">
+               <div class="transport-contacts__title">Общественный транспорт</div>
+               <div class="transport-contacts__station">ост. Новая (123 м) станция метро<br> “Горьковская” (1 500 м)</div>
+               <div class="transport-contacts__bus">Автобусы: </div>
+               <div class="transport-contacts__trams">Трамваи: </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="contacts__requisites requisites-contacts">
+         <div class="requisites-contacts__container">
+            <div class="requisites-contacts__body">
+               <div class="requisites-contacts__figure">
+                  <img src="@img/contacts/figure.svg" alt="Реквизиты">
+               </div>
+               <div class="requisites-contacts__title-1">Реквизиты </div>
+               <div class="requisites-contacts__title-2">
+                  <img src="@img/contacts/02.svg" alt="Центр финансов">
+                  Кредитный потребительский кооператив<br class="requisites-contacts__br-1"> «Центр финансов»
+               </div>
+               <div class="requisites-contacts__columns">
+                  <div class="requisites-contacts__column">
+                     <div class="requisites-contacts__text" id="textone">
+                        РФ, 610002, г. Киров, ул. Ленина, дом 85, пом. 1002,<br><br>
+
+                        ИНН-4345375135 (43 №002507106 от 25.12.2013г);<br>
+                        КПП-434501001<br>
+                        ОГРН 1134345029906 (43 №002508775 от 25.12.2013г)<br>
+                        finmarket43@mail.ru<br>
+                        р/сч-40701810610180000003 в Филиале «Центральный»<br class="requisites-contacts__br-2"> Банка ВТБ (ПАО) в г. Москве<br>
+                        БИК-044525411<br>
+                        кор/сч-30101810145250000411<br>
+                        ОКПО-22976825;<br><br>
+
+                        ОКВЭД 64.92 Предоставление займов и прочих<br class="requisites-contacts__br-3"> видов кредита<br>
+                        64.92.1 Деятельность по предоставлению<br class="requisites-contacts__br-3"> потребительского кредита<br>
+                        64.92.3 Деятельность по предоставлению денежных ссуд<br class="requisites-contacts__br-3"> под залог<br class="requisites-contacts__br-2"> недвижимого имущества<br>
+                        64.99.1 Вложения в ценные бумаги<br>
+                     </div>
+                  </div>
+                  <div class="requisites-contacts__column">
+                     <div id="texttwo" class="requisites-contacts__text requisites-contacts__text_margin-2">
+                        ОКАТО 33401367000<br>
+                        ОКТМО 33701000<br>
+                        ОКФС 16<br>
+                        ОКОПФ 20104<br>
+                        ОКОГУ 4210014<br>
+                        ПФР 053-003-108599<br>
+                        ФСС 4345090416 код подчиненности 43001<br><br>
+
+                        Председатель правления Сапегина Ольга Николаевна<br>
+                        (на основании Устава)
+                     </div>
+                     <button id="copyText" class="requisites-contacts__button">Скопировать в буфер</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      @@include('html/journal.html',{})
+
+
+      <div class="business__partner partner">
+         <div class="partner__container _container">
+            <div class="partner__heading">Становитесь пайщиками</div>
+            <div class="partner__blocks">
+               <div class="partner__block1">
+                  <div class="partner__item">
+                     <div class="partner__head">
+                        <div class="partner__icon"><img src="@img/business/partner/chart.svg" alt="Cтавки выше, чем по вкладам"></div>
+                        <div class="partner__title">Cтавки выше,<br class="partner-br"> чем по вкладам</div>
+                     </div>
+                     <div class="partner__text">Высокие ставки в кредитных кооперативах объясняются спецификой их деятельности. В отличие от банков, перечень услуг здесь меньше (только займы и сбережения), поэтому меньше издержек и больше возможностей для клиентов.Максимальная ставка в КПК зависит от ключевой ставки, которую устанавливает Центральный Банк России и не может превышать ее более, чем в 2 раза. Сегодня она — 8,5%, а значит максимально возможный доход в КПК — 17% годовых.</div>
+                  </div>
+                  <div class="partner__item">
+                     <div class="partner__head">
+                        <div class="partner__icon"><img src="@img/business/partner/slice.svg" alt="Cтавки выше, чем по вкладам"></div>
+                        <div class="partner__title">Новые финансовые<br class="partner-br"> возможности</div>
+                     </div>
+                     <div class="partner__text">Услугами КПК могут воспользоваться все пайщики, которые вступили в кооператив. Для вступления необходимо внести вступительный взнос — 100 рублей и паевой взнос — 1000 рублей. Согласно Закону «О кредитной кооперации», член КПК несет солидарно с другими пайщиками материальную ответственность в пределах невнесенной части дополнительного взноса каждого из членов КПК.</div>
+                  </div>
+               </div>
+               <div class="partner__block2">
+                  <div class="partner__item item-bottom">
+                     <div class="partner__head head-bottom">
+                        <div class="partner__icon"><img src="@img/business/partner/arrows.svg" alt="Cтавки выше, чем по вкладам">
+                        </div>
+                        <div class="partner__title">Пополняйте и снимайте</div>
+                     </div>
+                     <div class="partner__text">Вы можете пополнять баланс договора в течение всего срока действия. Существует программа “______”, по которой вы можете частично снять до 50% суммы, без потери процентов. При досрочном расторжении договора по другим сберегательным программам проценты пересчитываются по ставке 0,1%.</div>
+                  </div>
+                  <div class="partner__item">
+                     <div class="partner__head">
+                        <div class="partner__icon"><img src="@img/business/partner/vault.svg" alt="Cтавки выше, чем по вкладам"></div>
+                        <div class="partner__title">Ответственность<br class="partner-br"> кооператива застрахована</div>
+                     </div>
+                     <div class="partner__text">Мы страхуем свою ответственность перед пайщиками в НКО «Межрегиональное общество взаимного страхования». Каждому пайщику выдаём именное свидетельство, по которому он гарантированно сможет вернуть свои сбережения при страховом случае.</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      @@include('html/documents.html',{})
+      @@include('html/popupclients.html',{})
+      @@include('html/popupconsultation.html',{})
+      <!-- @@include('html/popupthanks.html',{}) -->
+
+      @@include('html/comment.html',{})
+      @@include('html/communication.html',{})
+      @@include('html/footer.html',{})
+   </div>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>
