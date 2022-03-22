@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
          // console.log(`Выбранный текст опции: ${text}`);
       },
    });
-   document.querySelector('.select').addEventListener('select.change', (e) => {
+   document.querySelector('.select')?.addEventListener('select.change', (e) => {
       const btn = e.target.querySelector('.select__toggle');
       // выбранное значение
       // console.log(`Выбранное значение: ${btn.value}`);
@@ -43,9 +43,10 @@ const SELECTOR_OPTION_SELECTED = '.select__option_selected';
 class CustomSelect {
    constructor(target, params) {
       this._elRoot = typeof target === 'string' ? document.querySelector(target) : target;
+      if (!this._elRoot) return
       this._params = params || {};
       if (this._params['options']) {
-         this._elRoot.classList.add(CLASS_NAME_SELECT);
+         this._elRoot?.classList.add(CLASS_NAME_SELECT);
          this._elRoot.innerHTML = CustomSelect.template(this._params);
       }
       this._elToggle = this._elRoot.querySelector(SELECTOR_DATA_TOGGLE);

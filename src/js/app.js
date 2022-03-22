@@ -9,7 +9,8 @@ import './files/reviewsswiper.js'
 import './files/popup.js'
 import './files/video.js'
 import './files/select.js'
-// import './files/copy.js'
+import './files/copy.js'
+// import './files/map.js'
 
 
 

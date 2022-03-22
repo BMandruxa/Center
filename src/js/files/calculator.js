@@ -31,13 +31,13 @@ function startTabListener(tabs, contents) {
             }
         })
     })
-    
+
     if (window.location.pathname === '/business.html') {
-        tabs[1].click()
+        tabs[1]?.click()
     } else if (window.location.pathname === '/loans.html') {
-        tabs[2].click()
+        tabs[2]?.click()
     } else {
-        tabs[0].click()
+        tabs[0]?.click()
     }
 }
 
