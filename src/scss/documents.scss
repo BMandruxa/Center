@@ -1,14 +1,16 @@
 .documents {
    &__container {
-      padding-top: 130px;
-      padding-bottom: 33px;
+      max-width: 1246px;
+      padding: 130px 15px 33px 15px;
+      margin: 0 auto;
       @media (max-width: 1024px) {
-         padding-top: 80px;
-         padding-bottom: 80px;
+         padding: 80px 15px 80px 15px;
       }
       @media (max-width: 645px) {
-         padding-top: 60px;
-         padding-bottom: 0px;
+         padding: 60px 15px 0px 15px;
+      }
+      @media (max-width: 395px) {
+         padding: 60px 5px 0px 5px;
       }
    }
 
@@ -17,17 +19,17 @@
       font-size: 38px;
       line-height: 1.2;
       color: #011b31;
-      margin-bottom: 58px;
+      margin-bottom: 80px;
 
       @media (max-width: 645px) {
-         margin-bottom: 79px;
+         margin-bottom: 60px;
          font-size: 28px;
          line-height: 1.2;
       }
       @media (max-width: 530px) {
-         margin-bottom: 79px;
          font-size: 22px;
          line-height: 1.2;
+         margin-bottom: 40px;
       }
    }
 

@@ -5,7 +5,7 @@ new Swiper('.reviews-slider', {
    spaceBetween: 33,
    navigation: {
       nextEl: '.swiper-button-next',
-      // prevEl: '.swiper-button-prev',
+      prevEl: '.swiper-button-prev',
    },
    slidesPerGroup: 1,
    breakpoints: {

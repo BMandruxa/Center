@@ -8,7 +8,7 @@ new Swiper('.journal-slider', {
    },
    navigation: {
       nextEl: '.swiper-button-next',
-      // prevEl: '.swiper-button-prev',
+      prevEl: '.swiper-button-prev'
    },
    breakpoints: {
       // when window width is >= 400px

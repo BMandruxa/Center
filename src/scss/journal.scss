@@ -16,55 +16,57 @@
       font-size: 38px;
       line-height: 1.2;
       color: #011b31;
-      margin-bottom: 58px;
+      margin-bottom: 80px;
 
       @media (max-width: 645px) {
          font-size: 28px;
+         margin-bottom: 60px;
       }
       @media (max-width: 530px) {
          font-size: 22px;
+         margin-bottom: 40px;
       }
    }
    &__button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      @media (max-width: 1023.98px) {
-         display: none;
-      }
-      position: absolute;
-      top: 50%;
-      right: -10%;
-      z-index: 100;
-      transform: translate(0%, -50%);
-      @media (max-width: 1221px) {
-         right: 0%;
-      }
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // text-align: center;
+      // @media (max-width: 1023.98px) {
+      //    display: none;
+      // }
+      // position: absolute;
+      // top: 50%;
+      // right: -10%;
+      // z-index: 100;
+      // transform: translate(0%, -50%);
+      // @media (max-width: 1221px) {
+      //    right: 0%;
+      // }
    }
    &__btn-block {
-      position: relative;
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.8);
+      // position: relative;
+      // width: 55px;
+      // height: 55px;
+      // border-radius: 50%;
+      // background: rgba(255, 255, 255, 0.8);
    }
    &__btn-block img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-31%, -50%);
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-31%, -50%);
    }
 }
-.journal__button .swiper-button-next {
-   top: 40%;
-   right: 0%;
-   width: 100%;
-   height: 100%;
-}
-.journal__button .swiper-button-next::after {
-   font-size: 0px;
-}
+// .journal__button .swiper-button-next {
+//    top: 40%;
+//    right: 0%;
+//    width: 100%;
+//    height: 100%;
+// }
+// .journal__button .swiper-button-next::after {
+//    font-size: 0px;
+// }
 .journal__container {
    position: relative;
    max-width: 1246px;
@@ -73,8 +75,8 @@
    display: flex;
    justify-content: flex-start;
    flex-direction: column;
-   @media (max-width: 385px) {
-      padding: 0px 0px;
+   @media (max-width: 375px) {
+      padding: 0px 5px;
    }
 }
 .journal-slider {

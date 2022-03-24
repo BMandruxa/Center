@@ -11,8 +11,34 @@
       height: 100%;
       width: 100%;
       position: relative;
-      object-fit: cover;
+      background: url("@img/business/head/01.png") no-repeat bottom center / cover;
+      // background-size: 100% 90%;
    }
+
+   &__block {
+      position: relative;
+      width: 280px;
+      height: 240px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      bottom: 0;
+      right: 0;
+      // background: inherit;
+      backdrop-filter: blur(5px);
+      // filter: blur(20px);
+   }
+   // &__block:before {
+   //    content: "";
+   //    position: absolute;
+   //    top: 0;
+   //    left: 0;
+   //    bottom: 0;
+   //    right: 0;
+   //    background: inherit;
+   //    // backdrop-filter: blur(5px);
+   //    filter: blur(20px);
+   // }
    &__figure {
       position: absolute;
       left: 0%;
@@ -25,6 +51,9 @@
       &_loans-fig {
          background: linear-gradient(180deg, #ff9ee4 0%, rgba(21, 128, 255, 0) 100%);
          height: 145px;
+      }
+      &_individuals {
+         background: linear-gradient(180deg, #a1e5ff 0%, rgba(21, 128, 255, 0) 100%);
       }
    }
 
@@ -124,18 +153,13 @@
    &__item {
       width: 280px;
       height: 240px;
-      // background-color: rgba(47, 198, 255, 0.12);
-      background: rgba(21, 128, 255, 0.2);
-      box-shadow: 0px 0px 18px rgba(0, 8, 15, 0.31);
-      // background: inherit;
-      // background: inherit;
-      // filter: blur(10px);
-
-      // border: 1px solid rgba(47, 198, 255, 1);
+      background: rgba(47, 198, 255, 0.12);
       border-radius: 7px;
       padding: 36px 0px 0px 30px;
       position: relative;
       z-index: 1;
+
+      backdrop-filter: blur(10px);
       @media (max-width: 1240px) {
          margin-bottom: 32px;
       }
@@ -198,6 +222,10 @@
    &__block {
       display: flex;
       align-items: center;
+      padding-left: 30px;
+      @media (max-width: 1023.98px) {
+         padding-left: 0px;
+      }
       @media (max-width: 912.98px) {
          margin-bottom: 40px;
          text-align: center;
@@ -234,7 +262,7 @@
    }
 
    &__month {
-      margin-right: 124px;
+      margin-right: 116px;
       @media (max-width: 1030px) {
          margin-right: 30px;
       }
@@ -267,8 +295,8 @@
       max-width: 1246px;
       margin: 0 auto;
       padding: 0px 15px 0px 15px;
-      @media (max-width: 414px) {
-         padding: 0px 0px 0px 0px;
+      @media (max-width: 395px) {
+         padding: 0px 5px 0px 5px;
       }
    }
    &__title {
@@ -314,25 +342,20 @@
       color: #000000;
    }
    &__more {
+      display: block;
       width: 104px;
       height: 35px;
-      background: #1580ff;
-      border-radius: 7px;
-      font-size: 14px;
-      line-height: 1.28;
-      color: #ffffff;
+      padding: 10px 16px 10px 16px;
       margin-top: 10px;
-      transition: all 0.3s ease 0s;
    }
-   &__more:hover {
-      background: #0663d4;
-   }
+
    &__text {
       font-size: 14px;
       line-height: 1.28;
       color: #000000;
    }
    &__button {
+      width: 55px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -348,6 +371,18 @@
       @media (max-width: 1221px) {
          right: 0%;
       }
+      &_prev {
+         width: 55px;
+         top: 50%;
+         left: -10%;
+         transform: translate(0%, -50%);
+         @media (max-width: 1221px) {
+            left: 0%;
+         }
+         @media (max-width: 1023.98px) {
+            display: none;
+         }
+      }
    }
    &__btn-block {
       position: relative;
@@ -355,14 +390,29 @@
       height: 55px;
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.8);
+      &_prev {
+      }
    }
-   &__btn-block img {
+   &__next {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-31%, -50%);
    }
+   &__prev-rotate {
+      position: absolute;
+      top: 47%;
+      left: 48%;
+      transform: rotate(180deg) translate(50%, 33%);
+   }
 }
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled .reviews__button {
+   opacity: 0;
+   cursor: auto;
+   pointer-events: none;
+}
+
 .reviews__button .swiper-button-next {
    top: 40%;
    right: 0%;
@@ -370,6 +420,15 @@
    height: 100%;
 }
 .reviews__button .swiper-button-next::after {
+   font-size: 0px;
+}
+.reviews__button .swiper-button-prev {
+   top: 40%;
+   left: 0%;
+   width: 100%;
+   height: 100%;
+}
+.reviews__button .swiper-button-prev::after {
    font-size: 0px;
 }
 .reviews-slider {
@@ -405,13 +464,13 @@
 }
 .reviews-slider {
    @media (max-width: 450px) {
-      padding: 0px 0px 0px 33px;
+      padding: 0px 0px 0px 18px;
    }
    @media (max-width: 400px) {
-      padding: 0px 0px 0px 23px;
+      padding: 0px 0px 0px 8px;
    }
    @media (max-width: 380px) {
-      padding: 0px 0px 0px 13px;
+      padding: 0px 0px 0px 8px;
    }
    @media (max-width: 365px) {
       padding: 0px 0px 0px 0px;
@@ -422,6 +481,7 @@
    &__partner {
    }
 }
+
 .partner {
    padding: 0px 0px 130px 0px;
    @media (max-width: 1024px) {
@@ -430,7 +490,14 @@
    @media (max-width: 645px) {
       padding: 0px 0px 60px 0px;
    }
+
    &__container {
+      max-width: 1246px;
+      margin: 0 auto;
+      padding: 0px 15px 0px 15px;
+      @media (max-width: 395px) {
+         padding: 0px 5px 0px 5px;
+      }
    }
    &__heading {
       font-family: DrukWideCyTTMedium;
@@ -516,7 +583,15 @@
       }
    }
 }
-
+.business__partner_savings {
+   padding: 0px 0px 0px 0px;
+   @media (max-width: 1024px) {
+      padding: 0px 0px 0px 0px;
+   }
+   @media (max-width: 645px) {
+      padding: 0px 0px 0px 0px;
+   }
+}
 .partner-br {
    @media (min-width: 1215px) {
       display: none;
@@ -537,9 +612,9 @@
       max-width: 1246px;
       padding: 0 15px;
       margin: 0 auto;
-      // @media (max-width: 414px) {
-      //    padding: 0px 0px;
-      // }
+      @media (max-width: 395px) {
+         padding: 0px 5px;
+      }
    }
 
    &__title {
@@ -554,10 +629,11 @@
       }
       @media (max-width: 645px) {
          font-size: 28px;
-         margin-bottom: 79px;
+         margin-bottom: 60px;
       }
       @media (max-width: 530px) {
          font-size: 22px;
+         margin-bottom: 40px;
       }
       @media (max-width: 1023.98px) {
          text-align: left;
@@ -690,17 +766,9 @@
    }
 
    &__button {
-      background: #1580ff;
       border-radius: 7px;
       width: 175px;
       height: 35px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease 0s;
-      font-size: 14px;
-      line-height: 1.28px;
-      color: #ffffff;
       &_1 {
          @media (max-width: 779.98px) {
             display: none;
@@ -711,12 +779,12 @@
             display: none;
          }
       }
-      &_1:hover {
-         background: #0660ce;
-      }
-      &_2:hover {
-         background: #0660ce;
-      }
+      // &_1:hover {
+      //    background: #0557a3;
+      // }
+      // &_2:hover {
+      //    background: #0557a3;
+      // }
    }
 }
 // =======================================================profitable-programs

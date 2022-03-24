@@ -64,9 +64,14 @@
       font-size: 24px;
       line-height: 1.27;
       font-weight: 400;
+      padding-left: 10px;
    }
 
    &__button {
+      font-size: 18px;
+      line-height: 1.27;
+      position: relative;
+      z-index: 1;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -75,17 +80,32 @@
       width: 280px;
       color: #fff;
       background: linear-gradient(266.9deg, #2fc6ff 1.58%, #1580ff 97.56%);
-      background-size: 400% 400%;
-      -moz-animation: gradient 3s ease-in-out infinite;
-      -webkit-animation: gradient 3s ease-in-out infinite;
-      animation: gradient 3s ease-in-out infinite;
       border-radius: 7px;
       padding: 20px 62px 27px 62px;
-      transition: all 0.5s ease 0s;
+      transition: all 0.3s ease 0s;
       cursor: pointer;
       margin-right: 33px;
-      font-size: 18px;
-      line-height: 1.27;
+   }
+   &__button:after {
+      border-radius: 10px;
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      border-radius: 7px;
+      width: 100%;
+      height: 100%;
+      transition: opacity 0.3s;
+      opacity: 0;
+      background: linear-gradient(266.9deg, #1580ff 1.58%, #1580ff 97.56%);
+   }
+   &__button:hover:after {
+      opacity: 1;
+   }
+   &__button span {
+      position: relative;
+      z-index: 3;
    }
    &__yes {
       display: flex;
@@ -368,15 +388,7 @@
       }
    }
 }
-
 @media (max-width: 414px) {
-   .communication {
-      &__container {
-         padding: 0px 0px;
-      }
-   }
-}
-@media (max-width: 390px) {
    .communication {
       &__label input {
          width: 360px;
@@ -385,6 +397,30 @@
       &__button {
          width: 360px;
          padding: 21px 100px 26px 100px;
+      }
+   }
+}
+@media (max-width: 390px) {
+   .communication {
+      &__label input {
+         width: 340px;
+      }
+
+      &__button {
+         width: 340px;
+         padding: 0px 0px 0px 0px;
+      }
+   }
+}
+@media (max-width: 390px) {
+   .communication__img {
+      top: 19%;
+   }
+}
+@media (max-width: 375px) {
+   .communication {
+      &__container {
+         padding: 5px 5px;
       }
    }
 }
