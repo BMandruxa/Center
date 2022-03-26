@@ -5,15 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220326125928" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20220326125928">
-	<title>Бизнес</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220326130632" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20220326130632">
+	<title>Главная</title>
 </head>
 
 <body>
-   <div class="wrapper">
-      <div class="wrapper-background"></div>
-      <!-- SPRITE -->
+	<div class="wrapper">
+		<div class="wrapper-background"></div>
+		<!-- SPRITE -->
 <svg style="display: none">
    <symbol id="navigate" viewBox="0 0 15 15">
       <g>
@@ -65,7 +65,7 @@
       </g>
    </symbol>
 </svg>
-      <header class="header">
+		<header class="header">
    <div class="header__container _container lock-padding">
       <div class="header__logo">
          <a href="./index.html">
@@ -238,228 +238,353 @@
 <!-- <div class="header__icon">
    <span></span>
 </div> -->
-      <div class="business__head head-business">
-         <div class="head-business__container">
-            <div class="head-business__figure"></div>
-            <picture><source srcset="img/business/head/01.webp" type="image/webp"><img class="head-business__img-desktop" src="img/business/head/01.png" alt="For business"></picture>
-            <picture><source srcset="img/business/head/02.webp" type="image/webp"><img class="head-business__img-mobile" src="img/business/head/02.png" alt="For business"></picture>
-            <h1 class="head-business__title">Для бизнеса</h1>
+		<div class="page">
+   <div class="page__border"></div>
+   <div class="page__content">
+      <h1 class="page__title">Доходные программы<br>
+         <span>до 17% годовых</span>
+      </h1>
+      <div class="page__text">Любые цели проще, когда управляешь<br>
+         своими средствами.</div>
+      <button class="page__button">
+         Узнать подробнее
+      </button>
+   </div>
+   <div class="image-slider swiper-container">
+      <!-- Слайдер -->
+      <div class="image-slider__wrapper swiper-wrapper">
+         <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+               <picture><source srcset="img/swiper/women.webp" type="image/webp"><img class="women" src="img/swiper/women.png" alt="Картинка"></picture>
+            </div>
          </div>
-      </div>
-      <div class="business__cards cards">
-         <div class="cards__container _container">
-            <div class="cards__body">
-               <div class="cards__items">
-                  <div class="cards__item">
-                     <div class="cards__icon">
-                        <img class="img-desktop" src="img/business/cards/briefcase.svg" alt="Знаем все проблемы развития малого бизнеса">
-                        <img class="img-mobile" src="img/business/cards/briefcase2.svg" alt="Знаем все проблемы развития малого бизнесса">
-                     </div>
-                     <div class="cards__text">Знаем все проблемы развития малого бизнеса</div>
-                  </div>
-               </div>
-               <div class="cards__items">
-                  <div class="cards__item">
-                     <div class="cards__icon">
-                        <img class="img-desktop" src="img/business/cards/swap.svg" alt="15 лет опыта финансового выполнения обязательств перед партёрами">
-                        <img class="img-mobile" src="img/business/cards/swap2.svg" alt="15 лет опыта финансового выполнения обязательств перед партёрами">
-                     </div>
-                     <div class="cards__text">15 лет опыта финансового
-                        выполнения обязательств<br class="cards__br">
-                        перед партёрами</div>
-                  </div>
-               </div>
-               <div class="cards__items">
-                  <div class="cards__item">
-                     <div class="cards__icon">
-                        <img class="img-desktop" src="img/business/cards/chats.svg" alt="Грамотная юридическая консультация и оценка для пайщиков">
-                        <img class="img-mobile" src="img/business/cards/chats2.svg" alt="Грамотная юридическая консультация и оценка для пайщиков">
-                     </div>
-                     <div class="cards__text">Грамотная юридическая
-                        консультация и оценка<br class="cards__br">
-                        для пайщиков</div>
-                  </div>
-               </div>
-               <div class="cards__items">
-                  <div class="cards__item">
-                     <div class="cards__icon">
-                        <img class="img-desktop" src="img/business/cards/up.svg" alt="Индивидуальные условия на условия сбережений">
-                        <img class="img-mobile" src="img/business/cards/up2.svg" alt="Индивидуальные условия на условия сбережений">
-                     </div>
-                     <div class="cards__text">Индивидуальные условия<br class="cards__br">
-                        на условия сбережений
-                     </div>
-                  </div>
-               </div>
+         <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image image-men">
+               <picture><source srcset="img/swiper/men.webp" type="image/webp"><img class="men" src="img/swiper/men.png" alt="Картинка"></picture>
+            </div>
+         </div>
+         <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image image-family">
+               <picture><source srcset="img/swiper/family.webp" type="image/webp"><img class="family" src="img/swiper/family.png" alt="Картинка"></picture>
+            </div>
+         </div>
+         <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image image-pensioners">
+               <picture><source srcset="img/swiper/pensioners.webp" type="image/webp"><img class="pensioners" src="img/swiper/pensioners.png" alt="Картинка"></picture>
             </div>
          </div>
       </div>
-      <div class="business__conditions conditions">
-         <div class="conditions__container _container">
-            <div class="conditions__block">
-               <h3 class="conditions__percent conditions__text">от 12 до 15%<br><span>годовых</span></h3>
-               <h3 class="conditions__month conditions__text">от 1 до 12<br><span>месяцев</span></h3>
-            </div>
-            <h3 class="conditions__deposit conditions__text">до 15 000 000 ₽<br><span>величина вклада</span></h3>
+      <div class="swiper__buttons">
+         <div class="swiper-button-prev" id="mouse1"></div>
+         <div class="swiper-button-next" id="mouse2"></div>
+         <div class="swiper__blocks">
+            <div class="swiper__block" id="blockone"></div>
+            <div class="swiper__block" id="blocktwo"></div>
          </div>
       </div>
-      <div class="buissness__profitable-programs programs-profitable">
-         <div class="programs-profitable__container">
-            <h2 class="programs-profitable__title title-padding">Доходные программы</h2>
-            <div class="programs-profitable__items">
-               <div class="programs-profitable__item">
-                  <div class="programs-profitable__content">
-                     <div class="programs-profitable__head head-programs">
-                        <h3 class="head-programs__title-1">Корпоративный</h3>
-                        <h3 class="head-programs__title-2">от 12 до 13% годовых</h3>
-                     </div>
-                     <div class="programs-profitable__list">
-                        <div class="programs-profitable__descriprion">от 1 до 12 месяцев</div>
-                        <div class="programs-profitable__descriprion">Пополнение от 10 000 <span>е</span></div>
-                        <div class="programs-profitable__descriprion"> Ежемесячная выплата<br> процентов</div>
-                        <div class="programs-profitable__descriprion"> Капитализация</div>
-                     </div>
-                     <button class="programs-profitable__button">Рассчитать доход</button>
-                     <div class="programs-profitable__image-1">
-                        <img src="img/business/programs/cornhusker.svg" alt="Доходные программы">
-                     </div>
-                     <div class="programs-profitable__image-3">
-                        <img src="img/business/programs/cornhusker2.svg" alt="Доходные программы">
-                     </div>
-                     <div class="programs-profitable__figure">
-                        <img src="img/business/programs/figure1.svg" alt="Доходные программы">
-                     </div>
-                  </div>
-               </div>
-               <div class="programs-profitable__item">
-                  <div class="programs-profitable__content programs-profitable__content_padding">
-                     <div class="programs-profitable__head head-programs">
-                        <h3 class="head-programs__title-1">Корпоративный <span>+</span></h3>
-                        <h3 class="head-programs__title-2">от 12 до 13% годовых</h3>
-                     </div>
-                     <div class="programs-profitable__list programs-profitable__list_margin">
-                        <div class="programs-profitable__descriprion">от 1 до 12 месяцев</div>
-                        <div class="programs-profitable__descriprion">Пополнение от 10 000 <span>е</span></div>
-                        <div class="programs-profitable__descriprion"> Ежемесячная выплата<br> процентов</div>
+   </div>
 
-                     </div>
-                     <button class="programs-profitable__button">Рассчитать доход</button>
-                     <div class="programs-profitable__image-2">
-                        <img src="img/business/programs/jet.svg" alt="Доходные программы">
-                     </div>
-                     <div class="programs-profitable__figure">
-                        <img src="img/business/programs/figure2.svg" alt="Доходные программы">
-                     </div>
-                  </div>
-               </div>
+
+
+   <div class="figure-slider swiper-container">
+      <div class="figure-slider__wrapper swiper-wrapper">
+         <div class="figure-slider__slide swiper-slide">
+            <div class="figure-slider__image">
+               <picture><source srcset="img/swiper/fig1.webp" type="image/webp"><img class="fig1" src="img/swiper/fig1.png" alt="Картинка"></picture>
+            </div>
+         </div>
+         <div class="figure-slider__slide swiper-slide">
+            <div class="figure-slider__image figure-men">
+               <picture><source srcset="img/swiper/fig2.webp" type="image/webp"><img class="fig1" src="img/swiper/fig2.png" alt="Картинка"></picture>
+            </div>
+         </div>
+         <div class="figure-slider__slide swiper-slide">
+            <div class="figure-slider__image">
+               <picture><source srcset="img/swiper/fig3.webp" type="image/webp"><img class="fig1" src="img/swiper/fig3.png" alt="Картинка"></picture>
+            </div>
+         </div>
+         <div class="figure-slider__slide swiper-slide">
+            <div class="figure-slider__image">
+               <picture><source srcset="img/swiper/fig4.webp" type="image/webp"><img class="fig1" src="img/swiper/fig4.png" alt="Картинка"></picture>
             </div>
          </div>
       </div>
-      <div class="buissness__loans loans-buissness">
-         <div class="loans-buissness__container">
-            <h1 class="loans-buissness__title">Займы</h1>
-            <div class="loans-buissness__items">
-               <img class="loans-buissness__mac" src="img/business/loans/mac.svg" alt="">
-               <div class="loans-buissness__item-1 loans-buissness__item">
-                  <div class="loans-buissness__head head-loans-buissness">
-                     <h3 class="head-loans-buissness__title">от 2% до 8% в мес</h3>
-                     <h3 class="head-loans-buissness__title">от 300 000 ₽
-                        <span class="head-loans-buissness__span-desktop">24-96% годовых</span>
-                     </h3>
-                     <h3 class="head-loans-buissness__title">до 5 000 000 ₽</h3>
-                     <span class="head-loans-buissness__span-mobile">24-96% годовых</span>
-                  </div>
-                  <div class="loans-buissness__text">
-                     до 12 месяцев<br>
-                     Под залог движимого или<br>
-                     недвижимого имущества<br>
-                     Возможность пролонгации <br>
-                     договора на первоначальный срок<br>
-                     Возможна выплата займа<br>
-                     в конце срока договора<br>
-                  </div>
-                  <button class="loans-buissness__button">Подать заявку на займ</button>
-                  <div class="loans-buissness__img-figure">
-                     <img class="loans-buissness__figure" src="img/business/loans/figure.svg" alt="">
-                  </div>
-               </div>
-               <div class="loans-buissness__item-2">
-                  <div class="loans-buissness__columns">
-                     <div class="loans-buissness__column">
-                        <img src="img/business/loans/check.svg" alt="">
-                        <div class="loans-buissness__case">
-                           Покупка товаров<br>
-                           для реализации,<br>
-                           пополнение оборотных<br>
-                           средств<br>
-                        </div>
-                     </div>
-                     <div class="loans-buissness__column loans-buissness__column_pp1">
-                        <img src="img/business/loans/check.svg" alt="">
-                        <div class="loans-buissness__case">
-                           Покупка/аренда<br>
-                           коммерческой<br>
-                           недвижимости<br>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="loans-buissness__columns">
-                     <div class="loans-buissness__column">
-                        <img src="img/business/loans/check.svg" alt="">
-                        <div class="loans-buissness__case">
-                           Ремонт/реконструкция<br>
-                           коммерческих<br>
-                           объектов<br>
-                        </div>
-                     </div>
-                     <div class="loans-buissness__column loans-buissness__column_pp2">
-                        <img src="img/business/loans/check.svg" alt="">
-                        <div class="loans-buissness__case">
-                           Покупка/аренда<br>
-                           коммерческого<br>
-                           транспорта<br>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="loans-buissness__columns">
-                     <div class="loans-buissness__column">
-                        <img src="img/business/loans/check.svg" alt="">
-                        <div class="loans-buissness__case">
-                           Приобретение<br>
-                           оборудования<br>
-                           и материалов<br>
-                        </div>
-                     </div>
-                     <div class="loans-buissness__column loans-buissness__column_pp3">
-                        <img src="img/business/loans/check.svg" alt="">
-                        <div class="loans-buissness__case">
-                           Рефинансирование<br>
-                           банковских кредитов<br>
-                           на бизнес<br>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="loans-buissness__columns">
-                     <div class="loans-buissness__column">
-                        <img src="img/business/loans/check.svg" alt="">
-                        <div class="loans-buissness__case">
-                           Исполнение<br>
-                           контрактов<br>
-                        </div>
-                     </div>
-                     <div class="loans-buissness__column loans-buissness__column_pp4">
-                        <img src="img/business/loans/check.svg" alt="">
-                        <div class="loans-buissness__case">
-                           Покупка<br>
-                           франшизы<br>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+   </div>
+
+   <div class="zadnik-slider swiper-container">
+      <div class="zadnik-slider__wrapper swiper-wrapper">
+         <div class="zadnik-slider__slide swiper-slide">
+            <div class="zadnik-slider__image">
+               <img class="zadnik-house" src="img/swiper/house.svg" alt="Картинка">
+            </div>
+         </div>
+         <div class="zadnik-slider__slide swiper-slide">
+            <div class="zadnik-slider__image">
+               <img class="zadnik-car" src="img/swiper/car.svg" alt="Картинка">
+            </div>
+         </div>
+         <div class="zadnik-slider__slide swiper-slide">
+            <div class="zadnik-slider__image">
+               <img class=" zadnik-flat" src="img/swiper/flat.svg" alt="Картинка">
+            </div>
+         </div>
+         <div class="zadnik-slider__slide swiper-slide">
+            <div class="zadnik-slider__image">
+               <img class="zadnik-palms" src="img/swiper/palms.svg" alt="Картинка">
             </div>
          </div>
       </div>
-      <div class="calculator">
+   </div>
+
+</div>
+		<!-- МЕНЮ СТАТЬ КЛИЕНТОМ -->
+<div id="popup" class="header__customer popup">
+   <div class="popup__body">
+      <div class="popup__column">
+         <div class="popup__content">
+            <div class="popup__title">Стать клиентом</div>
+            <div class="popup__text">Оставьте контактные данные, чтобы получить консультацию<br class="popup-textbr">
+               о вкладах и займах доступных<br class="popup-textbr2"> для пайщиков нашего кредитного кооператива</div>
+         </div>
+         <form action="#" class="popup__data">
+            <label class="popup__label" for="username">
+               <p>Ваше имя</p>
+               <input type="text" name="username" autocomplete="on" required>
+            </label>
+
+            <label class="popup__label" for="tel">
+               <p>Контактный телефон</p>
+               <input type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
+            </label>
+
+            <button class="popup__button go-data" name="submit"><span>Отправить данные</span> </button>
+
+
+            <div class="popup__checkbox">
+               <label class="checkbox-other" for="personal-data">
+                  <input type="checkbox" id="personal-data" name="personal-data" required checked>
+                  <span>Отправляя форму, я даю согласие на обработку<br>
+                     персональных данных.</span>
+               </label>
+            </div>
+         </form>
+         <img class="popup__img-case" src="img/main/header/client/case.svg" alt="case">
+         <img class="popup__img-safe" src="img/main/header/client/safe.svg" alt="safe">
+         <img class="popup__img-figure" src="img/main/header/client/figure.svg" alt="figure">
+         <div class="popup__icn close-popup">
+            <svg class="cross">
+               <use xlink:href="#cross"></use>
+            </svg>
+         </div>
+      </div>
+   </div>
+</div>
+		<div id="popup_4" class="header__customer popup">
+   <div class="popup__body body_3">
+      <div class="popup__column">
+         <div class="popup__content">
+            <div class="popup__title">Получить
+               консультацию</div>
+            <div class="popup__text">Оставьте контактные данные, чтобы получить консультацию<br class="popup-textbr">
+               о вкладах и займах доступных<br class="popup-textbr2"> для пайщиков нашего кредитного кооператива</div>
+         </div>
+         <form action="#" class="popup__data">
+            <label class="popup__label" for="username">
+               <p>Ваше имя</p>
+               <input type="text" name="username" autocomplete="on" required>
+            </label>
+
+            <label class="popup__label" for="tel">
+               <p>Контактный телефон</p>
+               <input type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
+            </label>
+
+            <button class="popup__button go-data" name="submit">Отправить данные</button>
+
+
+            <div class="popup__checkbox">
+               <label class="checkbox-other" for="personal-data">
+                  <input type="checkbox" id="personal-data" name="personal-data" required checked>
+                  <span>Отправляя форму, я даю согласие на обработку<br>
+                     персональных данных.</span>
+               </label>
+            </div>
+         </form>
+         <img class="popup__img-figure" src="img/main/saving-loans/figure4.svg" alt="figure">
+         <div class="popup__icn close-popup">
+            <svg class="cross">
+               <use xlink:href="#cross"></use>
+            </svg>
+         </div>
+      </div>
+   </div>
+</div>
+		<div id="popup_2" class="header__customer popup">
+   <div class="popup__body body_2">
+      <div class="popup__column">
+         <div class="popup__content">
+            <div class="popup__title">Оформить сбережение</div>
+            <div class="popup__text">Оставьте контактные данные, чтобы получить консультацию<br class="popup-textbr">
+               о вкладах и займах доступных<br class="popup-textbr2"> для пайщиков нашего кредитного кооператива</div>
+         </div>
+         <form action="#" class="popup__data">
+            <label class="popup__label" for="username">
+               <p>Ваше имя</p>
+               <input type="text" name="username" autocomplete="on" required>
+            </label>
+
+            <label class="popup__label" for="tel">
+               <p>Контактный телефон</p>
+               <input type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
+            </label>
+
+            <button class="popup__button go-data" name="submit">Отправить данные</button>
+
+
+            <div class="popup__checkbox">
+               <label class="checkbox-other" for="personal-data-2">
+                  <input type="checkbox" id="personal-data-2" name="personal-data-2" required checked>
+                  <span>Отправляя форму, я даю согласие на обработку<br>
+                     персональных данных.</span>
+               </label>
+            </div>
+         </form>
+         <img class="popup__img-figure figure_2" src="img/main/header/client/figure.svg" alt="figure">
+         <div class="popup__icn close-popup">
+            <svg class="cross">
+               <use xlink:href="#cross"></use>
+            </svg>
+         </div>
+      </div>
+   </div>
+</div>
+		<div id="popup_3" class="header__customer popup">
+   <div class="popup__body body_3">
+      <div class="popup__column">
+         <div class="popup__content">
+            <div class="popup__title">Получить займ</div>
+            <div class="popup__text">Оставьте контактные данные, чтобы получить консультацию<br class="popup-textbr">
+               о вкладах и займах доступных<br class="popup-textbr2"> для пайщиков нашего кредитного кооператива</div>
+         </div>
+         <form action="#" class="popup__data">
+            <label class="popup__label" for="username">
+               <p>Ваше имя</p>
+               <input type="text" name="username" autocomplete="on" required>
+            </label>
+
+            <label class="popup__label" for="tel">
+               <p>Контактный телефон</p>
+               <input type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
+            </label>
+
+            <button class="popup__button go-data" name="submit">Отправить данные</button>
+
+
+            <div class="popup__checkbox">
+               <label class="checkbox-other" for="personal-data-3">
+                  <input type="checkbox" id="personal-data-3" name="personal-data-3" required checked>
+                  <span>Отправляя форму, я даю согласие на обработку<br>
+                     персональных данных.</span>
+               </label>
+            </div>
+         </form>
+         <img class="popup__img-figure figure_3" src="img/main/saving-loans/figure3.svg" alt="figure">
+         <div class="popup__icn close-popup">
+            <svg class="cross">
+               <use xlink:href="#cross"></use>
+            </svg>
+         </div>
+      </div>
+   </div>
+</div>
+		
+		<div class="description">
+			<div class="description__container _container">
+				<div class="description__row">
+					<div class="description__column">
+						<div class="description__content block-1">
+							<div class="description__icon bank">
+								<img src="img/main/page/bank.svg" alt="Банк РФ">
+							</div>
+							<div class="description__text">Находимся
+								в государственном реестре Центрального Банка РФ</div>
+						</div>
+					</div>
+					<div class="description__column">
+						<div class="description__content block-2">
+							<div class="description__icon puzzle">
+								<img src="img/main/page/puzl.svg" alt="Банк РФ">
+							</div>
+							<div class="description__text">Состоим в СРО<br class="description-br-one">
+								«НСКК «Содействие»</div>
+						</div>
+					</div>
+					<div class="description__column">
+						<div class="description__content block-3">
+							<div class="description__icon gerb">
+								<img src="img/main/page/gerb.svg" alt="Банк РФ">
+							</div>
+							<div class="description__text">Действуем в соответствии<br>
+								с законом РФ<br class="description-br">
+								«О кредитной кооперации»</div>
+						</div>
+					</div>
+					<div class="description__column">
+						<div class="description__content block-4">
+							<div class="description__icon question">
+								<img src="img/main/page/question.svg" alt="Банк РФ">
+							</div>
+							<div class="description__text">Вопрос-ответ по любым темам о деятельности “Центр финансов”</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="savings-loans">
+			<div class="savings-loans__container _container">
+				<div class="savings-loans__row">
+					<div class="savings-loans__column">
+						<div class="savings-loans__content">
+							<h2 class="savings-loans__title">Сбережения</h2>
+							<div class="savings-loans__info">
+								<div class="savings-loans__text">Ставка выше, чем по вкладам<br> на весь срок</div>
+								<div class="savings-loans__text">Пополнение и снятие на свою<br> карту в любом банке</div>
+								<div class="savings-loans__text">Ответственность “Центр<br> Финансов” застрахована.</div>
+							</div>
+							<div class="savings-loans__button">
+								<a class="savings-loans__btn popup-link" href="#popup_2">Подробнее</a>
+							</div>
+							<img class="savings-loans__img-safe" src="img/main/header/client/safe.svg" alt="safe">
+							<img class="savings-loans__img-procent-one" src="img/main/saving-loans/procent-one.svg" alt="procent">
+							<img class="savings-loans__img-figure" src="img/main/saving-loans/figure.svg" alt="figure">
+							<img class="savings-loans__img-figure-mobile" src="img/main/saving-loans/figure-mobile.svg" alt="figure">
+							<img class="savings-loans__img-safe-mobile" src="img/main/saving-loans/safe-mobile.svg" alt="safe">
+						</div>
+
+					</div>
+					<div class="savings-loans__column">
+						<div class="savings-loans__content gradient">
+							<h2 class="savings-loans__title">Займы</h2>
+							<div class="savings-loans__info savings-loans__info_two">
+								<div class="savings-loans__text">Для бизнесса или на личные<br> цели</div>
+								<div class="savings-loans__text">От 3% в месяц, индивидуальные<br> условия</div>
+								<div class="savings-loans__text">Под залог недвижимости<br> или авто</div>
+							</div>
+							<div class="savings-loans__button savings-loans__button_white">
+								<a class="savings-loans__btn popup-link" href="#popup_3">Подробнее</a>
+							</div>
+
+							<img class="savings-loans__img-procent-two" src="img/main/saving-loans/procent-two.svg" alt="procent">
+							<img class="savings-loans__img-figure-blue" src="img/main/saving-loans/figure-blue.svg" alt="figure">
+							<img class="savings-loans__img-case" src="img/main/header/client/case.svg" alt="case">
+							<img class="savings-loans__img-figure-mobile-blue" src="img/main/saving-loans/figure-mobile-blue.svg" alt="figure">
+						</div>
+						<img class="savings-loans__img-case-mobile" src="img/main/saving-loans/case-mobile.svg" alt="case">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="calculator">
    <div class="background-calc"></div>
    <div class="calculator__container _container">
       <div class="calculator__tabs tabs">
@@ -835,256 +960,110 @@
       </div>
    </div>
 </div>
-      <div class="business__reviews reviews">
-         <div class="reviews__container">
-            <h2 class="reviews__title title-padding">Отзывы от наших пайщиков</h2>
-            <div class="reviews-slider swiper-container">
-               <!-- Слайдер -->
-               <div class="reviews-slider__wrapper swiper-wrapper">
-                  <div class="reviews-slider__slide swiper-slide">
-                     <div class="reviews-slider__image">
-                        <div class="reviews__head">
-                           <div class="reviews__icon">
-                              <img src="img/business/reviews/01.svg" alt="Александр Евгеньевич">
-                           </div>
-                           <div class="reviews__name">Александр<br>
-                              Евгеньевич</div>
-                        </div>
-                        <div class="reviews__text">
-                           Я, Виктор Николаевич Дмитриев являюсь вкладчиком КПК "Народный капитал" могу дать оценку о работе сотрудниц данного отдела. Менеджеры к клиентам относятся учтиво, добросовестно, всегда выслушивают мнение клиентов и, своими действиями, помогают разобраться в вопросах.
-                        </div>
-                     </div>
+		<div class="journal">
+   <div class="journal__container">
+      <h2 class="journal__title">Наш журнал</h2>
+      <div class="journal-slider swiper-container">
+         <!-- Слайдер -->
+         <div class="journal-slider__wrapper swiper-wrapper">
+            <div class="journal-slider__slide swiper-slide">
+               <a href="#">
+                  <div class="journal-slider__image">
+                     <picture><source srcset="img/elements/journal/01.webp" type="image/webp"><img class="journal__image" src="img/elements/journal/01.png" alt="Картинка"></picture>
+                     <h3 class="journal__text">Как мужчина пытался взыскать 32 млн рублей, которые дал в долг</h3>
                   </div>
-                  <div class="reviews-slider__slide swiper-slide">
-                     <div class="reviews-slider__image">
-                        <div class="reviews__head">
-                           <div class="reviews__icon">
-                              <img src="img/business/reviews/01.svg" alt="Александр Евгеньевич">
-                           </div>
-                           <div class="reviews__name">Александр<br>
-                              Евгеньевич</div>
-                        </div>
-                        <div class="reviews__text">
-                           Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
-                        </div>
-                        <a href="#popup_5" class="reviews__more button-style popup-link">Подробнее</a>
-                     </div>
-                  </div>
-                  <div class="reviews-slider__slide swiper-slide">
-                     <div class="reviews-slider__image">
-                        <div class="reviews__head">
-                           <div class="reviews__icon">
-                              <img src="img/business/reviews/01.svg" alt="Александр Евгеньевич">
-                           </div>
-                           <div class="reviews__name">Александр<br>
-                              Евгеньевич</div>
-                        </div>
-                        <div class="reviews__text">
-                           Я, Виктор Николаевич Дмитриев являюсь вкладчиком КПК "Народный капитал" могу дать оценку о работе сотрудниц данного отдела. Менеджеры к клиентам относятся учтиво, добросовестно, всегда выслушивают мнение клиентов и, своими действиями, помогают разобраться в вопросах.
-                        </div>
-                     </div>
-                  </div>
-                  <div class="reviews-slider__slide swiper-slide">
-                     <div class="reviews-slider__image">
-                        <div class="reviews__head">
-                           <div class="reviews__icon">
-                              <img src="img/business/reviews/01.svg" alt="Александр Евгеньевич">
-                           </div>
-                           <div class="reviews__name">Александр<br>
-                              Евгеньевич</div>
-                        </div>
-                        <div class="reviews__text">
-                           Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
-                        </div>
-                        <a href="#popup_6" class="reviews__more button-style popup-link">Подробнее</a>
-                     </div>
-                  </div>
-                  <div class="reviews-slider__slide swiper-slide">
-                     <div class="reviews-slider__image">
-                        <div class="reviews__head">
-                           <div class="reviews__icon">
-                              <img src="img/business/reviews/01.svg" alt="Александр Евгеньевич">
-                           </div>
-                           <div class="reviews__name">Александр<br>
-                              Евгеньевич</div>
-                        </div>
-                        <div class="reviews__text">
-                           Я, Виктор Николаевич Дмитриев являюсь вкладчиком КПК "Народный капитал" могу дать оценку о работе сотрудниц данного отдела. Менеджеры к клиентам относятся учтиво, добросовестно, всегда выслушивают мнение клиентов и, своими действиями, помогают разобраться в вопросах.
-                        </div>
-
-                     </div>
-                  </div>
-                  <div class="reviews-slider__slide swiper-slide">
-                     <div class="reviews-slider__image">
-                        <div class="reviews__head">
-                           <div class="reviews__icon">
-                              <img src="img/business/reviews/01.svg" alt="Александр Евгеньевич">
-                           </div>
-                           <div class="reviews__name">Александр<br>
-                              Евгеньевич</div>
-                        </div>
-                        <div class="reviews__text">
-                           Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
-                        </div>
-                        <a href="#popup_7" class="reviews__more button-style popup-link">Подробнее</a>
-                     </div>
-                  </div>
-                  <div class="reviews-slider__slide swiper-slide">
-                     <div class="reviews-slider__image">
-                        <div class="reviews__head">
-                           <div class="reviews__icon">
-                              <img src="img/business/reviews/01.svg" alt="Александр Евгеньевич">
-                           </div>
-                           <div class="reviews__name">Александр<br>
-                              Евгеньевич</div>
-                        </div>
-                        <div class="reviews__text">
-                           Я, Виктор Николаевич Дмитриев являюсь вкладчиком КПК "Народный капитал" могу дать оценку о работе сотрудниц данного отдела. Менеджеры к клиентам относятся учтиво, добросовестно, всегда выслушивают мнение клиентов и, своими действиями, помогают разобраться в вопросах.
-                        </div>
-                     </div>
-                  </div>
-                  <div class="reviews-slider__slide swiper-slide">
-                     <div class="reviews-slider__image">
-                        <div class="reviews__head">
-                           <div class="reviews__icon">
-                              <img src="img/business/reviews/01.svg" alt="Александр Евгеньевич">
-                           </div>
-                           <div class="reviews__name">Александр<br>
-                              Евгеньевич</div>
-                        </div>
-                        <div class="reviews__text">
-                           Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
-                        </div>
-                        <a href="#popup_8" class="reviews__more button-style popup-link">Подробнее</a>
-                     </div>
-                  </div>
+               </a>
+            </div>
+            <div class="journal-slider__slide swiper-slide">
+               <div class="journal-slider__image">
+                  <a href="#">
+                     <img class="journal__image image_3" src="img/elements/journal/02.svg" alt="Картинка">
+                     <div class="journal__block"></div>
+                     <h3 class="journal__text">Куда вложить годовую премию: 11 идей, как распорядиться деньгами</h3>
                </div>
-
-               <div class="reviews__button">
-                  <div class="swiper-button-next">
-                     <div class="reviews__btn-block">
-                        <img class="reviews__next" src="img/elements/journal/Vector.svg" alt="">
-                     </div>
+               </a>
+            </div>
+            <div class="journal-slider__slide swiper-slide">
+               <a href="#">
+                  <div class="journal-slider__image">
+                     <picture><source srcset="img/elements/journal/03.webp" type="image/webp"><img class="journal__image" src="img/elements/journal/03.png" alt="Картинка"></picture>
+                     <h3 class="journal__text">Как мы организовали кемпинг-свадьбу в лесу за 108 000 ₽</h3>
                   </div>
-               </div>
-               <div class="reviews__button reviews__button_prev">
-                  <div class="swiper-button-prev">
-
-                     <div class="reviews__btn-block reviews__btn-block_prev">
-                        <img class="reviews__prev-rotate" src="img/elements/journal/Vector.svg" alt="">
-                     </div>
+               </a>
+            </div>
+            <div class="journal-slider__slide swiper-slide">
+               <a href="#">
+                  <div class="journal-slider__image">
+                     <picture><source srcset="img/elements/journal/05.webp" type="image/webp"><img class="journal__image" src="img/elements/journal/05.png" alt="Картинка"></picture>
+                     <h3 class="journal__text">Бухгалтерский баланс: зачем он нужен и как его читать</h3>
                   </div>
-               </div>
-
+               </a>
             </div>
          </div>
-      </div>
-      <div class="business__partner partner">
-         <div class="partner__container">
-            <h2 class="partner__heading ">Становитесь пайщиками</h2>
-            <div class="partner__blocks">
-               <div class="partner__block1">
-                  <div class="partner__item">
-                     <div class="partner__head">
-                        <div class="partner__icon"><img src="img/business/partner/chart.svg" alt="Cтавки выше, чем по вкладам"></div>
-                        <h3 class="partner__title">Cтавки выше,<br class="partner-br"> чем по вкладам</h3>
-                     </div>
-                     <div class="partner__text">Высокие ставки в кредитных кооперативах объясняются спецификой их деятельности. В отличие от банков, перечень услуг здесь меньше (только займы и сбережения), поэтому меньше издержек и больше возможностей для клиентов.Максимальная ставка в КПК зависит от ключевой ставки, которую устанавливает Центральный Банк России и не может превышать ее более, чем в 2 раза. Сегодня она — 8,5%, а значит максимально возможный доход в КПК — 17% годовых.</div>
-                  </div>
-                  <div class="partner__item">
-                     <div class="partner__head">
-                        <div class="partner__icon"><img src="img/business/partner/slice.svg" alt="Cтавки выше, чем по вкладам"></div>
-                        <h3 class="partner__title">Новые финансовые<br class="partner-br"> возможности</h3>
-                     </div>
-                     <div class="partner__text">Услугами КПК могут воспользоваться все пайщики, которые вступили в кооператив. Для вступления необходимо внести вступительный взнос — 100 рублей и паевой взнос — 1000 рублей. Согласно Закону «О кредитной кооперации», член КПК несет солидарно с другими пайщиками материальную ответственность в пределах невнесенной части дополнительного взноса каждого из членов КПК.</div>
-                  </div>
-               </div>
-               <div class="partner__block2">
-                  <div class="partner__item item-bottom">
-                     <div class="partner__head head-bottom">
-                        <div class="partner__icon"><img src="img/business/partner/arrows.svg" alt="Cтавки выше, чем по вкладам">
-                        </div>
-                        <h3 class="partner__title">Пополняйте и снимайте</h3>
-                     </div>
-                     <div class="partner__text">Вы можете пополнять баланс договора в течение всего срока действия. Существует программа “______”, по которой вы можете частично снять до 50% суммы, без потери процентов. При досрочном расторжении договора по другим сберегательным программам проценты пересчитываются по ставке 0,1%.</div>
-                  </div>
-                  <div class="partner__item">
-                     <div class="partner__head">
-                        <div class="partner__icon"><img src="img/business/partner/vault.svg" alt="Cтавки выше, чем по вкладам"></div>
-                        <h3 class="partner__title">Ответственность<br class="partner-br"> кооператива застрахована</h3>
-                     </div>
-                     <div class="partner__text">Мы страхуем свою ответственность перед пайщиками в НКО «Межрегиональное общество взаимного страхования». Каждому пайщику выдаём именное свидетельство, по которому он гарантированно сможет вернуть свои сбережения при страховом случае.</div>
-                  </div>
+         <div class="reviews__button">
+            <div class="swiper-button-next">
+               <div class="reviews__btn-block">
+                  <img class="reviews__next" src="img/elements/journal/Vector.svg" alt="">
                </div>
             </div>
          </div>
-      </div>
-      <div class="business__open open">
-         <div class="open__container">
-            <h2 class="open__title">Как открыть сбережение<br>
-               и получать доход</h2>
-            <div class="open__items">
-               <div class="open__shell">
-                  <div class="open__item">
-                     <div class="open__info">
-                        <div class="open__block1">
-                           <div class="open__img"><picture><source srcset="img/business/open/01.webp" type="image/webp"><img src="img/business/open/01.png" alt="Посетите наш офис"></picture></div>
-                           <div class="open__block2">
-                              <div class="open__time"><img src="img/business/open/time.svg" alt="5 минут"> 5 минут</div>
-                              <h3 class="open__head">Посетите наш офис</h3>
-                           </div>
-                        </div>
-                        <div class="open__text open__text_margin-1">Наш офис находится в центре Москвы. <br class="open__br-text">С собой возьмите паспорт и пенсионное удостоверением, если оно у вас есть.</div>
-                        <button class="open__button open__button_1 button-style">Получить консультацию</button>
+         <div class="reviews__button reviews__button_prev">
+            <div class="swiper-button-prev">
 
-                     </div>
-                  </div>
-                  <div class="open__item">
-                     <div class="open__info">
-                        <div class="open__block1">
-                           <div class="open__img"><picture><source srcset="img/business/open/02.webp" type="image/webp"><img src="img/business/open/02.png" alt="Вступите в кооператив"></picture></div>
-                           <div class="open__block2">
-                              <div class="open__time"><img src="img/business/open/check.svg" alt="5 минут"> 5 минут</div>
-                              <h3 class="open__head">Вступите в кооператив</h3>
-                           </div>
-                        </div>
-                        <div class="open__text">Чтобы стать пайщиком КПК, подпишите документы и получите членскую книжку.</div>
-
-                     </div>
-                  </div>
-               </div>
-               <div class="open__shell">
-                  <div class="open__item open__item_margin-2">
-                     <div class="open__info">
-                        <div class="open__block1">
-                           <div class="open__img"><picture><source srcset="img/business/open/03.webp" type="image/webp"><img src="img/business/open/03.png" alt="Внесите сбережения"></picture></div>
-                           <div class="open__block2">
-                              <div class="open__time"><img src="img/business/open/check.svg" alt="5 минут"> 5 минут</div>
-                              <h3 class="open__head">Внесите сбережения</h3>
-                           </div>
-                        </div>
-                        <div class="open__text">Наличными или переводом с банковской карты.</div>
-
-                     </div>
-                  </div>
-                  <div class="open__item open__item_margin-1">
-                     <div class="open__info">
-                        <div class="open__block1">
-                           <div class="open__img"><picture><source srcset="img/business/open/04.webp" type="image/webp"><img src="img/business/open/04.png" alt="Получите подарок и доход"></picture></div>
-                           <div class="open__block2">
-                              <div class="open__time"><img src="img/business/open/check.svg" alt="5 минут"> 5 минут</div>
-                              <h3 class="open__head">Получите подарок и доход</h3>
-                           </div>
-                        </div>
-                        <div class="open__text open__text_margin-2">Получайте доход наличными или на карту. За открытие сбережения дарим подарок!</div>
-                        <button class="open__button open__button_2 button-style">Получить консультацию</button>
-                     </div>
-                  </div>
+               <div class="reviews__btn-block reviews__btn-block_prev">
+                  <img class="reviews__prev-rotate" src="img/elements/journal/Vector.svg" alt="">
                </div>
             </div>
          </div>
+         <div class="swiper-scrollbar"></div>
       </div>
-      <div class="documents">
+   </div>
+</div>
+		<div class="video">
+			<div class="video__container">
+				<div class="video__vimeo">
+					<div class="click-for-video">
+						<div class="video__titles">
+							<div class="video__work">Как работает кредитный кооператив?</div>
+							<div class="video__minute">За 2 минуты расскажет финансовый управляющий <span>группы компаний</span> Роман Крайнов </div>
+						</div>
+						<picture><source srcset="img/main/video/video.webp" type="image/webp"><img class="video__media" src="img/main/video/video.png" alt="video"></picture>
+						<button class="video__button">
+							<span class="video__flex">
+								<span class="video__btn">
+									<svg class="video__icon">
+										<use xlink:href="#play"></use>
+									</svg></span> <span class="video__text">Смотреть видео</span>
+							</span>
+						</button>
+					</div>
+					<div class="youtube">
+						<iframe class="youtube"></iframe>
+					</div>
+				</div>
+				<div class="video__title"> <a href="https://vimeo.com/user141088718">Смотреть больше о КПК “Центр Финансов"</a></div>
+			</div>
+		</div>
+		<div class="history">
+			<div class="history__container _container">
+				<div class="history__body">
+					<h2 class="history__title">История создания</h2>
+					<div class="history__icon">
+						<img class="history__icn" src="img/main/history/lider.svg" alt="stroy lider">
+					</div>
+					<h2 class="history__text">Как бизнес по малоэтажному<br>
+						строительству стал центром притяжения<br class="br-mobilenone">
+						<span class="whitespace-mobile">для доходов других</span> отраслей
+					</h2>
+					<button class="history__button">
+						Читать в проектах
+					</button>
+				</div>
+			</div>
+			<img class="history__home" src="img/main/history/home.svg" alt="home">
+			<img class="history__neon" src="img/main/history/neon.svg" alt="neon">
+		</div>
+		<div class="documents">
    <div class="documents__container ">
       <h2 class="documents__title">Документы</h2>
       <div class="documents__body">
@@ -1141,183 +1120,7 @@
       </div>
    </div>
 </div>
-      <!-- МЕНЮ СТАТЬ КЛИЕНТОМ -->
-<div id="popup" class="header__customer popup">
-   <div class="popup__body">
-      <div class="popup__column">
-         <div class="popup__content">
-            <div class="popup__title">Стать клиентом</div>
-            <div class="popup__text">Оставьте контактные данные, чтобы получить консультацию<br class="popup-textbr">
-               о вкладах и займах доступных<br class="popup-textbr2"> для пайщиков нашего кредитного кооператива</div>
-         </div>
-         <form action="#" class="popup__data">
-            <label class="popup__label" for="username">
-               <p>Ваше имя</p>
-               <input type="text" name="username" autocomplete="on" required>
-            </label>
-
-            <label class="popup__label" for="tel">
-               <p>Контактный телефон</p>
-               <input type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
-            </label>
-
-            <button class="popup__button go-data" name="submit"><span>Отправить данные</span> </button>
-
-
-            <div class="popup__checkbox">
-               <label class="checkbox-other" for="personal-data">
-                  <input type="checkbox" id="personal-data" name="personal-data" required checked>
-                  <span>Отправляя форму, я даю согласие на обработку<br>
-                     персональных данных.</span>
-               </label>
-            </div>
-         </form>
-         <img class="popup__img-case" src="img/main/header/client/case.svg" alt="case">
-         <img class="popup__img-safe" src="img/main/header/client/safe.svg" alt="safe">
-         <img class="popup__img-figure" src="img/main/header/client/figure.svg" alt="figure">
-         <div class="popup__icn close-popup">
-            <svg class="cross">
-               <use xlink:href="#cross"></use>
-            </svg>
-         </div>
-      </div>
-   </div>
-</div>
-      <div id="popup_4" class="header__customer popup">
-   <div class="popup__body body_3">
-      <div class="popup__column">
-         <div class="popup__content">
-            <div class="popup__title">Получить
-               консультацию</div>
-            <div class="popup__text">Оставьте контактные данные, чтобы получить консультацию<br class="popup-textbr">
-               о вкладах и займах доступных<br class="popup-textbr2"> для пайщиков нашего кредитного кооператива</div>
-         </div>
-         <form action="#" class="popup__data">
-            <label class="popup__label" for="username">
-               <p>Ваше имя</p>
-               <input type="text" name="username" autocomplete="on" required>
-            </label>
-
-            <label class="popup__label" for="tel">
-               <p>Контактный телефон</p>
-               <input type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
-            </label>
-
-            <button class="popup__button go-data" name="submit">Отправить данные</button>
-
-
-            <div class="popup__checkbox">
-               <label class="checkbox-other" for="personal-data">
-                  <input type="checkbox" id="personal-data" name="personal-data" required checked>
-                  <span>Отправляя форму, я даю согласие на обработку<br>
-                     персональных данных.</span>
-               </label>
-            </div>
-         </form>
-         <img class="popup__img-figure" src="img/main/saving-loans/figure4.svg" alt="figure">
-         <div class="popup__icn close-popup">
-            <svg class="cross">
-               <use xlink:href="#cross"></use>
-            </svg>
-         </div>
-      </div>
-   </div>
-</div>
-      
-      <div id="popup_5" class="header__customer reviews-popup popup">
-   <div class="popup__body body-reviews">
-      <div class="popup__column popup__column_reviews">
-         <div class="popup__content content-reviews">
-            <div class="popup__head head-popup">
-               <div class="head-popup__icon">
-                  <img src="img/business/reviews/01.svg" alt="">
-               </div>
-               <div class="head-popup__name">Александр<br>
-                  Евгеньевич</div>
-            </div>
-            <div class="popup__text text-reviews">Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ... Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
-               Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
-               Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень.</div>
-            <div class="popup__icn icn-reviews close-popup">
-               <svg class="cross">
-                  <use xlink:href="#cross"></use>
-               </svg>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-      <div id="popup_6" class="header__customer reviews-popup popup">
-   <div class="popup__body body-reviews">
-      <div class="popup__column column-reviews">
-         <div class="popup__content content-reviews">
-            <div class="popup__head head-popup">
-               <div class="head-popup__icon">
-                  <img src="img/business/reviews/01.svg" alt="">
-               </div>
-               <div class="head-popup__name">Александр<br>
-                  Евгеньевич</div>
-            </div>
-            <div class="popup__text text-reviews">Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ... Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
-               Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
-               Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень.</div>
-            <div class="popup__icn icn-reviews close-popup">
-               <svg class="cross">
-                  <use xlink:href="#cross"></use>
-               </svg>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-      <div id="popup_7" class="header__customer reviews-popup popup">
-   <div class="popup__body body-reviews">
-      <div class="popup__column column-reviews">
-         <div class="popup__content content-reviews">
-            <div class="popup__head head-popup">
-               <div class="head-popup__icon">
-                  <img src="img/business/reviews/01.svg" alt="">
-               </div>
-               <div class="head-popup__name">Александр<br>
-                  Евгеньевич</div>
-            </div>
-            <div class="popup__text text-reviews">Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ... Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
-               Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
-               Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень.</div>
-            <div class="popup__icn icn-reviews close-popup">
-               <svg class="cross">
-                  <use xlink:href="#cross"></use>
-               </svg>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-      <div id="popup_8" class="header__customer reviews-popup popup">
-   <div class="popup__body body-reviews">
-      <div class="popup__column column-reviews">
-         <div class="popup__content content-reviews">
-            <div class="popup__head head-popup">
-               <div class="head-popup__icon">
-                  <img src="img/business/reviews/01.svg" alt="">
-               </div>
-               <div class="head-popup__name">Александр<br>
-                  Евгеньевич</div>
-            </div>
-            <div class="popup__text text-reviews">Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ... Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
-               Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень доброжелательно, предложили чай/кофе. Сотрудник Элеонора Александровна ...
-               Прохожу каждый день мимо этой компании. Очень привлекла новая красивая вывеска снаружи, решила зайти поинтересоваться, чем занимается компания. Встретили очень.</div>
-            <div class="popup__icn icn-reviews close-popup">
-               <svg class="cross">
-                  <use xlink:href="#cross"></use>
-               </svg>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-
-      <div class="comment">
+		<div class="comment">
    <div class="comment__container _container">
       <div class="comment__body">
          <h2 class="comment__title">Оставьте комментарий<br>
@@ -1336,7 +1139,7 @@
       </div>
    </div>
 </div>
-      <div class="communication">
+		<div class="communication">
    <div class="communication__container">
       <div class="communication__body">
          <h2 class="communication__title">Мы готовы к вашим<br class="communication__title-mobile"> вопросам,<br class="communication__title-br">
@@ -1367,7 +1170,7 @@
       <img class="communication__img" src="img/elements/communication/comp.svg" alt="communication">
    </div>
 </div>
-      <footer class="footer">
+		<footer class="footer">
    <div class="footer__container _container">
       <div class="footer__top top-footer">
          <div class="top-footer__logo">
@@ -1476,10 +1279,13 @@
    </div> -->
    <div class="footer__block"></div>
 </footer>
-   </div>
-   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js?_v=20220326125928"></script>
-   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220326125928"></script>
-   <script src="js/app.min.js?_v=20220326125928"></script>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js?_v=20220326130632"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220326130632"></script>
+	<script src="js/app.min.js?_v=20220326130632"></script>
 </body>
 
 </html>
+<!-- <svg class="content-footer__icn">
+   <use xlink:href="#twitter"></use>
+ </svg> -->
