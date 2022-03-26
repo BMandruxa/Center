@@ -8,10 +8,10 @@
       margin: 0 auto;
       padding: 0px 0px 130px 0px;
       @media (max-width: 1024px) {
-         padding: 0px 0px 80px 0px;
+         padding: 0px 15px 80px 15px;
       }
       @media (max-width: 645px) {
-         padding: 0px 0px 60px 0px;
+         padding: 0px 15px 60px 15px;
       }
    }
 
@@ -20,10 +20,13 @@
       font-size: 38px;
       line-height: 1.2;
       color: #011b31;
-      padding-left: 40px;
       margin-bottom: 45px;
-      @media (max-width: 1215px) {
-         // padding-left: 0px;
+      padding-left: 70px;
+      @media (max-width: 1023.98px) {
+         padding-left: 40px;
+      }
+      @media (max-width: 500px) {
+         padding-left: 0px;
       }
       @media (max-width: 645px) {
          font-size: 28px;
@@ -206,7 +209,7 @@
       &_pp2 {
          padding-right: 27px;
          @media (max-width: 650px) {
-            padding-right: 17px;
+            padding-right: 21px;
          }
       }
       &_pp3 {
@@ -302,19 +305,23 @@
       font-size: 38px;
       line-height: 1.2;
       color: #011b31;
-      padding-left: 40px;
       margin-bottom: 80px;
-      @media (max-width: 1215px) {
+      padding-left: 70px;
+      @media (max-width: 1023.98px) {
+         padding-left: 40px;
+      }
+      @media (max-width: 500px) {
          padding-left: 0px;
+      }
+      @media (max-width: 1023.98px) {
+         text-align: left;
+         margin-bottom: 0px;
       }
       @media (max-width: 645px) {
          font-size: 28px;
       }
       @media (max-width: 530px) {
          font-size: 22px;
-      }
-      @media (max-width: 1023.98px) {
-         text-align: left;
       }
    }
 
@@ -324,6 +331,7 @@
       @media (max-width: 1023.98px) {
          flex-wrap: wrap;
          justify-content: center;
+         padding: 375px 0px 0px 0px;
       }
    }
 
@@ -370,6 +378,8 @@
    }
 
    &__money {
+      font-family: DINRoundPro;
+      // font-family: Druk Text Wide Cyr Heavy;
       font-weight: 700;
       font-size: 24px;
       line-height: 1.25;
@@ -382,6 +392,9 @@
          margin-bottom: 80px;
       }
    }
+   &__money span {
+      font-family: RUBSN;
+   }
 
    &__list {
       font-size: 18px;
@@ -393,6 +406,9 @@
    }
 
    &__information {
+   }
+   &__information span {
+      font-family: RUBSN;
    }
    &__information:not(:last-child) {
       margin-bottom: 28px;
@@ -526,3 +542,7 @@
    left: 0%;
    object-fit: cover;
 }
+// .savings-individuals__ruble {
+//    width: 15px;
+//    height: 15px;
+// }

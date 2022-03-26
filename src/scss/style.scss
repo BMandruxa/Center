@@ -20,47 +20,26 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+.wrapper-background {
+	width: 0;
+	height: 0;
+	// transition: all 0.3s ease 0s;
+}
+.wrapper-background._background {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 40;
+	background: rgba(0, 0, 0, 0.8);
+}
 ._container {
 	max-width: 1246px;
 	margin: 0px auto;
 	padding: 0px 15px;
-	@media (max-width: 395px) {
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-}
-//</ОБОЛОЧКА>===========================================================================================================
-
-@import "ui.scss";
-@import "header.scss";
-@import "swiper.scss";
-@import "checkbox.scss";
-@import "btn.scss";
-@import "headermobile.scss";
-@import "calculator.scss";
-@import "documents.scss";
-@import "comment.scss";
-@import "communication.scss";
-@import "footer.scss";
-@import "journal.scss";
-@import "popupclients.scss";
-@import "popupconsultation.scss";
-@import "popuploans.scss";
-@import "popupsaving.scss";
-@import "popupthanks.scss";
-@import "business.scss";
-@import "individuals.scss";
-@import "savings.scss";
-@import "loans.scss";
-@import "articles.scss";
-@import "projects.scss";
-@import "contacts.scss";
-@import "popupreviews.scss";
-.title {
-	font-family: DrukWideCyTTMedium;
-	font-size: 38px;
-	line-height: 1.2;
-	color: #011b31;
+	// @media (max-width: 395px) {
+	// 	padding-left: 5px;
+	// 	padding-right: 5px;
+	// }
 }
 // ==================================================КНОПКИ
 .go-data {
@@ -109,6 +88,40 @@ body {
 .button-style:hover {
 	background: #0557a3;
 }
+//</ОБОЛОЧКА>===========================================================================================================
+
+@import "ui.scss";
+@import "header.scss";
+@import "swiper.scss";
+@import "checkbox.scss";
+@import "btn.scss";
+@import "headermobile.scss";
+@import "calculator.scss";
+@import "documents.scss";
+@import "comment.scss";
+@import "communication.scss";
+@import "footer.scss";
+@import "journal.scss";
+@import "popupclients.scss";
+@import "popupconsultation.scss";
+@import "popuploans.scss";
+@import "popupsaving.scss";
+@import "popupthanks.scss";
+@import "business.scss";
+@import "individuals.scss";
+@import "savings.scss";
+@import "loans.scss";
+@import "articles.scss";
+@import "projects.scss";
+@import "contacts.scss";
+@import "popupreviews.scss";
+.title {
+	font-family: DrukWideCyTTMedium;
+	font-size: 38px;
+	line-height: 1.2;
+	color: #011b31;
+}
+
 // ==================================================description
 .description {
 	&__container {
@@ -316,6 +329,7 @@ body {
 		font-size: 18px;
 		line-height: 1.27;
 		margin: 57px 0px 74px 0px;
+		font-weight: 300;
 	}
 
 	&__text {
@@ -841,6 +855,13 @@ div.youtube {
 	}
 
 	&__body {
+		padding-left: 70px;
+		@media (max-width: 1023.98px) {
+			padding-left: 40px;
+		}
+		@media (max-width: 500px) {
+			padding-left: 0px;
+		}
 	}
 
 	&__title {

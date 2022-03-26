@@ -1,17 +1,27 @@
 .body-reviews {
    // display: block;
+   background: rgba(0, 0, 0, 0.8);
 }
-.content-reviews {
-   margin: 0 0 0 0;
-   text-align: left;
-}
-.column-reviews {
+// .content-reviews {
+//    margin: 0 0 0 0;
+//    text-align: left;
+// }
+.popup__column_reviews {
    height: auto;
    padding: 32px 33px 50px 33px;
    background-color: #fff;
    @media (max-width: 754.98px) {
       width: 384px;
       height: auto;
+      padding: 32px 33px 50px 33px;
+   }
+}
+.content-reviews {
+   margin: 0px;
+   text-align: left;
+   @media (max-width: 754.98px) {
+      margin: 0px;
+      text-align: left;
    }
 }
 .head-popup {

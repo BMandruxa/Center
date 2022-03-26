@@ -1,6 +1,13 @@
 @font-face {
 	font-family: DINRoundPro;
 	font-display: swap;
+	src: url("../fonts/DINRoundPro-Black.woff2") format("woff2"), url("../fonts/DINRoundPro-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: DINRoundPro;
+	font-display: swap;
 	src: url("../fonts/DINRoundPro-Bold.woff2") format("woff2"), url("../fonts/DINRoundPro-Bold.woff") format("woff");
 	font-weight: 700;
 	font-style: normal;
@@ -8,8 +15,8 @@
 @font-face {
 	font-family: DINRoundPro;
 	font-display: swap;
-	src: url("../fonts/DINRoundPro-Medi.woff2") format("woff2"), url("../fonts/DINRoundPro-Medi.woff") format("woff");
-	font-weight: 500;
+	src: url("../fonts/DINRoundPro-Light.woff2") format("woff2"), url("../fonts/DINRoundPro-Light.woff") format("woff");
+	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
@@ -20,10 +27,24 @@
 	font-style: normal;
 }
 @font-face {
+	font-family: DINRoundPro;
+	font-display: swap;
+	src: url("../fonts/DINRoundPro-Medi.woff2") format("woff2"), url("../fonts/DINRoundPro-Medi.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
 	font-family: Druk Text Wide Cyr Heavy;
 	font-display: swap;
 	src: url("../fonts/Druk Text Wide Cyr Heavy.woff2") format("woff2"),
 		url("../fonts/Druk Text Wide Cyr Heavy.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: RUBSN;
+	font-display: swap;
+	src: url("../fonts/RUBSN.woff2") format("woff2"), url("../fonts/RUBSN.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }

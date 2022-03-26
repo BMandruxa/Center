@@ -37,10 +37,10 @@ body {
    -moz-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
 }
-@media (max-width: 767px) {
-   body._lock {
-      overflow: hidden;
-   }
+
+body._lock {
+   overflow: hidden;
+   // background-color: rgba(0, 0, 0, 0.5);
 }
 
 // @media (max-width: 1023.98px) {

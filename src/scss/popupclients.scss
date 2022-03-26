@@ -156,6 +156,12 @@ body.lock {
 .popup__checkbox {
    margin-bottom: 20px;
 }
+
+@media (min-width: 755px) {
+   .popup-textbr2 {
+      display: none;
+   }
+}
 @media (max-width: 754.98px) {
    .popup {
       &__body {
@@ -238,11 +244,6 @@ body.lock {
       }
    }
    .popup-textbr {
-      display: none;
-   }
-}
-@media (min-width: 755px) {
-   .popup-textbr2 {
       display: none;
    }
 }

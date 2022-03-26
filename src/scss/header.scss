@@ -25,6 +25,7 @@
    @media (min-width: 1024px) {
       &__container {
          position: relative;
+         z-index: 10;
          max-height: 111px;
          display: flex;
          align-items: center;
@@ -79,15 +80,16 @@
 
       &__menu {
          position: absolute;
-         top: -100%;
+         top: 23%;
          left: 0;
          width: 100%;
          background: #011b31;
          padding: 0px 0px 0px 0px;
-         transition: all 0s ease 0s;
+         transition: all 0.3s ease 0s;
          overflow: auto;
          display: flex;
          justify-content: center;
+         z-index: 1;
       }
       &__menu._active {
          top: 99%;
@@ -198,6 +200,31 @@
 }
 .header._scroll {
    overflow-y: auto;
+}
+
+.display-block {
+   // visibility: hidden;
+   // display: none;
+   opacity: 0;
+   transition: all 0s ease 0.1s;
+}
+.display-block._display {
+   // visibility: visible;
+   // display: flex;
+   opacity: 1;
+   // transition: all 0s ease 0s;
+}
+.opacity-block {
+   visibility: hidden;
+   // display: none;
+   // opacity: 0;
+   transition: all 0s ease 0.1s;
+}
+.opacity-block._opacity {
+   visibility: visible;
+   // display: flex;
+   // opacity: 1;
+   // transition: all 0s ease 0s;
 }
 // ==============================================ИКОНКИ
 .header__navigate {
