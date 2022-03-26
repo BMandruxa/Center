@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220326125928" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20220326125928">
+	<title>Главная</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper-background"></div>
+		<!-- SPRITE -->
+<svg style="display: none">
+   <symbol id="navigate" viewBox="0 0 15 15">
+      <g>
+         <path d="M13.253 0.567971L0.428721 6.23021C-0.291111 6.56025 -0.0491036 7.65144 0.742918 7.65144H6.87558C6.94852 7.65144 7.01847 7.68042 7.07004 7.732C7.12162 7.78357 7.15059 7.85353 7.15059 7.92647V14.0583C7.15059 14.8504 8.25062 15.0897 8.57926 14.3719L14.232 1.54709C14.2953 1.41006 14.315 1.25691 14.2886 1.10831C14.2621 0.959718 14.1906 0.82282 14.0839 0.71609C13.9772 0.609361 13.8403 0.537934 13.6917 0.511448C13.5432 0.484962 13.39 0.50469 13.253 0.567971Z" />
+      </g>
+   </symbol>
+
+   <symbol id="vk" viewBox="0 0 21 11">
+      <g>
+         <path d="M17.4262 6.30771C17.0867 5.92271 17.1838 5.75143 17.4262 5.40729C17.4306 5.40336 20.2333 1.92579 20.5221 0.746428L20.5238 0.745643C20.6673 0.315857 20.5238 0 19.8299 0H17.5339C16.9493 0 16.6798 0.271071 16.5354 0.574357C16.5354 0.574357 15.3664 3.08707 13.7126 4.71586C13.1788 5.1865 12.9321 5.33736 12.6407 5.33736C12.4972 5.33736 12.2741 5.1865 12.2741 4.75671V0.745643C12.2741 0.230214 12.1104 0 11.6265 0H8.01615C7.64952 0 7.43163 0.240429 7.43163 0.464357C7.43163 0.953071 8.25854 1.06543 8.34429 2.44043V5.42379C8.34429 6.0775 8.21216 6.19771 7.91902 6.19771C7.1385 6.19771 5.24406 3.67479 4.12139 0.787286C3.89476 0.227071 3.67338 0.000785657 3.08448 0.000785657H0.787527C0.13213 0.000785657 0 0.271857 0 0.575143C0 1.111 0.780527 3.77536 3.62963 7.29536C5.52844 9.69807 8.20253 11 10.6351 11C12.0973 11 12.2758 10.7109 12.2758 10.2135C12.2758 7.91764 12.1437 7.70079 12.8761 7.70079C13.2156 7.70079 13.8001 7.85164 15.1652 9.01057C16.7253 10.3848 16.9817 11 17.855 11H20.1511C20.8056 11 21.1372 10.7109 20.9465 10.1404C20.5098 8.94064 17.5592 6.47271 17.4262 6.30771Z" />
+      </g>
+   </symbol>
+
+   <symbol id="instagram" viewBox="0 0 20 20">
+      <g>
+         <path d="M13.75 0H6.25C2.79875 0 0 2.79875 0 6.25V13.75C0 17.2013 2.79875 20 6.25 20H13.75C17.2013 20 20 17.2013 20 13.75V6.25C20 2.79875 17.2013 0 13.75 0ZM18.125 13.75C18.125 16.1625 16.1625 18.125 13.75 18.125H6.25C3.8375 18.125 1.875 16.1625 1.875 13.75V6.25C1.875 3.8375 3.8375 1.875 6.25 1.875H13.75C16.1625 1.875 18.125 3.8375 18.125 6.25V13.75Z" />
+         <path d="M10 5C7.23875 5 5 7.23875 5 10C5 12.7613 7.23875 15 10 15C12.7613 15 15 12.7613 15 10C15 7.23875 12.7613 5 10 5ZM10 13.125C8.2775 13.125 6.875 11.7225 6.875 10C6.875 8.27625 8.2775 6.875 10 6.875C11.7225 6.875 13.125 8.27625 13.125 10C13.125 11.7225 11.7225 13.125 10 13.125Z" />
+         <path d="M15.375 5.29125C15.743 5.29125 16.0413 4.99296 16.0413 4.625C16.0413 4.25704 15.743 3.95875 15.375 3.95875C15.007 3.95875 14.7087 4.25704 14.7087 4.625C14.7087 4.99296 15.007 5.29125 15.375 5.29125Z" />
+      </g>
+   </symbol>
+
+   <symbol id="facebook" viewBox="0 0 11 20">
+      <g>
+         <path d="M7.33333 7.69231V4.61538C7.33333 3.76615 7.9904 3.84615 8.8 3.84615H10.2667V0H7.33333C4.90258 0 2.93333 2.06564 2.93333 4.61538V7.69231H0V11.5385H2.93333V20H7.33333V11.5385H9.53333L11 7.69231H7.33333Z" />
+      </g>
+   </symbol>
+
+   <symbol id="client" viewBox="0 0 20 19">
+      <g>
+         <path d="M14.4444 4.47059V2.23529C14.4444 1.00588 13.4444 0 12.2222 0H7.77778C6.55556 0 5.55556 1.00588 5.55556 2.23529V4.47059H0V16.7647C0 17.9941 1 19 2.22222 19H17.7778C19 19 20 17.9941 20 16.7647V4.47059H14.4444ZM7.77778 2.23529H12.2222V4.47059H7.77778V2.23529ZM17.7778 16.7647H2.22222V6.70588H17.7778V16.7647Z" />
+      </g>
+   </symbol>
+
+   <symbol id="cross" viewBox="0 0 19 19">
+      <g>
+         <rect y="16.9707" width="24" height="2" rx="1" transform="rotate(-45 0 16.9707)" />
+         <rect x="1.41406" width="24" height="2" rx="1" transform="rotate(45 1.41406 0)" />
+      </g>
+   </symbol>
+
+   <symbol id="phone" viewBox="0 0 25 25">
+      <g>
+         <path d="M7.5625 12.6C8.59153 14.7251 10.3098 16.439 12.4375 17.4625C12.5944 17.5369 12.768 17.569 12.9412 17.5559C13.1143 17.5427 13.2811 17.4847 13.425 17.3875L16.55 15.3C16.6881 15.2064 16.8476 15.1493 17.0137 15.134C17.1799 15.1187 17.3472 15.1457 17.5 15.2125L23.35 17.725C23.5499 17.8083 23.717 17.9549 23.8254 18.1424C23.9338 18.3298 23.9776 18.5477 23.95 18.7625C23.7646 20.2097 23.0582 21.5397 21.9631 22.5038C20.8679 23.4678 19.459 23.9997 18 24C13.4913 24 9.1673 22.209 5.97919 19.0209C2.79107 15.8327 1 11.5087 1 7.00004C1.00033 5.54104 1.53227 4.13214 2.49628 3.03699C3.4603 1.94183 4.79033 1.23546 6.2375 1.05004C6.4523 1.02245 6.67021 1.06623 6.85768 1.17465C7.04515 1.28307 7.19178 1.4501 7.275 1.65004L9.7875 7.51254C9.85284 7.66298 9.88017 7.82717 9.86709 7.99066C9.85401 8.15415 9.80092 8.31191 9.7125 8.45004L7.625 11.625C7.53206 11.7686 7.47752 11.9337 7.46657 12.1044C7.45563 12.2751 7.48866 12.4457 7.5625 12.6V12.6Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+   </symbol>
+   <symbol id="play" viewBox="0 0 14 16">
+      <g>
+         <path d="M2.79573 0.254531C2.51142 0.086553 2.18944 -0.00121618 1.86202 1.27298e-05C1.5346 0.00124164 1.21324 0.0914256 0.930123 0.261533C0.647003 0.431641 0.41206 0.675701 0.248822 0.969275C0.0855831 1.26285 -0.000221434 1.59563 4.29159e-07 1.93429V14.0657C-0.000221434 14.4044 0.0855831 14.7372 0.248822 15.0307C0.41206 15.3243 0.647003 15.5684 0.930123 15.7385C1.21324 15.9086 1.5346 15.9988 1.86202 16C2.18944 16.0012 2.51142 15.9134 2.79573 15.7455L13.0592 9.67783C13.345 9.5087 13.5826 9.26445 13.7478 8.96981C13.913 8.67517 14 8.34061 14 8C14 7.65939 13.913 7.32483 13.7478 7.03019C13.5826 6.73555 13.345 6.4913 13.0592 6.32217L2.79573 0.254531Z" />
+      </g>
+   </symbol>
+</svg>
+		<header class="header">
+   <div class="header__container _container lock-padding">
+      <div class="header__logo">
+         <a href="./index.html">
+            <img src="img/main/header/logo.svg" alt="logo">
+         </a>
+      </div>
+      <div class="header__content">
+         <div class="header__list">
+            <a class="header__link header__link_color-white" href="./individuals.html">Частным лицам</a>
+         </div>
+         <div class="header__list">
+            <a class="header__link header__link_color-white" href="./business.html">Бизнесу</a>
+         </div>
+         <div class="header__list">
+            <a class="header__link header__link_color-blue" href="#">
+               <svg class="header__navigate navigate">
+                  <use xlink:href="#navigate"></use>
+               </svg> Нижний Новгород</a>
+         </div>
+         <div class="header__list">
+            <a class="header__link menu popup-link" href="#popup">
+               <svg class="header__client">
+                  <use xlink:href="#client"></use>
+               </svg>
+               <span>Стать клиентом</span> </a>
+         </div>
+         <div class="header__list">
+            <a class="header__link header__link_color-blue telephone" href="tel:8-800-222-17-14">8-800-222-17-14</a>
+         </div>
+         <div class="header__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+      </div>
+
+   </div>
+   <div class="header__menu menu-header">
+      <div class="header__menu-active">
+         <!-- <div class="header__menu-border"></div> -->
+         <div class="header__socials display-block">
+            <a class="header__social" href="#">
+               <svg class="header__icn">
+                  <use xlink:href="#vk"></use>
+               </svg>
+            </a>
+            <a class="header__social" href="#">
+               <svg class="header__icn inst">
+                  <use xlink:href="#instagram"></use>
+               </svg>
+            </a>
+            <a class="header__social" href="#">
+               <svg class="header__icn facebook">
+                  <use xlink:href="#facebook"></use>
+               </svg>
+            </a>
+         </div>
+         <div class="header__linkvips opacity-block">
+            <div class="header__linkvip"><a href="#">О нас</a></div>
+            <div class="header__linkvip"><a href="./savings.html">Сбережения</a></div>
+            <div class="header__linkvip"><a href="./loans.html">Займы</a></div>
+            <div class="header__linkvip"><a href="./projects.html">Проекты</a></div>
+            <div class="header__linkvip"><a href="./articles.html">Отзывы</a></div>
+            <div class="header__linkvip"><a href="./contacts.html">Контактная информация</a></div>
+         </div>
+      </div>
+   </div>
+   <!-- МОБИЛЬНЫЙ ХЕДЕР -->
+   <div class="header__mobile">
+      <div class="header__container-mobile mobile-container">
+         <div class="header__body-mobile mobile-body">
+            <div class="mobile-body__image">
+               <a href="./index.html">
+                  <img class="mobile-body__logo" src="img/main/header/logo.svg" alt="logo">
+               </a>
+            </div>
+            <div class="mobile-body__connect">
+               <div class="mobile-body__phone">
+                  <a href="tel:8-800-222-17-14">
+                     <img src="img/main/header/mobile/phone.svg" alt="phone">
+                     <!-- <svg class="mobile-body__phone-icon">
+                        <use xlink:href="#phone"></use>
+                     </svg> -->
+                  </a>
+               </div>
+               <div class="mobile-body__icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
+         </div>
+         <!-- <div class="header__border-bottom"></div> -->
+         <div class="header__content-mobile mobile-content">
+
+            <div class="mobile-content__container">
+               <div class="mobile-content__list">
+
+                  <div class="mobile-content__link">
+                     <a class="mobile-content__item mobile-content__item_blue" href="./individuals.html">Частным лицам</a>
+                  </div>
+                  <div class="mobile-content__link">
+                     <a class="mobile-content__item mobile-content__item_blue" href="./business.html">Бизнесу</a>
+                  </div>
+                  <div class="mobile-content__link">
+                     <a class="mobile-content__item" href="#">О нас</a>
+                  </div>
+                  <div class="mobile-content__link">
+                     <a class="mobile-content__item" href="./savings.html">Сбережения</a>
+                  </div>
+                  <div class="mobile-content__link">
+                     <a class="mobile-content__item" href="./loans.html">Займы</a>
+                  </div>
+                  <div class="mobile-content__link">
+                     <a class="mobile-content__item" href="./projects.html">Проекты</a>
+                  </div>
+                  <div class="mobile-content__link">
+                     <a class="mobile-content__item" href="./articles.html">Отзывы</a>
+                  </div>
+                  <div class="mobile-content__link margin">
+                     <a class="mobile-content__item" href="./contacts.html">Контактная информация</a>
+                  </div>
+                  <div class="mobile-content__border"></div>
+                  <div class="mobile-content__link mobile-content__link_telephone">
+                     <a class="mobile-content__item" href="tel:8-800-222-17-14">8-800-222-17-14</a>
+                  </div>
+                  <div class="mobile-content__icons">
+                     <a class="mobile-content__social" href="#">
+                        <svg class="mobile-content__icon vk">
+                           <use xlink:href="#vk"></use>
+                        </svg>
+                     </a>
+                     <a class="mobile-content__social" href="#">
+                        <svg class="mobile-content__icon inst">
+                           <use xlink:href="#instagram"></use>
+                        </svg>
+                     </a>
+                     <a class="mobile-content__social" href="#">
+                        <svg class="mobile-content__icon facebook">
+                           <use xlink:href="#facebook"></use>
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="mobile-content__button">
+                     <a class="mobile-content__btn menu popup-link" href="#popup">
+                        <svg class="header__client">
+                           <use xlink:href="#client"></use>
+                        </svg>
+                        Стать клиентом</a>
+                  </div>
+                  <div class="mobile-content__geoposition">
+                     <a class="mobile-content__link header__link_color-blue" href="#">
+                        <svg class="mobile-content__svg-geoposition navigate">
+                           <use xlink:href="#navigate"></use>
+                        </svg> Нижний Новгород</a>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+</header>
+
+
+<!-- <svg class="content-footer__icn">
+   <use xlink:href="#twitter"></use>
+ </svg> -->
+
+<!-- <div class="header__icon">
+   <span></span>
+</div> -->
+		<div class="page">
+   <div class="page__border"></div>
+   <div class="page__content">
+      <h1 class="page__title">Доходные программы<br>
+         <span>до 17% годовых</span>
+      </h1>
+      <div class="page__text">Любые цели проще, когда управляешь<br>
+         своими средствами.</div>
+      <button class="page__button">
+         Узнать подробнее
+      </button>
+   </div>
+   <div class="image-slider swiper-container">
+      <!-- Слайдер -->
+      <div class="image-slider__wrapper swiper-wrapper">
+         <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+               <picture><source srcset="img/swiper/women.webp" type="image/webp"><img class="women" src="img/swiper/women.png" alt="Картинка"></picture>
+            </div>
+         </div>
+         <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image image-men">
+               <picture><source srcset="img/swiper/men.webp" type="image/webp"><img class="men" src="img/swiper/men.png" alt="Картинка"></picture>
+            </div>
+         </div>
+         <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image image-family">
+               <picture><source srcset="img/swiper/family.webp" type="image/webp"><img class="family" src="img/swiper/family.png" alt="Картинка"></picture>
+            </div>
+         </div>
+         <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image image-pensioners">
+               <picture><source srcset="img/swiper/pensioners.webp" type="image/webp"><img class="pensioners" src="img/swiper/pensioners.png" alt="Картинка"></picture>
+            </div>
+         </div>
+      </div>
+      <div class="swiper__buttons">
+         <div class="swiper-button-prev" id="mouse1"></div>
+         <div class="swiper-button-next" id="mouse2"></div>
+         <div class="swiper__blocks">
+            <div class="swiper__block" id="blockone"></div>
+            <div class="swiper__block" id="blocktwo"></div>
+         </div>
+      </div>
+   </div>
+
+
+
+   <div class="figure-slider swiper-container">
+      <div class="figure-slider__wrapper swiper-wrapper">
+         <div class="figure-slider__slide swiper-slide">
+            <div class="figure-slider__image">
+               <picture><source srcset="img/swiper/fig1.webp" type="image/webp"><img class="fig1" src="img/swiper/fig1.png" alt="Картинка"></picture>
+            </div>
+         </div>
+         <div class="figure-slider__slide swiper-slide">
+            <div class="figure-slider__image figure-men">
+               <picture><source srcset="img/swiper/fig2.webp" type="image/webp"><img class="fig1" src="img/swiper/fig2.png" alt="Картинка"></picture>
+            </div>
+         </div>
+         <div class="figure-slider__slide swiper-slide">
+            <div class="figure-slider__image">
+               <picture><source srcset="img/swiper/fig3.webp" type="image/webp"><img class="fig1" src="img/swiper/fig3.png" alt="Картинка"></picture>
+            </div>
+         </div>
+         <div class="figure-slider__slide swiper-slide">
+            <div class="figure-slider__image">
+               <picture><source srcset="img/swiper/fig4.webp" type="image/webp"><img class="fig1" src="img/swiper/fig4.png" alt="Картинка"></picture>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="zadnik-slider swiper-container">
+      <div class="zadnik-slider__wrapper swiper-wrapper">
+         <div class="zadnik-slider__slide swiper-slide">
+            <div class="zadnik-slider__image">
+               <img class="zadnik-house" src="img/swiper/house.svg" alt="Картинка">
+            </div>
+         </div>
+         <div class="zadnik-slider__slide swiper-slide">
+            <div class="zadnik-slider__image">
+               <img class="zadnik-car" src="img/swiper/car.svg" alt="Картинка">
+            </div>
+         </div>
+         <div class="zadnik-slider__slide swiper-slide">
+            <div class="zadnik-slider__image">
+               <img class=" zadnik-flat" src="img/swiper/flat.svg" alt="Картинка">
+            </div>
+         </div>
+         <div class="zadnik-slider__slide swiper-slide">
+            <div class="zadnik-slider__image">
+               <img class="zadnik-palms" src="img/swiper/palms.svg" alt="Картинка">
+            </div>
+         </div>
+      </div>
+   </div>
+
+</div>
+		<!-- МЕНЮ СТАТЬ КЛИЕНТОМ -->
+<div id="popup" class="header__customer popup">
+   <div class="popup__body">
+      <div class="popup__column">
+         <div class="popup__content">
+            <div class="popup__title">Стать клиентом</div>
+            <div class="popup__text">Оставьте контактные данные, чтобы получить консультацию<br class="popup-textbr">
+               о вкладах и займах доступных<br class="popup-textbr2"> для пайщиков нашего кредитного кооператива</div>
+         </div>
+         <form action="#" class="popup__data">
+            <label class="popup__label" for="username">
+               <p>Ваше имя</p>
+               <input type="text" name="username" autocomplete="on" required>
+            </label>
+
+            <label class="popup__label" for="tel">
+               <p>Контактный телефон</p>
+               <input type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
+            </label>
+
+            <button class="popup__button go-data" name="submit"><span>Отправить данные</span> </button>
+
+
+            <div class="popup__checkbox">
+               <label class="checkbox-other" for="personal-data">
+                  <input type="checkbox" id="personal-data" name="personal-data" required checked>
+                  <span>Отправляя форму, я даю согласие на обработку<br>
+                     персональных данных.</span>
+               </label>
+            </div>
+         </form>
+         <img class="popup__img-case" src="img/main/header/client/case.svg" alt="case">
+         <img class="popup__img-safe" src="img/main/header/client/safe.svg" alt="safe">
+         <img class="popup__img-figure" src="img/main/header/client/figure.svg" alt="figure">
+         <div class="popup__icn close-popup">
+            <svg class="cross">
+               <use xlink:href="#cross"></use>
+            </svg>
+         </div>
+      </div>
+   </div>
+</div>
+		<div id="popup_4" class="header__customer popup">
+   <div class="popup__body body_3">
+      <div class="popup__column">
+         <div class="popup__content">
+            <div class="popup__title">Получить
+               консультацию</div>
+            <div class="popup__text">Оставьте контактные данные, чтобы получить консультацию<br class="popup-textbr">
+               о вкладах и займах доступных<br class="popup-textbr2"> для пайщиков нашего кредитного кооператива</div>
+         </div>
+         <form action="#" class="popup__data">
+            <label class="popup__label" for="username">
+               <p>Ваше имя</p>
+               <input type="text" name="username" autocomplete="on" required>
+            </label>
+
+            <label class="popup__label" for="tel">
+               <p>Контактный телефон</p>
+               <input type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
+            </label>
+
+            <button class="popup__button go-data" name="submit">Отправить данные</button>
+
+
+            <div class="popup__checkbox">
+               <label class="checkbox-other" for="personal-data">
+                  <input type="checkbox" id="personal-data" name="personal-data" required checked>
+                  <span>Отправляя форму, я даю согласие на обработку<br>
+                     персональных данных.</span>
+               </label>
+            </div>
+         </form>
+         <img class="popup__img-figure" src="img/main/saving-loans/figure4.svg" alt="figure">
+         <div class="popup__icn close-popup">
+            <svg class="cross">
+               <use xlink:href="#cross"></use>
+            </svg>
+         </div>
+      </div>
+   </div>
+</div>
+		<div id="popup_2" class="header__customer popup">
+   <div class="popup__body body_2">
+      <div class="popup__column">
+         <div class="popup__content">
+            <div class="popup__title">Оформить сбережение</div>
+            <div class="popup__text">Оставьте контактные данные, чтобы получить консультацию<br class="popup-textbr">
+               о вкладах и займах доступных<br class="popup-textbr2"> для пайщиков нашего кредитного кооператива</div>
+         </div>
+         <form action="#" class="popup__data">
+            <label class="popup__label" for="username">
+               <p>Ваше имя</p>
+               <input type="text" name="username" autocomplete="on" required>
+            </label>
+
+            <label class="popup__label" for="tel">
+               <p>Контактный телефон</p>
+               <input type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
+            </label>
+
+            <button class="popup__button go-data" name="submit">Отправить данные</button>
+
+
+            <div class="popup__checkbox">
+               <label class="checkbox-other" for="personal-data-2">
+                  <input type="checkbox" id="personal-data-2" name="personal-data-2" required checked>
+                  <span>Отправляя форму, я даю согласие на обработку<br>
+                     персональных данных.</span>
+               </label>
+            </div>
+         </form>
+         <img class="popup__img-figure figure_2" src="img/main/header/client/figure.svg" alt="figure">
+         <div class="popup__icn close-popup">
+            <svg class="cross">
+               <use xlink:href="#cross"></use>
+            </svg>
+         </div>
+      </div>
+   </div>
+</div>
+		<div id="popup_3" class="header__customer popup">
+   <div class="popup__body body_3">
+      <div class="popup__column">
+         <div class="popup__content">
+            <div class="popup__title">Получить займ</div>
+            <div class="popup__text">Оставьте контактные данные, чтобы получить консультацию<br class="popup-textbr">
+               о вкладах и займах доступных<br class="popup-textbr2"> для пайщиков нашего кредитного кооператива</div>
+         </div>
+         <form action="#" class="popup__data">
+            <label class="popup__label" for="username">
+               <p>Ваше имя</p>
+               <input type="text" name="username" autocomplete="on" required>
+            </label>
+
+            <label class="popup__label" for="tel">
+               <p>Контактный телефон</p>
+               <input type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
+            </label>
+
+            <button class="popup__button go-data" name="submit">Отправить данные</button>
+
+
+            <div class="popup__checkbox">
+               <label class="checkbox-other" for="personal-data-3">
+                  <input type="checkbox" id="personal-data-3" name="personal-data-3" required checked>
+                  <span>Отправляя форму, я даю согласие на обработку<br>
+                     персональных данных.</span>
+               </label>
+            </div>
+         </form>
+         <img class="popup__img-figure figure_3" src="img/main/saving-loans/figure3.svg" alt="figure">
+         <div class="popup__icn close-popup">
+            <svg class="cross">
+               <use xlink:href="#cross"></use>
+            </svg>
+         </div>
+      </div>
+   </div>
+</div>
+		
+		<div class="description">
+			<div class="description__container _container">
+				<div class="description__row">
+					<div class="description__column">
+						<div class="description__content block-1">
+							<div class="description__icon bank">
+								<img src="img/main/page/bank.svg" alt="Банк РФ">
+							</div>
+							<div class="description__text">Находимся
+								в государственном реестре Центрального Банка РФ</div>
+						</div>
+					</div>
+					<div class="description__column">
+						<div class="description__content block-2">
+							<div class="description__icon puzzle">
+								<img src="img/main/page/puzl.svg" alt="Банк РФ">
+							</div>
+							<div class="description__text">Состоим в СРО<br class="description-br-one">
+								«НСКК «Содействие»</div>
+						</div>
+					</div>
+					<div class="description__column">
+						<div class="description__content block-3">
+							<div class="description__icon gerb">
+								<img src="img/main/page/gerb.svg" alt="Банк РФ">
+							</div>
+							<div class="description__text">Действуем в соответствии<br>
+								с законом РФ<br class="description-br">
+								«О кредитной кооперации»</div>
+						</div>
+					</div>
+					<div class="description__column">
+						<div class="description__content block-4">
+							<div class="description__icon question">
+								<img src="img/main/page/question.svg" alt="Банк РФ">
+							</div>
+							<div class="description__text">Вопрос-ответ по любым темам о деятельности “Центр финансов”</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="savings-loans">
+			<div class="savings-loans__container _container">
+				<div class="savings-loans__row">
+					<div class="savings-loans__column">
+						<div class="savings-loans__content">
+							<h2 class="savings-loans__title">Сбережения</h2>
+							<div class="savings-loans__info">
+								<div class="savings-loans__text">Ставка выше, чем по вкладам<br> на весь срок</div>
+								<div class="savings-loans__text">Пополнение и снятие на свою<br> карту в любом банке</div>
+								<div class="savings-loans__text">Ответственность “Центр<br> Финансов” застрахована.</div>
+							</div>
+							<div class="savings-loans__button">
+								<a class="savings-loans__btn popup-link" href="#popup_2">Подробнее</a>
+							</div>
+							<img class="savings-loans__img-safe" src="img/main/header/client/safe.svg" alt="safe">
+							<img class="savings-loans__img-procent-one" src="img/main/saving-loans/procent-one.svg" alt="procent">
+							<img class="savings-loans__img-figure" src="img/main/saving-loans/figure.svg" alt="figure">
+							<img class="savings-loans__img-figure-mobile" src="img/main/saving-loans/figure-mobile.svg" alt="figure">
+							<img class="savings-loans__img-safe-mobile" src="img/main/saving-loans/safe-mobile.svg" alt="safe">
+						</div>
+
+					</div>
+					<div class="savings-loans__column">
+						<div class="savings-loans__content gradient">
+							<h2 class="savings-loans__title">Займы</h2>
+							<div class="savings-loans__info savings-loans__info_two">
+								<div class="savings-loans__text">Для бизнесса или на личные<br> цели</div>
+								<div class="savings-loans__text">От 3% в месяц, индивидуальные<br> условия</div>
+								<div class="savings-loans__text">Под залог недвижимости<br> или авто</div>
+							</div>
+							<div class="savings-loans__button savings-loans__button_white">
+								<a class="savings-loans__btn popup-link" href="#popup_3">Подробнее</a>
+							</div>
+
+							<img class="savings-loans__img-procent-two" src="img/main/saving-loans/procent-two.svg" alt="procent">
+							<img class="savings-loans__img-figure-blue" src="img/main/saving-loans/figure-blue.svg" alt="figure">
+							<img class="savings-loans__img-case" src="img/main/header/client/case.svg" alt="case">
+							<img class="savings-loans__img-figure-mobile-blue" src="img/main/saving-loans/figure-mobile-blue.svg" alt="figure">
+						</div>
+						<img class="savings-loans__img-case-mobile" src="img/main/saving-loans/case-mobile.svg" alt="case">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="calculator">
+   <div class="background-calc"></div>
+   <div class="calculator__container _container">
+      <div class="calculator__tabs tabs">
+         <div class="tabs-triggers">
+            <h2 class="tabs-triggers__title">Калькулятор</h2>
+            <div class="tabs-triggers__items">
+               <a href="#tab-1" class="tabs-triggers__item tabs-triggers__item_item-1">Сбережения</a>
+               <a href="#tab-2" class="tabs-triggers__item tabs-triggers__item_item-2">Бизнес сбережения</a>
+               <a href="#tab-3" class="tabs-triggers__item tabs-triggers__item_item-3">Займы</a>
+            </div>
+         </div>
+         <div class="tabs-content">
+            <div id="tab-1" class="tabs-content__item">
+               <div class="tabs-content__body">
+                  <div class="tabs-content__sliders sliders">
+                     <div class="sliders__slider-1">
+                        <div class="sliders__title">Сумма</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">50 000</div>
+                           <div class="sliders__num-2">3 000 000</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="sum-pointer" class="sliders__table">1 500 000</div>
+                              </div>
+                           </div>
+                           <!-- <div class="progress-bar"></div> -->
+                           <input id="sum" class="sliders__range-1 slider" type="range" min="50000" max="3000000" value="1500000" step="10000">
+                        </div>
+                     </div>
+                     <div class="sliders__slider-2">
+                        <div class="sliders__title">Срок</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">1</div>
+                           <div class="sliders__num-2">36</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="time-pointer" class="sliders__table">18</div>
+                              </div>
+                           </div>
+                           <input id="time" class="sliders__range-2 slider" type="range" min="1" max="36" value="18" step="1">
+                        </div>
+                     </div>
+                     <div class="sliders__slider-3">
+                        <div class="sliders__title">Ежемесячное пополнение</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">10 000</div>
+                           <div class="sliders__num-2">250 000</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="refill-pointer" class="sliders__table">125 000</div>
+                              </div>
+                           </div>
+                           <input id="refill" class="sliders__range-3 slider" type="range" min="10000" max="250000" value="125000" step="5000">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-content__check check">
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_1">
+                           <div class="check__title">Выплата % в день<br> открытия договора</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_2">
+                           <div class="check__title">Ежемесячное получение %</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_3">
+                           <div class="check__title">Частичное снятие любой<br> суммы</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_4">
+                           <div class="check__title">Капитализация</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" name="namecheckbox_5">
+                           <div class="check__title">Частичное снятие 50%<br> от суммы</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-content__stavka stavka">
+                     <div class="stavka__content">
+                        <div class="stavka__body">
+                           <div class="stavka__text">
+                              <div class="stavka__title">Ставка</div>
+                              <div class="stavka__title">Внесена сумма<br> <span class="stavka__data start-date">на 01. 2022 г.</span></div>
+                              <div class="stavka__title">Пополнено<br> <span class="stavka__data end-date">на 06. 2023 г.</span></div>
+                              <div class="stavka__title">Общий доход<br> <span class="stavka__data end-date">на 06. 2023 г.</span></div>
+                              <div class="stavka__title">Прибыль<br> <span class="stavka__data end-date">на 06. 2023 г.</span></div>
+                              <div class="stavka__title">Доход в месяц</div>
+                           </div>
+                           <div class="stavka__numbers">
+                              <div class="stavka__num">13%</div>
+                              <div id="sum-value" class="stavka__num">1 500 000</div>
+                              <div id="sum-fill" class="stavka__num">3 750 000</div>
+                              <div class="stavka__num">5 255 000</div>
+                              <div class="stavka__num">724 200</div>
+                              <div class="stavka__num">40 235</div>
+                           </div>
+                           <div class="stavka__border"></div>
+                        </div>
+                        <form>
+                           <button class="stavka__button">
+                              <svg class="header__client">
+                                 <use xlink:href="#client"></use>
+                              </svg><span>Оформить сбережение</span>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="shape">
+                     <img src="img/elements/calculator/shape.svg" alt="">
+                  </div>
+                  <div class="figure-calc">
+                     <img src="img/elements/calculator/figure.svg" alt="">
+                  </div>
+                  <div class="text-calc">
+                     Подробная информация по тарифам находится<br class="br-calcmobile"> в разделе документы - Положение<br class="br-calcdesktop"> “О порядке<br class="br-calcmobile"> и об условиях привлечения денежных средств”
+                  </div>
+               </div>
+            </div>
+            <div id="tab-2" class="tabs-content__item">
+               <div class="tabs-content__body">
+                  <div class="tabs-content__sliders sliders">
+                     <div class="sliders__slider-1">
+                        <div class="sliders__title">Сумма</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">50 000</div>
+                           <div class="sliders__num-2">3 000 000</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="bsum-pointer" class="sliders__table">1 500 000</div>
+                              </div>
+                           </div>
+                           <input id="bsum" class="sliders__range-1 slider" type="range" min="50000" max="3000000" value="1500000" step="50000">
+                        </div>
+                     </div>
+                     <div class="sliders__slider-2">
+                        <div class="sliders__title">Срок</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">1</div>
+                           <div class="sliders__num-2">36</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="btime-pointer" class="sliders__table">18</div>
+                              </div>
+                           </div>
+                           <input id="btime" class="sliders__range-2 slider" type="range" min="1" max="36" value="18" step="1">
+                        </div>
+                     </div>
+                     <div class="sliders__slider-3">
+                        <div class="sliders__title">Ежемесячное пополнение</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">10 000</div>
+                           <div class="sliders__num-2">250 000</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="brefill-pointer" class="sliders__table">125 000</div>
+                              </div>
+                           </div>
+                           <input id="brefill" class="sliders__range-3 slider" type="range" min="10000" max="250000" value="125000" step="5000">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-content__check check">
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_1">
+                           <div class="check__title">Выплата % в день<br> открытия договора</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_2">
+                           <div class="check__title">Ежемесячное получение %</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_3">
+                           <div class="check__title">Частичное снятие любой<br> суммы</div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" name="namecheckbox_4">
+                           <div class="check__title">Капитализация</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-content__stavka stavka">
+                     <div class="stavka__content">
+                        <div class="stavka__body">
+                           <div class="stavka__text">
+                              <div class="stavka__title">Ставка</div>
+                              <div class="stavka__title">Внесена сумма<br> <span class="stavka__data bstart-date">на 01. 2022 г.</span></div>
+                              <div class="stavka__title">Пополнено<br> <span class="stavka__data bend-date">на 06. 2023 г.</span></div>
+                              <div class="stavka__title">Общий доход<br> <span class="stavka__data bend-date">на 06. 2023 г.</span></div>
+                              <div class="stavka__title">Прибыль<br> <span class="stavka__data bend-date">на 06. 2023 г.</span></div>
+                              <div class="stavka__title">Доход в месяц</div>
+                           </div>
+                           <div class="stavka__numbers">
+                              <div class="stavka__num">13%</div>
+                              <div id="bsum-value" class="stavka__num">1 500 000</div>
+                              <div id="bsum-fill" class="stavka__num">3 750 000</div>
+                              <div class="stavka__num">5 255 000</div>
+                              <div class="stavka__num">724 200</div>
+                              <div class="stavka__num">40 235</div>
+                           </div>
+                           <div class="stavka__border"></div>
+                        </div>
+                        <form>
+                           <button class="stavka__button">
+                              <svg class="header__client">
+                                 <use xlink:href="#client"></use>
+                              </svg><span>Оформить сбережение</span>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="shape">
+                     <img src="img/elements/calculator/shape.svg" alt="">
+                  </div>
+                  <div class="figure-calc">
+                     <img src="img/elements/calculator/figure.svg" alt="">
+                  </div>
+                  <div class="text-calc">
+                     Подробная информация по тарифам находится<br class="br-calcmobile"> в разделе документы - Положение<br class="br-calcdesktop"> “О порядке<br class="br-calcmobile"> и об условиях привлечения денежных средств”
+                  </div>
+               </div>
+            </div>
+            <div id="tab-3" class="tabs-content__item">
+               <div class="tabs-content__body calc-3">
+                  <div class="tabs-content__sliders sliders">
+                     <div class="sliders__slider-1">
+                        <div class="sliders__title">Сумма займа</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">300 000</div>
+                           <div class="sliders__num-2">5 000 000</div>
+                        </div>
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="zsum-pointer" class="sliders__table">2 500 000</div>
+                              </div>
+                           </div>
+                           <input id="zsum" class="sliders__range-2 slider" type="range" min="300000" max="5000000" value="2500000" step="100000">
+                        </div>
+                     </div>
+                     <div class="sliders__slider-2">
+                        <div class="sliders__title">Срок</div>
+                        <div class="sliders__numbers">
+                           <div class="sliders__num-1">1</div>
+                           <div class="sliders__num-2">12</div>
+                        </div>
+
+                        <div class="sliders__range">
+                           <div class="sliders__obolochka">
+                              <div class="sliders__sliderValue">
+                                 <div id="ztime-pointer" class="sliders__table">6</div>
+                              </div>
+                           </div>
+                           <input id="ztime" class="sliders__range-2 slider" type="range" min="1" max="12" value="6" step="1">
+                        </div>
+
+                     </div>
+                     <div class="sliders__slider-3">
+                        <div class="sliders__title">Вид залога</div>
+
+                        <div class="select" id="select-1">
+
+                           <button type="button" class="select__toggle" name="car" value="" data-select="toggle" data-index="-1">Выберите из списка</button>
+
+                           <div class="select__dropdown">
+                              <ul class="select__options">
+                                 <li class="select__option" data-select="option" data-value="avto" data-index="0">Автомобиль</li>
+                                 <li class="select__option" data-select="option" data-value="flat" data-index="1">Квартира</li>
+                                 <li class="select__option" data-select="option" data-value="house" data-index="2">Дом</li>
+                                 <li class="select__option" data-select="option" data-value="realty" data-index="3">Ком. недвижимость</li>
+                              </ul>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="tabs-content__check check check-calc-3">
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" checked name="namecheckbox_1">
+                           <div class="check__title">Возможность пролонгации<br> на первоначальный срок
+                           </div>
+                        </div>
+                     </div>
+                     <div class="check__input">
+                        <div class="checkbox">
+                           <input type="checkbox" name="namecheckbox_2">
+                           <div class="check__title">Возможность выплаты займа<br> в конце срока договора</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-content__stavka stavka">
+                     <div class="stavka__content content-calc-3">
+                        <div class="stavka__body">
+                           <div class="stavka__text">
+                              <div class="stavka__title">Ставка</div>
+                              <div class="stavka__title">Ежемесячный платёж</div>
+                              <div class="stavka__title">Итоговая сумма</div>
+                           </div>
+                           <div class="stavka__numbers">
+                              <div class="stavka__num">3% <span>в месяц</span></div>
+                              <div class="stavka__num">50 000</div>
+                              <div class="stavka__num">3 750 000</div>
+                              <!-- <div class="stavka__num">5 255 000</div>
+                           <div class="stavka__num">724 200</div>
+                           <div class="stavka__num">40 235</div> -->
+                           </div>
+                        </div>
+                        <form action="#" class="stavka__form">
+                           <label class="stavka__label" for="username">
+                              <p>Ваше имя</p>
+                              <input class="name" type="text" name="username" autocomplete="on" required>
+                           </label>
+
+                           <label class="stavka__label" for="tel">
+                              <p>Контактный телефон</p>
+                              <input class="tel" type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
+                           </label>
+
+                           <button class="stavka__button">
+                              <svg class="header__client">
+                                 <use xlink:href="#client"></use>
+                              </svg><span>Получить займ</span>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="rub">
+                     <img src="img/elements/calculator/rub.svg" alt="">
+                  </div>
+                  <div class="figure-3">
+                     <img class="image-calc-3" src="img/elements/calculator/figure3.svg" alt="">
+                  </div>
+                  <div class="figure-calc">
+                     <img src="img/elements/calculator/figure.svg" alt="">
+                  </div>
+                  <div class="text-calc text-calc_3">
+                     Предварительный расчет носит ознакомительный характер<br id="text-3">
+                     и не является официальной офертой. Ознакомиться с условиями.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+		<div class="journal">
+   <div class="journal__container">
+      <h2 class="journal__title">Наш журнал</h2>
+      <div class="journal-slider swiper-container">
+         <!-- Слайдер -->
+         <div class="journal-slider__wrapper swiper-wrapper">
+            <div class="journal-slider__slide swiper-slide">
+               <a href="#">
+                  <div class="journal-slider__image">
+                     <picture><source srcset="img/elements/journal/01.webp" type="image/webp"><img class="journal__image" src="img/elements/journal/01.png" alt="Картинка"></picture>
+                     <h3 class="journal__text">Как мужчина пытался взыскать 32 млн рублей, которые дал в долг</h3>
+                  </div>
+               </a>
+            </div>
+            <div class="journal-slider__slide swiper-slide">
+               <div class="journal-slider__image">
+                  <a href="#">
+                     <img class="journal__image image_3" src="img/elements/journal/02.svg" alt="Картинка">
+                     <div class="journal__block"></div>
+                     <h3 class="journal__text">Куда вложить годовую премию: 11 идей, как распорядиться деньгами</h3>
+               </div>
+               </a>
+            </div>
+            <div class="journal-slider__slide swiper-slide">
+               <a href="#">
+                  <div class="journal-slider__image">
+                     <picture><source srcset="img/elements/journal/03.webp" type="image/webp"><img class="journal__image" src="img/elements/journal/03.png" alt="Картинка"></picture>
+                     <h3 class="journal__text">Как мы организовали кемпинг-свадьбу в лесу за 108 000 ₽</h3>
+                  </div>
+               </a>
+            </div>
+            <div class="journal-slider__slide swiper-slide">
+               <a href="#">
+                  <div class="journal-slider__image">
+                     <picture><source srcset="img/elements/journal/05.webp" type="image/webp"><img class="journal__image" src="img/elements/journal/05.png" alt="Картинка"></picture>
+                     <h3 class="journal__text">Бухгалтерский баланс: зачем он нужен и как его читать</h3>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="reviews__button">
+            <div class="swiper-button-next">
+               <div class="reviews__btn-block">
+                  <img class="reviews__next" src="img/elements/journal/Vector.svg" alt="">
+               </div>
+            </div>
+         </div>
+         <div class="reviews__button reviews__button_prev">
+            <div class="swiper-button-prev">
+
+               <div class="reviews__btn-block reviews__btn-block_prev">
+                  <img class="reviews__prev-rotate" src="img/elements/journal/Vector.svg" alt="">
+               </div>
+            </div>
+         </div>
+         <div class="swiper-scrollbar"></div>
+      </div>
+   </div>
+</div>
+		<div class="video">
+			<div class="video__container">
+				<div class="video__vimeo">
+					<div class="click-for-video">
+						<div class="video__titles">
+							<div class="video__work">Как работает кредитный кооператив?</div>
+							<div class="video__minute">За 2 минуты расскажет финансовый управляющий <span>группы компаний</span> Роман Крайнов </div>
+						</div>
+						<picture><source srcset="img/main/video/video.webp" type="image/webp"><img class="video__media" src="img/main/video/video.png" alt="video"></picture>
+						<button class="video__button">
+							<span class="video__flex">
+								<span class="video__btn">
+									<svg class="video__icon">
+										<use xlink:href="#play"></use>
+									</svg></span> <span class="video__text">Смотреть видео</span>
+							</span>
+						</button>
+					</div>
+					<div class="youtube">
+						<iframe class="youtube"></iframe>
+					</div>
+				</div>
+				<div class="video__title"> <a href="https://vimeo.com/user141088718">Смотреть больше о КПК “Центр Финансов"</a></div>
+			</div>
+		</div>
+		<div class="history">
+			<div class="history__container _container">
+				<div class="history__body">
+					<h2 class="history__title">История создания</h2>
+					<div class="history__icon">
+						<img class="history__icn" src="img/main/history/lider.svg" alt="stroy lider">
+					</div>
+					<h2 class="history__text">Как бизнес по малоэтажному<br>
+						строительству стал центром притяжения<br class="br-mobilenone">
+						<span class="whitespace-mobile">для доходов других</span> отраслей
+					</h2>
+					<button class="history__button">
+						Читать в проектах
+					</button>
+				</div>
+			</div>
+			<img class="history__home" src="img/main/history/home.svg" alt="home">
+			<img class="history__neon" src="img/main/history/neon.svg" alt="neon">
+		</div>
+		<div class="documents">
+   <div class="documents__container ">
+      <h2 class="documents__title">Документы</h2>
+      <div class="documents__body">
+         <div class="documents__item">
+            <a class="documents__link" href="#">
+               <div class="documents__icon">
+                  <img src="img/elements/documents/doc.svg" alt="document">
+               </div>
+               <div class="documents__text">Свидетельство<br>
+                  о регистрации КПК</div>
+            </a>
+         </div>
+         <div class="documents__item">
+            <a class="documents__link" href="#">
+               <div class="documents__icon">
+                  <img src="img/elements/documents/doc.svg" alt="document">
+               </div>
+               <div class="documents__text">Положение о займах</div>
+            </a>
+         </div>
+         <div class="documents__item">
+            <a class="documents__link" href="#">
+               <div class="documents__icon">
+                  <img src="img/elements/documents/doc.svg" alt="document">
+               </div>
+               <div class="documents__text">Положение о порядке<br>
+                  и об условиях привлечения<br> денежных средств</div>
+            </a>
+         </div>
+         <div class="documents__item">
+            <a class="documents__link" href="#">
+               <div class="documents__icon">
+                  <img src="img/elements/documents/doc.svg" alt="document">
+               </div>
+               <div class="documents__text">Устав КПК "Центр финансов"</div>
+            </a>
+         </div>
+         <div class="documents__item">
+            <a class="documents__link" href="#">
+               <div class="documents__icon">
+                  <img src="img/elements/documents/doc.svg" alt="document">
+               </div>
+               <div class="documents__text">Свидетельство о членстве<br> в СРО</div>
+            </a>
+         </div>
+         <div class="documents__item">
+            <a class="documents__link" href="#">
+               <div class="documents__icon">
+                  <img src="img/elements/documents/doc.svg" alt="document">
+               </div>
+               <div class="documents__text">Реквизиты КПК "Центр финансов"</div>
+            </a>
+         </div>
+      </div>
+   </div>
+</div>
+		<div class="comment">
+   <div class="comment__container _container">
+      <div class="comment__body">
+         <h2 class="comment__title">Оставьте комментарий<br>
+            о нашей работе</h2>
+         <div class="comment__text">Мы получаем много отзывов от наших клиентов. Решили поделиться некоторыми<br class="br-comment"> из
+            них. Также вы можете отправить свою обратную связь о работе “Центр<br class="br-comment"> финансов” </div>
+         <div class="comment__links">
+            <div class="comment__link-one">
+               <a href="./articles.html">Читать отзывы</a>
+            </div>
+            <button class="comment__link-two">
+               Оставить отзыв
+            </button>
+         </div>
+         <img class="comment__image" src="img/elements/comment/01.svg" alt="comment">
+      </div>
+   </div>
+</div>
+		<div class="communication">
+   <div class="communication__container">
+      <div class="communication__body">
+         <h2 class="communication__title">Мы готовы к вашим<br class="communication__title-mobile"> вопросам,<br class="communication__title-br">
+            спрашивайте. Ответим ;)</h2>
+
+         <form action="#" class="communication__data">
+            <label class="communication__label" for="username">
+               <p>Ваше имя</p>
+               <input type="text" name="username" autocomplete="on" required>
+            </label>
+
+            <label class="communication__label" for="tel">
+               <p>Контактный телефон</p>
+               <input type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" required>
+            </label>
+            <div class="communication__yes">
+               <button class="communication__button" name="submit"><span>Отправить данные</span></button>
+
+               <label class="checkbox-othe" for="personal-date">
+                  <input type="checkbox" id="personal-date" name="personal-date" required checked>
+                  <span>Отправляя форму, я даю<br class="br-communication"> согласие на обработку<br>
+                     персональных данных.</span>
+               </label>
+
+            </div>
+         </form>
+      </div>
+      <img class="communication__img" src="img/elements/communication/comp.svg" alt="communication">
+   </div>
+</div>
+		<footer class="footer">
+   <div class="footer__container _container">
+      <div class="footer__top top-footer">
+         <div class="top-footer__logo">
+            <img src="img/main/header/logo.svg" alt="logo">
+         </div>
+         <div class="top-footer__body">
+            <div class="top-footer__about-us aboutus-topfooter">
+               <a class="aboutus-topfooter__link" href="#">О нас</a>
+               <a class="aboutus-topfooter__link" href="#">Проекты</a>
+               <a class="aboutus-topfooter__link" href="#">Отзывы</a>
+               <a class="aboutus-topfooter__link" href="#">Контактная информация</a>
+            </div>
+            <div class="top-footer__credits">
+               <div class="top-footer__business-face businessface-topfooter">
+                  <a class="businessface-topfooter__link" href="#">Частным лицам</a>
+                  <a class="businessface-topfooter__link" href="#">Бизнесу</a>
+               </div>
+               <div class="top-footer__deposits-loans depositsloans-topfooter">
+                  <a class="depositsloans-topfooter__link" href="#">Вклад под 17% в год</a>
+                  <a class="depositsloans-topfooter__link" href="#">Займы</a>
+               </div>
+            </div>
+            <div class="top-footer__connection">
+               <div class="top-footer__number"> <a href="tel:8-800-222-17-14">8-800-222-17-14</a> </div>
+               <a href="#" class="top-footer__call">Обратный звонок</a>
+               <div class="top-footer__timetable">Будни с 9.00 до 20.00<br>
+                  Суббота с 10.00 до 18.00<br>
+                  Воскресенье - выходной</div>
+            </div>
+         </div>
+      </div>
+      <div class="footer__border"></div>
+      <div class="footer__bottom bottom-footer">
+         <div class="bottom-footer__content">
+            <div class="bottom-footer__kpk">© 2022 КПК «Центр финансов»<br>
+               ИНН 4345375135, ОГРН 1134345029906</div>
+            <div class="bottom-footer__address">
+               <img class="bottom-footer__img" src="img/main/header/navigate.svg" alt="navigate"> 603024, г.Нижний Новгород, ул.Белинского д.63, ТЦ “Этажи”
+            </div>
+         </div>
+         <div class="bottom-footer__description">Услуги предоставляются пайщикам Кредитного потребительского кооператива
+            «Дело и Деньги» (КПК). ИНН 5257168276 ОГРН 1165275075130, член Ассоциации «Саморегулируемая организация
+            «Национальное содружество кредитных кооперативов «Содействие» (реестровый номер №СЗ-0154 от 20.01.2017).
+            Вступительный взнос 100 руб., паевой – 1000 руб. Возвращаем паевой взнос при прекращении членства. Ставка
+            17% годовых действует на срок размещения от 3 до 36 месяцев, сумма от 30 тыс. до 3 млн. руб. Частичный
+            возврат в первые три месяца не более 20% от суммы по договору. По истечении трех месяцев до суммы
+            минимального остатка 30 тыс. руб. Досрочный возврат возможен при подписании заявления о выходе из КПК,
+            выплата процентов в течении трех месяцев с даты подписания договора, проценты пересчитываются по ставке 3%
+            годовых с удержанием суммы излишне уплаченных процентов. По сберегательной программе «Легкий старт»
+            действует ставка 8,5% годовых на срок от 1 до 2 месяцев, сумма от 10 тыс. руб. до 3 млн. руб. Частичный
+            досрочный возврат не ранее 1 месяца с момента заключения договора, минимальный остаток на договоре 10 000
+            рублей. Досрочный возврат не ранее чем через 1 месяц, проценты пересчитываются по ставке 0,01% годовых с
+            удержанием суммы излишне уплаченных процентов. Член КПК солидарно несет субсидиарную ответственность по его
+            обязательствам в пределах невнесенной части доп. взноса каждого из членов КПК. Ответственность КПК
+            застрахована в НКО «МОВС», свидетельство РН КПК №0351 от 17.08.2021. Лицензия ЦБ РФ ВС №4349.</div>
+      </div>
+
+
+      <div class="footer__mobile mobile-footer">
+         <div class="mobile-footer__head">
+            <img src="img/main/header/logo.svg" alt="./index.html">
+
+            <div class="mobile-footer__number"><a href="tel:8-800-222-17-14">8-800-222-17-14</a></div>
+         </div>
+         <div class="mobile-footer__links">
+            <div class="mobile-footer__links-one">
+               <a class="mobile-footer__link mobile-footer__link_blue" href="./individuals.html">Частным лицам</a>
+               <a class="mobile-footer__link mobile-footer__link_blue" href="./business.html">Бизнесу</a>
+               <a class="mobile-footer__link" href="#">О нас</a>
+               <a class="mobile-footer__link" href="./savings.html">Сбережения</a>
+            </div>
+            <div class="mobile-footer__links-two">
+               <a class="mobile-footer__link" href="./loans.html">Займы</a>
+               <a class="mobile-footer__link" href="./projects.html">Проекты</a>
+               <a class="mobile-footer__link" href="./articles.html">Отзывы</a>
+               <a class="mobile-footer__link" href="./contacts.html">Контактная информация</a>
+            </div>
+         </div>
+         <div class="mobile-footer__address">
+            <div class="mobile-footer__image">
+               <img class="mobile-footer__img" src="img/main/header/navigate.svg" alt="navigate">
+            </div>
+            <div class="mobile-footer__text">
+               603024, г.Нижний
+               Новгород, ул.Белинского д.63, ТЦ “Этажи”
+            </div>
+         </div>
+         <div class="mobile-footer__data">Будни с 9.00 до 20.00 Суббота с 10.00 до 18.00
+            Воскресенье - выходной</div>
+         <div class="mobile-footer__foot">
+            <div class="mobile-footer__button">
+               <a class="mobile-footer__btn popup-link" href="#popup_4"><img src="img/footer/address.svg"> Получить консультацию</a>
+            </div>
+            <div class="mobile-footer__icons">
+               <img src="img/footer/vk.svg" alt="vk">
+               <img src="img/footer/inst.svg" alt="instagram">
+               <img src="img/footer/fb.svg" alt="facebook">
+            </div>
+            <div class="mobile-footer__kpk">© 2022 КПК «Центр финансов»<br>
+               ИНН 4345375135, ОГРН 1134345029906</div>
+         </div>
+      </div>
+   </div>
+   <!-- <div class="footer__prob">
+      <img src="img/footer/figure2.svg" alt="">
+   </div> -->
+   <div class="footer__block"></div>
+</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js?_v=20220326125928"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220326125928"></script>
+	<script src="js/app.min.js?_v=20220326125928"></script>
+</body>
+
+</html>
+<!-- <svg class="content-footer__icn">
+   <use xlink:href="#twitter"></use>
+ </svg> -->
