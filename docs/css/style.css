@@ -1270,7 +1270,7 @@ body {
 
 .sliders {
   position: relative;
-  z-index: 10;
+  z-index: 11;
   width: 417px;
   margin-right: 104px;
   padding: 41px 0px 0px 73px;
@@ -2716,6 +2716,10 @@ input[type=range]::-ms-thumb {
 .popup__content {
   margin: 0px 0px 43px 0px;
   text-align: center;
+}
+
+.popup__content_savings {
+  margin: 0px 0px 32px 0px;
 }
 
 .popup__title {
@@ -7953,7 +7957,6 @@ div.youtube {
 
   .popup__content {
     margin: 0px 0px 62px 0px;
-    text-align: left;
   }
 
   .popup__title {
@@ -8033,6 +8036,7 @@ div.youtube {
     width: 384px;
     height: auto;
     padding: 32px 33px 50px 33px;
+    background-color: #fff;
   }
 
   .content-reviews {
